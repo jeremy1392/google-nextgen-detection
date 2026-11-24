@@ -1,0 +1,63 @@
+{
+ "world": "experiments/cache_g11/s7_inject10",
+ "days_scored": 1.5,
+ "fused_alerts_total": 169,
+ "fused_alerts_during_warmup": 55,
+ "fused_alerts_scored": 114,
+ "scored_true_positives": 65,
+ "scored_false_positives": 49,
+ "scored_fp_that_touch_an_attack_started_before_warmup_end": 8,
+ "precision": 0.5702,
+ "fp_per_day": 32.7,
+ "attack_cases_scored": 73,
+ "P8": {
+  "model_calls": 169,
+  "calls_during_warmup": 55,
+  "calls_shown_any_attack_event": 83,
+  "calls_shown_scored_attack_event": 59,
+  "calls_after_warmup": 114,
+  "calls_after_warmup_positive_for_scorer": 59,
+  "positive_alerts_closed_any_attack": 45,
+  "positive_alerts_closed_after_warmup_scored": 31
+ },
+ "P8-harness": {
+  "model_calls": 169,
+  "calls_during_warmup": 55,
+  "calls_shown_any_attack_event": 83,
+  "calls_shown_scored_attack_event": 59,
+  "calls_after_warmup": 114,
+  "calls_after_warmup_positive_for_scorer": 59,
+  "positive_alerts_closed_any_attack": 25,
+  "positive_alerts_closed_after_warmup_scored": 17
+ },
+ "P8-g4": {
+  "model_calls": 169,
+  "calls_during_warmup": 55,
+  "calls_shown_any_attack_event": 83,
+  "calls_shown_scored_attack_event": 59,
+  "calls_after_warmup": 114,
+  "calls_after_warmup_positive_for_scorer": 59,
+  "positive_alerts_closed_any_attack": 28,
+  "positive_alerts_closed_after_warmup_scored": 21
+ },
+ "P9-g4": {
+  "model_calls": 169,
+  "calls_during_warmup": 55,
+  "calls_shown_any_attack_event": 83,
+  "calls_shown_scored_attack_event": 59,
+  "calls_after_warmup": 114,
+  "calls_after_warmup_positive_for_scorer": 59,
+  "positive_alerts_closed_any_attack": 31,
+  "positive_alerts_closed_after_warmup_scored": 22
+ },
+ "P8-agent-g4": {
+  "model_calls": 141,
+  "calls_during_warmup": 55,
+  "calls_shown_any_attack_event": 71,
+  "calls_shown_scored_attack_event": 46,
+  "calls_after_warmup": 86,
+  "calls_after_warmup_positive_for_scorer": 46,
+  "positive_alerts_closed_any_attack": 26,
+  "positive_alerts_closed_after_warmup_scored": 18
+ }
+}

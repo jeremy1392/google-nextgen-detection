@@ -1,0 +1,6 @@
+P2                     recall 0.506 FP/day 304.87 R@10 0.116 exfil 0/27 {'spanner_bulk_export': '0/13', 'bigtable_full_scan': '0/11', 'b4_replication_spike': '0/3'} vol-rule FP 0 (backup window 0, backup entities 0)
+P2-vol                 recall 0.588 FP/day 306.23 R@10 0.179 exfil 17/27 {'spanner_bulk_export': '7/13', 'bigtable_full_scan': '7/11', 'b4_replication_spike': '3/3'} vol-rule FP 6 (backup window 1, backup entities 1)
+P2-volflat             recall 0.588 FP/day 305.8 R@10 0.164 exfil 17/27 {'spanner_bulk_export': '7/13', 'bigtable_full_scan': '7/11', 'b4_replication_spike': '3/3'} vol-rule FP 4 (backup window 3, backup entities 3)
+FINAL-nollm            recall 0.607 FP/day 17.77 R@10 0.607 exfil 0/27 {'spanner_bulk_export': '0/13', 'bigtable_full_scan': '0/11', 'b4_replication_spike': '0/3'} vol-rule FP 0 (backup window 0, backup entities 0)
+FINAL-vol-nollm        recall 0.688 FP/day 17.3 R@10 0.684 exfil 17/27 {'spanner_bulk_export': '7/13', 'bigtable_full_scan': '7/11', 'b4_replication_spike': '3/3'} vol-rule FP 0 (backup window 0, backup entities 0)
+FINAL-volflat-nollm    recall 0.674 FP/day 18.7 R@10 0.664 exfil 14/27 {'spanner_bulk_export': '7/13', 'bigtable_full_scan': '7/11', 'b4_replication_spike': '0/3'} vol-rule FP 3 (backup window 3, backup entities 3)

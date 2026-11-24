@@ -1,0 +1,244 @@
+{
+ "source": "G_series_v5_2d.json (2-day run), C2_e2e_local_v2.json, D1_malconv_report.json",
+ "prices": {
+  "cpu_core_s": 1.31e-05,
+  "gpu_s": {
+   "H100": 0.001097,
+   "L4": 0.000222
+  }
+ },
+ "log_path": {
+  "P9": {
+   "model": "google/gemini-3.1-flash-lite-preview",
+   "stages": [
+    {
+     "stage": "events ingested",
+     "per_day": 422509.0,
+     "share_of_events": 1.0,
+     "latency_p50_s": null
+    },
+    {
+     "stage": "detector signals (P0-P2 rules and baselines)",
+     "per_day": 4731.5,
+     "share_of_events": 0.011198578018456412,
+     "latency_p50_s": 1.15e-05
+    },
+    {
+     "stage": "fast path: rare severe signals, alerted without the LLM",
+     "per_day": 21.0,
+     "share_of_events": 4.9703083247930815e-05,
+     "latency_p50_s": 1.15e-05
+    },
+    {
+     "stage": "fused alerts sent to the LLM",
+     "per_day": 84.5,
+     "share_of_events": 0.0001999957397357216,
+     "latency_p50_s": 1.15e-05
+    },
+    {
+     "stage": "kept by the LLM (escalated to an analyst)",
+     "per_day": 21.5,
+     "share_of_events": 5.0886489991929166e-05,
+     "latency_p50_s": 0.9130115000000001,
+     "latency_p95_s": 1.1170115
+    }
+   ],
+   "analyst_alerts_per_day": 42.5,
+   "recall": 0.411,
+   "fp_per_day": 3.3,
+   "cost_per_day_usd": {
+    "detection_compute": 7.7e-05,
+    "llm": 0.0673
+   },
+   "llm_cost_per_call_usd": 0.0008,
+   "detector_mean_s_per_event": 1.3854061318075393e-05
+  },
+  "P9-g4": {
+   "model": "google/gemini-4-hydrogen",
+   "stages": [
+    {
+     "stage": "events ingested",
+     "per_day": 422509.0,
+     "share_of_events": 1.0,
+     "latency_p50_s": null
+    },
+    {
+     "stage": "detector signals (P0-P2 rules and baselines)",
+     "per_day": 4731.5,
+     "share_of_events": 0.011198578018456412,
+     "latency_p50_s": 1.12e-05
+    },
+    {
+     "stage": "fast path: rare severe signals, alerted without the LLM",
+     "per_day": 21.0,
+     "share_of_events": 4.9703083247930815e-05,
+     "latency_p50_s": 1.12e-05
+    },
+    {
+     "stage": "fused alerts sent to the LLM",
+     "per_day": 84.5,
+     "share_of_events": 0.0001999957397357216,
+     "latency_p50_s": 1.12e-05
+    },
+    {
+     "stage": "kept by the LLM (escalated to an analyst)",
+     "per_day": 26.0,
+     "share_of_events": 6.153715068791434e-05,
+     "latency_p50_s": 6.1220112,
+     "latency_p95_s": 11.7040112
+    }
+   ],
+   "analyst_alerts_per_day": 47.0,
+   "recall": 0.411,
+   "fp_per_day": 2.0,
+   "cost_per_day_usd": {
+    "detection_compute": 7.4e-05,
+    "llm": 0.7606
+   },
+   "llm_cost_per_call_usd": 0.009,
+   "detector_mean_s_per_event": 1.3452432199741713e-05
+  }
+ },
+ "binary_path": {
+  "L4": {
+   "stage1_extraction_ms": {
+    "p50": 0.2429014999982826,
+    "p95": 6.3513039999975245,
+    "p99": 22.937539559998918,
+    "max": 163.05550100000232,
+    "share_under_5ms": 0.92125
+   },
+   "malconv_bucketed": [
+    {
+     "files_per_s": 50,
+     "total_ms": {
+      "p50": 8.286162999979751,
+      "p95": 15.368055999999797,
+      "p99": 40.43660079997833
+     },
+     "share_under_50ms": 0.9927159209157128,
+     "mean_batch": 1.6951092611862644
+    },
+    {
+     "files_per_s": 200,
+     "total_ms": {
+      "p50": 9.731611000006524,
+      "p95": 22.74865629997862,
+      "p99": 34.795079100011804
+     },
+     "share_under_50ms": 0.9972045743329098,
+     "mean_batch": 3.327827191867853
+    },
+    {
+     "files_per_s": 500,
+     "total_ms": {
+      "p50": 35.855462999961674,
+      "p95": 95.82655940001813,
+      "p99": 123.20255175999142
+     },
+     "share_under_50ms": 0.6764488546395018,
+     "mean_batch": 21.767233189063656
+    },
+    {
+     "files_per_s": 1000,
+     "total_ms": {
+      "p50": 5934.844945000009,
+      "p95": 11575.78565179998,
+      "p99": 11713.708431680014
+     },
+     "share_under_50ms": 0.00404975412207116,
+     "mean_batch": 31.967312698871854
+    },
+    {
+     "files_per_s": 2000,
+     "total_ms": {
+      "p50": 17660.536887500002,
+      "p95": 29796.111738700038,
+      "p99": 30952.442424060016
+     },
+     "share_under_50ms": 0.0015301933268642234,
+     "mean_batch": 31.98544450250056
+    }
+   ],
+   "capacity_files_per_s_99pct_under_50ms": 196.8,
+   "gpu_usd_per_million_binaries_at_capacity": 1.13
+  },
+  "H100": {
+   "stage1_extraction_ms": {
+    "p50": 0.25225099999914846,
+    "p95": 6.201937000002994,
+    "p99": 28.869817099996077,
+    "max": 218.3652110000054,
+    "share_under_5ms": 0.92975
+   },
+   "malconv_bucketed": [
+    {
+     "files_per_s": 50,
+     "total_ms": {
+      "p50": 7.406787999997277,
+      "p95": 14.423066199999823,
+      "p99": 45.79920451999327
+     },
+     "share_under_50ms": 0.9927083333333333,
+     "mean_batch": 1.7125
+    },
+    {
+     "files_per_s": 200,
+     "total_ms": {
+      "p50": 7.531771000003573,
+      "p95": 14.54862039998943,
+      "p99": 28.254614119995427
+     },
+     "share_under_50ms": 0.9969332992588806,
+     "mean_batch": 2.774597495527728
+    },
+    {
+     "files_per_s": 500,
+     "total_ms": {
+      "p50": 9.644212000011976,
+      "p95": 20.3933651000014,
+      "p99": 40.18694240000748
+     },
+     "share_under_50ms": 0.9946740519812527,
+     "mean_batch": 6.115892628887942
+    },
+    {
+     "files_per_s": 1000,
+     "total_ms": {
+      "p50": 14.451856000007979,
+      "p95": 31.974181999987646,
+      "p99": 49.060520379993946
+     },
+     "share_under_50ms": 0.9907176816844012,
+     "mean_batch": 15.911817976001812
+    },
+    {
+     "files_per_s": 2000,
+     "total_ms": {
+      "p50": 515.8309960000054,
+      "p95": 2281.3004445500096,
+      "p99": 2415.364194560025
+     },
+     "share_under_50ms": 0.017925824175824175,
+     "mean_batch": 31.981043956043955
+    }
+   ],
+   "capacity_files_per_s_99pct_under_50ms": 883.4,
+   "gpu_usd_per_million_binaries_at_capacity": 1.24
+  },
+  "sandbox_share_at_0.5": {
+   "known_toolchains": {
+    "benign_escalated": 0.0008939879311629293,
+    "malware_missed": 0.0008002133902373967
+   },
+   "unseen_toolchain": {
+    "benign_escalated": 0.2988442487616951,
+    "malware_missed": 0.0008002133902373967
+   },
+   "per_1000_new_benign_binaries": {
+    "known": 0.89,
+    "unseen": 298.8
+   }
+  }
+ }
+}

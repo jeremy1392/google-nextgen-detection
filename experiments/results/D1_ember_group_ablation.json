@@ -1,0 +1,186 @@
+{
+ "alone": {
+  "byte_histogram": {
+   "test": {
+    "auc": 0.99973,
+    "tpr_at_fpr_1e-3": 0.967
+   },
+   "unseen_toolchain": {
+    "auc": 0.99039,
+    "tpr_at_fpr_1e-3": 0.5755
+   }
+  },
+  "byte_entropy": {
+   "test": {
+    "auc": 0.99967,
+    "tpr_at_fpr_1e-3": 0.9714
+   },
+   "unseen_toolchain": {
+    "auc": 0.96895,
+    "tpr_at_fpr_1e-3": 0.2847
+   }
+  },
+  "strings": {
+   "test": {
+    "auc": 0.99945,
+    "tpr_at_fpr_1e-3": 0.8741
+   },
+   "unseen_toolchain": {
+    "auc": 0.98999,
+    "tpr_at_fpr_1e-3": 0.8166
+   }
+  },
+  "general": {
+   "test": {
+    "auc": 0.99986,
+    "tpr_at_fpr_1e-3": 0.9837
+   },
+   "unseen_toolchain": {
+    "auc": 0.95739,
+    "tpr_at_fpr_1e-3": 0.4585
+   }
+  },
+  "header": {
+   "test": {
+    "auc": 0.99993,
+    "tpr_at_fpr_1e-3": 0.9994
+   },
+   "unseen_toolchain": {
+    "auc": 0.9996,
+    "tpr_at_fpr_1e-3": 0.9698
+   }
+  },
+  "sections": {
+   "test": {
+    "auc": 0.99998,
+    "tpr_at_fpr_1e-3": 0.9995
+   },
+   "unseen_toolchain": {
+    "auc": 0.97814,
+    "tpr_at_fpr_1e-3": 0.1792
+   }
+  },
+  "imports": {
+   "test": {
+    "auc": 0.99846,
+    "tpr_at_fpr_1e-3": 0.5341
+   },
+   "unseen_toolchain": {
+    "auc": 0.95732,
+    "tpr_at_fpr_1e-3": 0.8356
+   }
+  },
+  "exports": {
+   "test": {
+    "auc": 0.82058,
+    "tpr_at_fpr_1e-3": 0.013
+   },
+   "unseen_toolchain": {
+    "auc": 0.5761,
+    "tpr_at_fpr_1e-3": 0.013
+   }
+  },
+  "data_directories": {
+   "test": {
+    "auc": 0.99989,
+    "tpr_at_fpr_1e-3": 0.9915
+   },
+   "unseen_toolchain": {
+    "auc": 0.9844,
+    "tpr_at_fpr_1e-3": 0.7266
+   }
+  }
+ },
+ "all_but": {
+  "byte_histogram": {
+   "test": {
+    "auc": 1.0,
+    "tpr_at_fpr_1e-3": 1.0
+   },
+   "unseen_toolchain": {
+    "auc": 0.99957,
+    "tpr_at_fpr_1e-3": 0.9818
+   }
+  },
+  "byte_entropy": {
+   "test": {
+    "auc": 1.0,
+    "tpr_at_fpr_1e-3": 1.0
+   },
+   "unseen_toolchain": {
+    "auc": 0.9997,
+    "tpr_at_fpr_1e-3": 0.9912
+   }
+  },
+  "strings": {
+   "test": {
+    "auc": 0.99999,
+    "tpr_at_fpr_1e-3": 1.0
+   },
+   "unseen_toolchain": {
+    "auc": 0.99926,
+    "tpr_at_fpr_1e-3": 0.9676
+   }
+  },
+  "general": {
+   "test": {
+    "auc": 1.0,
+    "tpr_at_fpr_1e-3": 1.0
+   },
+   "unseen_toolchain": {
+    "auc": 0.99963,
+    "tpr_at_fpr_1e-3": 0.9902
+   }
+  },
+  "header": {
+   "test": {
+    "auc": 1.0,
+    "tpr_at_fpr_1e-3": 0.9997
+   },
+   "unseen_toolchain": {
+    "auc": 0.99897,
+    "tpr_at_fpr_1e-3": 0.9534
+   }
+  },
+  "sections": {
+   "test": {
+    "auc": 1.0,
+    "tpr_at_fpr_1e-3": 1.0
+   },
+   "unseen_toolchain": {
+    "auc": 0.99923,
+    "tpr_at_fpr_1e-3": 0.9769
+   }
+  },
+  "imports": {
+   "test": {
+    "auc": 1.0,
+    "tpr_at_fpr_1e-3": 1.0
+   },
+   "unseen_toolchain": {
+    "auc": 0.99943,
+    "tpr_at_fpr_1e-3": 0.9802
+   }
+  },
+  "exports": {
+   "test": {
+    "auc": 0.99999,
+    "tpr_at_fpr_1e-3": 1.0
+   },
+   "unseen_toolchain": {
+    "auc": 0.99951,
+    "tpr_at_fpr_1e-3": 0.9844
+   }
+  },
+  "data_directories": {
+   "test": {
+    "auc": 0.99999,
+    "tpr_at_fpr_1e-3": 0.9999
+   },
+   "unseen_toolchain": {
+    "auc": 0.99953,
+    "tpr_at_fpr_1e-3": 0.9807
+   }
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "events": 200000,
+ "serialize_and_enqueue_us": {
+  "p50": 7.0,
+  "p99": 14.9,
+  "mean": 7.44
+ },
+ "event_bytes": {
+  "mean": 494,
+  "p50": 453,
+  "p99": 727
+ },
+ "note": "Python json.dumps + deque append on one core of the benchmark machine; an agent in C++/Go would be faster: an upper bound."
+}

@@ -1,0 +1,27 @@
+{
+ "note": "generator before calibration (printed output of bench.a1_compare on experiments/cache/base_s1)",
+ "simulated": {
+  "machines": 112,
+  "hours": 36,
+  "termination_mix": {
+   "FAIL": 0.6276,
+   "EVICT": 0.2577,
+   "KILL": 0.1147,
+   "FINISH": 0.0,
+   "LOST": 0.0
+  },
+  "schedule_per_machine_hour_mean": 3.0662,
+  "share_zero": 0.1786,
+  "priority_mix": {
+   "free (0-1)": 0.0,
+   "production (9-11)": 0.8416,
+   "batch / middle (2-8)": 0.1584
+  }
+ },
+ "distance": {
+  "termination_mix_tvd": 0.4773,
+  "priority_mix_tvd": 0.8068,
+  "schedule_per_machine_hour_ks": 0.1507,
+  "schedule_rate_ratio_sim_over_real": 0.5693
+ }
+}

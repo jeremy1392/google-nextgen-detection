@@ -1,0 +1,1355 @@
+[
+ {
+  "dataset": "darpa-tc-e3-cadets",
+  "pipeline": "P2",
+  "events": 41350895,
+  "cases_mode": "windows",
+  "case_sizes": {
+   "tc-cadets-nginx_drakon_2": 35,
+   "tc-cadets-nginx_drakon_3": 44709,
+   "tc-cadets-nginx_drakon_4": 20812
+  },
+  "warmup_days": 3.0,
+  "wall_s": 261.1,
+  "evidence_completeness": 0.03,
+  "attack_coverage": "0/0",
+  "attack_missed": [],
+  "brier": 0.3461,
+  "reliability": [
+   {
+    "bin": "0.0-0.1",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.1-0.2",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.2-0.3",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.3-0.4",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.4-0.5",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.5-0.6",
+    "alerts": 224269,
+    "anomaly_rate": 0.001
+   },
+   {
+    "bin": "0.6-0.7",
+    "alerts": 141321,
+    "anomaly_rate": 0.001
+   },
+   {
+    "bin": "0.7-0.8",
+    "alerts": 12621,
+    "anomaly_rate": 0.0
+   },
+   {
+    "bin": "0.8-0.9",
+    "alerts": 12871,
+    "anomaly_rate": 0.0
+   },
+   {
+    "bin": "0.9-1.0",
+    "alerts": 18435,
+    "anomaly_rate": 0.0
+   }
+  ],
+  "batch_s": null,
+  "alerts": 409517,
+  "alerts_per_day": 51330.9,
+  "precision": 0.0008,
+  "fp_per_day": 51289.8,
+  "fp_lookalike_per_day": 0.0,
+  "fp_lookalike_by_type": {},
+  "fp_per_day_by_rule": {
+   "new_action_for_user": 26456.6,
+   "new_machine_for_user": 16121.0,
+   "rare_hour_for_user": 8712.2
+  },
+  "cases": 3,
+  "recall": 1.0,
+  "recall_by_family": {
+   "other": 1.0
+  },
+  "recall_by_type": {
+   "nginx_drakon_2": "1/1",
+   "nginx_drakon_3": "1/1",
+   "nginx_drakon_4": "1/1"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 0.0,
+   "p95": 0.0
+  },
+  "average_precision": 0.0005,
+  "recall_at_fp_per_day": {
+   "1/day": 0.0,
+   "10/day": 0.0,
+   "100/day": 0.0
+  },
+  "node_level": {
+   "labelled_nodes": 12858,
+   "labelled_nodes_seen_after_warmup": 12857,
+   "flagged_nodes": 107984,
+   "true_positive_nodes": 62,
+   "node_precision": 0.0006,
+   "node_recall": 0.0048,
+   "attack_nodes": 12848,
+   "attack_nodes_flagged": 53,
+   "attack_node_recall": 0.0041,
+   "attack_node_precision": 0.0005
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 1.6,
+    "p95": 2.3,
+    "p99": 3.1,
+    "max": 443306.2
+   },
+   "throughput_eps": 584195,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   },
+   "overload": {
+    "dropped": 0,
+    "dropped_share": 0.0,
+    "peak_backlog_s": 0.4,
+    "peak_backlog_events": 616
+   }
+  }
+ },
+ {
+  "dataset": "darpa-tc-e3-cadets",
+  "pipeline": "P3",
+  "events": 41350895,
+  "cases_mode": "windows",
+  "case_sizes": {
+   "tc-cadets-nginx_drakon_2": 35,
+   "tc-cadets-nginx_drakon_3": 44709,
+   "tc-cadets-nginx_drakon_4": 20812
+  },
+  "warmup_days": 3.0,
+  "wall_s": 563.5,
+  "evidence_completeness": 0.021,
+  "attack_coverage": "0/0",
+  "attack_missed": [],
+  "brier": 0.4682,
+  "reliability": [
+   {
+    "bin": "0.0-0.1",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.1-0.2",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.2-0.3",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.3-0.4",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.4-0.5",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.5-0.6",
+    "alerts": 2293,
+    "anomaly_rate": 0.002
+   },
+   {
+    "bin": "0.6-0.7",
+    "alerts": 1543,
+    "anomaly_rate": 0.002
+   },
+   {
+    "bin": "0.7-0.8",
+    "alerts": 361,
+    "anomaly_rate": 0.003
+   },
+   {
+    "bin": "0.8-0.9",
+    "alerts": 486,
+    "anomaly_rate": 0.0
+   },
+   {
+    "bin": "0.9-1.0",
+    "alerts": 664,
+    "anomaly_rate": 0.002
+   }
+  ],
+  "batch_s": null,
+  "alerts": 5347,
+  "alerts_per_day": 670.2,
+  "precision": 0.0017,
+  "fp_per_day": 669.1,
+  "fp_lookalike_per_day": 0.0,
+  "fp_lookalike_by_type": {},
+  "fp_per_day_by_rule": {
+   "iforest:dev": 559.8,
+   "iforest:task": 106.7,
+   "iforest:exe": 2.6
+  },
+  "cases": 3,
+  "recall": 0.6667,
+  "recall_by_family": {
+   "other": 0.667
+  },
+  "recall_by_type": {
+   "nginx_drakon_2": "0/1",
+   "nginx_drakon_3": "1/1",
+   "nginx_drakon_4": "1/1"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 3546.1,
+   "p95": 3546.1
+  },
+  "average_precision": 0.0019,
+  "recall_at_fp_per_day": {
+   "1/day": 0.0,
+   "10/day": 0.0,
+   "100/day": 0.333
+  },
+  "node_level": {
+   "labelled_nodes": 12858,
+   "labelled_nodes_seen_after_warmup": 12857,
+   "flagged_nodes": 127324,
+   "true_positive_nodes": 12,
+   "node_precision": 0.0001,
+   "node_recall": 0.0009,
+   "attack_nodes": 12848,
+   "attack_nodes_flagged": 7,
+   "attack_node_recall": 0.0005,
+   "attack_node_precision": 0.0001
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 5.5,
+    "p95": 9.5,
+    "p99": 14.6,
+    "max": 2322870.7
+   },
+   "throughput_eps": 141076,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   },
+   "overload": {
+    "dropped": 0,
+    "dropped_share": 0.0,
+    "peak_backlog_s": 2.3,
+    "peak_backlog_events": 2099
+   }
+  }
+ },
+ {
+  "dataset": "darpa-tc-e3-cadets",
+  "pipeline": "P4",
+  "events": 41350895,
+  "cases_mode": "windows",
+  "case_sizes": {
+   "tc-cadets-nginx_drakon_2": 35,
+   "tc-cadets-nginx_drakon_3": 44709,
+   "tc-cadets-nginx_drakon_4": 20812
+  },
+  "warmup_days": 3.0,
+  "wall_s": 7334.4,
+  "evidence_completeness": 0.001,
+  "attack_coverage": "0/0",
+  "attack_missed": [],
+  "brier": 0.9742,
+  "reliability": [
+   {
+    "bin": "0.0-0.1",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.1-0.2",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.2-0.3",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.3-0.4",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.4-0.5",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.5-0.6",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.6-0.7",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.7-0.8",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.8-0.9",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.9-1.0",
+    "alerts": 119419,
+    "anomaly_rate": 0.0
+   }
+  ],
+  "batch_s": null,
+  "alerts": 119419,
+  "alerts_per_day": 14968.6,
+  "precision": 0.0002,
+  "fp_per_day": 14965.3,
+  "fp_lookalike_per_day": 0.0,
+  "fp_lookalike_by_type": {},
+  "fp_per_day_by_rule": {
+   "seq:ext.tc.cadets": 14965.3
+  },
+  "cases": 3,
+  "recall": 0.6667,
+  "recall_by_family": {
+   "other": 0.667
+  },
+  "recall_by_type": {
+   "nginx_drakon_2": "0/1",
+   "nginx_drakon_3": "1/1",
+   "nginx_drakon_4": "1/1"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 140.1,
+   "p95": 140.1
+  },
+  "average_precision": 0.0062,
+  "recall_at_fp_per_day": {
+   "1/day": 0.0,
+   "10/day": 0.0,
+   "100/day": 0.667
+  },
+  "node_level": {
+   "labelled_nodes": 12858,
+   "labelled_nodes_seen_after_warmup": 12857,
+   "flagged_nodes": 140140,
+   "true_positive_nodes": 29,
+   "node_precision": 0.0002,
+   "node_recall": 0.0023,
+   "attack_nodes": 12848,
+   "attack_nodes_flagged": 20,
+   "attack_node_recall": 0.0016,
+   "attack_node_precision": 0.0001
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 9.9,
+    "p95": 53.5,
+    "p99": 7651.7,
+    "max": 1237900.3
+   },
+   "throughput_eps": 5905,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 387.1
+   },
+   "overload": {
+    "dropped": 0,
+    "dropped_share": 0.0,
+    "peak_backlog_s": 580.7,
+    "peak_backlog_events": 184388
+   }
+  }
+ },
+ {
+  "dataset": "darpa-tc-e3-cadets",
+  "pipeline": "P5",
+  "events": 41350895,
+  "cases_mode": "windows",
+  "case_sizes": {
+   "tc-cadets-nginx_drakon_2": 35,
+   "tc-cadets-nginx_drakon_3": 44709,
+   "tc-cadets-nginx_drakon_4": 20812
+  },
+  "warmup_days": 3.0,
+  "wall_s": 555.2,
+  "evidence_completeness": 0.03,
+  "attack_coverage": "0/0",
+  "attack_missed": [],
+  "brier": 0.5897,
+  "reliability": [
+   {
+    "bin": "0.0-0.1",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.1-0.2",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.2-0.3",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.3-0.4",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.4-0.5",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.5-0.6",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.6-0.7",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.7-0.8",
+    "alerts": 648,
+    "anomaly_rate": 0.051
+   },
+   {
+    "bin": "0.8-0.9",
+    "alerts": 113,
+    "anomaly_rate": 0.08
+   },
+   {
+    "bin": "0.9-1.0",
+    "alerts": 153,
+    "anomaly_rate": 0.0
+   }
+  ],
+  "batch_s": null,
+  "alerts": 914,
+  "alerts_per_day": 114.6,
+  "precision": 0.046,
+  "fp_per_day": 109.3,
+  "fp_lookalike_per_day": 0.0,
+  "fp_lookalike_by_type": {},
+  "fp_per_day_by_rule": {
+   "risk:noisy_or": 109.3
+  },
+  "cases": 3,
+  "recall": 1.0,
+  "recall_by_family": {
+   "other": 1.0
+  },
+  "recall_by_type": {
+   "nginx_drakon_2": "1/1",
+   "nginx_drakon_3": "1/1",
+   "nginx_drakon_4": "1/1"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 140.2,
+   "p95": 1464.8
+  },
+  "average_precision": 0.042,
+  "recall_at_fp_per_day": {
+   "1/day": 0.0,
+   "10/day": 0.0,
+   "100/day": 1.0
+  },
+  "node_level": {
+   "labelled_nodes": 12858,
+   "labelled_nodes_seen_after_warmup": 12857,
+   "flagged_nodes": 9789,
+   "true_positive_nodes": 59,
+   "node_precision": 0.006,
+   "node_recall": 0.0046,
+   "attack_nodes": 12848,
+   "attack_nodes_flagged": 50,
+   "attack_node_recall": 0.0039,
+   "attack_node_precision": 0.0051
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 5.6,
+    "p95": 10.1,
+    "p99": 26.8,
+    "max": 711636.7
+   },
+   "throughput_eps": 150436,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   },
+   "overload": {
+    "dropped": 0,
+    "dropped_share": 0.0,
+    "peak_backlog_s": 0.7,
+    "peak_backlog_events": 1519
+   }
+  }
+ },
+ {
+  "dataset": "darpa-tc-e3-cadets",
+  "pipeline": "P5-hyper",
+  "events": 41350895,
+  "cases_mode": "windows",
+  "case_sizes": {
+   "tc-cadets-nginx_drakon_2": 35,
+   "tc-cadets-nginx_drakon_3": 44709,
+   "tc-cadets-nginx_drakon_4": 20812
+  },
+  "warmup_days": 3.0,
+  "wall_s": 318.9,
+  "evidence_completeness": null,
+  "attack_coverage": "0/0",
+  "attack_missed": [],
+  "brier": 0.5496,
+  "reliability": [
+   {
+    "bin": "0.0-0.1",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.1-0.2",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.2-0.3",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.3-0.4",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.4-0.5",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.5-0.6",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.6-0.7",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.7-0.8",
+    "alerts": 85,
+    "anomaly_rate": 0.0
+   },
+   {
+    "bin": "0.8-0.9",
+    "alerts": 7,
+    "anomaly_rate": 0.0
+   },
+   {
+    "bin": "0.9-1.0",
+    "alerts": 5,
+    "anomaly_rate": 0.0
+   }
+  ],
+  "batch_s": null,
+  "alerts": 97,
+  "alerts_per_day": 12.2,
+  "precision": 0.0,
+  "fp_per_day": 12.2,
+  "fp_lookalike_per_day": 0.0,
+  "fp_lookalike_by_type": {},
+  "fp_per_day_by_rule": {
+   "risk:noisy_or": 12.2
+  },
+  "cases": 3,
+  "recall": 0.0,
+  "recall_by_family": {
+   "other": 0.0
+  },
+  "recall_by_type": {
+   "nginx_drakon_2": "0/1",
+   "nginx_drakon_3": "0/1",
+   "nginx_drakon_4": "0/1"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": null,
+   "p95": null
+  },
+  "average_precision": null,
+  "recall_at_fp_per_day": {
+   "1/day": 0.0,
+   "10/day": 0.0,
+   "100/day": 0.0
+  },
+  "node_level": {
+   "labelled_nodes": 12858,
+   "labelled_nodes_seen_after_warmup": 12857,
+   "flagged_nodes": 1876,
+   "true_positive_nodes": 5,
+   "node_precision": 0.0027,
+   "node_recall": 0.0004,
+   "attack_nodes": 12848,
+   "attack_nodes_flagged": 0,
+   "attack_node_recall": 0.0,
+   "attack_node_precision": 0.0
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 3.4,
+    "p95": 5.2,
+    "p99": 9.7,
+    "max": 428190.1
+   },
+   "throughput_eps": 263542,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   },
+   "overload": {
+    "dropped": 0,
+    "dropped_share": 0.0,
+    "peak_backlog_s": 0.4,
+    "peak_backlog_events": 1444
+   }
+  }
+ },
+ {
+  "dataset": "darpa-tc-e3-cadets",
+  "pipeline": "P6",
+  "events": 41350895,
+  "cases_mode": "windows",
+  "case_sizes": {
+   "tc-cadets-nginx_drakon_2": 35,
+   "tc-cadets-nginx_drakon_3": 44709,
+   "tc-cadets-nginx_drakon_4": 20812
+  },
+  "warmup_days": 3.0,
+  "wall_s": 269.6,
+  "evidence_completeness": 0.002,
+  "attack_coverage": "0/0",
+  "attack_missed": [],
+  "brier": 0.5736,
+  "reliability": [
+   {
+    "bin": "0.0-0.1",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.1-0.2",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.2-0.3",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.3-0.4",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.4-0.5",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.5-0.6",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.6-0.7",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.7-0.8",
+    "alerts": 584,
+    "anomaly_rate": 0.045
+   },
+   {
+    "bin": "0.8-0.9",
+    "alerts": 61,
+    "anomaly_rate": 0.098
+   },
+   {
+    "bin": "0.9-1.0",
+    "alerts": 115,
+    "anomaly_rate": 0.0
+   }
+  ],
+  "batch_s": null,
+  "alerts": 760,
+  "alerts_per_day": 95.3,
+  "precision": 0.0421,
+  "fp_per_day": 91.3,
+  "fp_lookalike_per_day": 0.0,
+  "fp_lookalike_by_type": {},
+  "fp_per_day_by_rule": {
+   "risk:noisy_or": 91.3
+  },
+  "cases": 3,
+  "recall": 0.6667,
+  "recall_by_family": {
+   "other": 0.667
+  },
+  "recall_by_type": {
+   "nginx_drakon_2": "0/1",
+   "nginx_drakon_3": "1/1",
+   "nginx_drakon_4": "1/1"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 140.2,
+   "p95": 140.2
+  },
+  "average_precision": 0.043,
+  "recall_at_fp_per_day": {
+   "1/day": 0.0,
+   "10/day": 0.0,
+   "100/day": 0.667
+  },
+  "node_level": {
+   "labelled_nodes": 12858,
+   "labelled_nodes_seen_after_warmup": 12857,
+   "flagged_nodes": 9303,
+   "true_positive_nodes": 40,
+   "node_precision": 0.0043,
+   "node_recall": 0.0031,
+   "attack_nodes": 12848,
+   "attack_nodes_flagged": 32,
+   "attack_node_recall": 0.0025,
+   "attack_node_precision": 0.0034
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 2.5,
+    "p95": 3.5,
+    "p99": 6.9,
+    "max": 245241.1
+   },
+   "throughput_eps": 368762,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   },
+   "overload": {
+    "dropped": 0,
+    "dropped_share": 0.0,
+    "peak_backlog_s": 0.2,
+    "peak_backlog_events": 618
+   }
+  }
+ },
+ {
+  "dataset": "darpa-tc-e3-cadets",
+  "pipeline": "P6-hyper",
+  "events": 41350895,
+  "cases_mode": "windows",
+  "case_sizes": {
+   "tc-cadets-nginx_drakon_2": 35,
+   "tc-cadets-nginx_drakon_3": 44709,
+   "tc-cadets-nginx_drakon_4": 20812
+  },
+  "warmup_days": 3.0,
+  "wall_s": 455.0,
+  "evidence_completeness": null,
+  "attack_coverage": "0/0",
+  "attack_missed": [],
+  "brier": 0.5501,
+  "reliability": [
+   {
+    "bin": "0.0-0.1",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.1-0.2",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.2-0.3",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.3-0.4",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.4-0.5",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.5-0.6",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.6-0.7",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.7-0.8",
+    "alerts": 83,
+    "anomaly_rate": 0.0
+   },
+   {
+    "bin": "0.8-0.9",
+    "alerts": 7,
+    "anomaly_rate": 0.0
+   },
+   {
+    "bin": "0.9-1.0",
+    "alerts": 5,
+    "anomaly_rate": 0.0
+   }
+  ],
+  "batch_s": null,
+  "alerts": 95,
+  "alerts_per_day": 11.9,
+  "precision": 0.0,
+  "fp_per_day": 11.9,
+  "fp_lookalike_per_day": 0.0,
+  "fp_lookalike_by_type": {},
+  "fp_per_day_by_rule": {
+   "risk:noisy_or": 11.9
+  },
+  "cases": 3,
+  "recall": 0.0,
+  "recall_by_family": {
+   "other": 0.0
+  },
+  "recall_by_type": {
+   "nginx_drakon_2": "0/1",
+   "nginx_drakon_3": "0/1",
+   "nginx_drakon_4": "0/1"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": null,
+   "p95": null
+  },
+  "average_precision": null,
+  "recall_at_fp_per_day": {
+   "1/day": 0.0,
+   "10/day": 0.0,
+   "100/day": 0.0
+  },
+  "node_level": {
+   "labelled_nodes": 12858,
+   "labelled_nodes_seen_after_warmup": 12857,
+   "flagged_nodes": 1862,
+   "true_positive_nodes": 5,
+   "node_precision": 0.0027,
+   "node_recall": 0.0004,
+   "attack_nodes": 12848,
+   "attack_nodes_flagged": 0,
+   "attack_node_recall": 0.0,
+   "attack_node_precision": 0.0
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 4.1,
+    "p95": 7.6,
+    "p99": 15.0,
+    "max": 242143.3
+   },
+   "throughput_eps": 211612,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   },
+   "overload": {
+    "dropped": 0,
+    "dropped_share": 0.0,
+    "peak_backlog_s": 0.2,
+    "peak_backlog_events": 592
+   }
+  }
+ },
+ {
+  "dataset": "darpa-tc-e3-cadets",
+  "pipeline": "P6+P4",
+  "events": 41350895,
+  "cases_mode": "windows",
+  "case_sizes": {
+   "tc-cadets-nginx_drakon_2": 35,
+   "tc-cadets-nginx_drakon_3": 44709,
+   "tc-cadets-nginx_drakon_4": 20812
+  },
+  "warmup_days": 3.0,
+  "wall_s": 4890.4,
+  "evidence_completeness": null,
+  "attack_coverage": "0/0",
+  "attack_missed": [],
+  "brier": 0.6032,
+  "reliability": [
+   {
+    "bin": "0.0-0.1",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.1-0.2",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.2-0.3",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.3-0.4",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.4-0.5",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.5-0.6",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.6-0.7",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.7-0.8",
+    "alerts": 112,
+    "anomaly_rate": 0.0
+   },
+   {
+    "bin": "0.8-0.9",
+    "alerts": 24,
+    "anomaly_rate": 0.0
+   },
+   {
+    "bin": "0.9-1.0",
+    "alerts": 21,
+    "anomaly_rate": 0.0
+   }
+  ],
+  "batch_s": null,
+  "alerts": 157,
+  "alerts_per_day": 19.7,
+  "precision": 0.0,
+  "fp_per_day": 19.7,
+  "fp_lookalike_per_day": 0.0,
+  "fp_lookalike_by_type": {},
+  "fp_per_day_by_rule": {
+   "risk:noisy_or": 19.7
+  },
+  "cases": 3,
+  "recall": 0.0,
+  "recall_by_family": {
+   "other": 0.0
+  },
+  "recall_by_type": {
+   "nginx_drakon_2": "0/1",
+   "nginx_drakon_3": "0/1",
+   "nginx_drakon_4": "0/1"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": null,
+   "p95": null
+  },
+  "average_precision": null,
+  "recall_at_fp_per_day": {
+   "1/day": 0.0,
+   "10/day": 0.0,
+   "100/day": 0.0
+  },
+  "node_level": {
+   "labelled_nodes": 12858,
+   "labelled_nodes_seen_after_warmup": 12857,
+   "flagged_nodes": 2538,
+   "true_positive_nodes": 7,
+   "node_precision": 0.0028,
+   "node_recall": 0.0005,
+   "attack_nodes": 12848,
+   "attack_nodes_flagged": 0,
+   "attack_node_recall": 0.0,
+   "attack_node_precision": 0.0
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 8.9,
+    "p95": 39.1,
+    "p99": 5050.1,
+    "max": 1338165.9
+   },
+   "throughput_eps": 8803,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 181.1
+   },
+   "overload": {
+    "dropped": 0,
+    "dropped_share": 0.0,
+    "peak_backlog_s": 277.3,
+    "peak_backlog_events": 132670
+   }
+  }
+ },
+ {
+  "dataset": "darpa-tc-e3-cadets",
+  "pipeline": "P10",
+  "events": 41350895,
+  "cases_mode": "windows",
+  "case_sizes": {
+   "tc-cadets-nginx_drakon_2": 35,
+   "tc-cadets-nginx_drakon_3": 44709,
+   "tc-cadets-nginx_drakon_4": 20812
+  },
+  "warmup_days": 3.0,
+  "wall_s": 530.4,
+  "evidence_completeness": null,
+  "attack_coverage": "0/0",
+  "attack_missed": [],
+  "brier": 0.9801,
+  "reliability": [
+   {
+    "bin": "0.0-0.1",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.1-0.2",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.2-0.3",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.3-0.4",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.4-0.5",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.5-0.6",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.6-0.7",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.7-0.8",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.8-0.9",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.9-1.0",
+    "alerts": 77951,
+    "anomaly_rate": 0.0
+   }
+  ],
+  "batch_s": null,
+  "alerts": 77951,
+  "alerts_per_day": 9770.8,
+  "precision": 0.0,
+  "fp_per_day": 9770.8,
+  "fp_lookalike_per_day": 0.0,
+  "fp_lookalike_by_type": {},
+  "fp_per_day_by_rule": {
+   "gnn_unlikely_edge:exe->o": 9770.8
+  },
+  "cases": 3,
+  "recall": 0.0,
+  "recall_by_family": {
+   "other": 0.0
+  },
+  "recall_by_type": {
+   "nginx_drakon_2": "0/1",
+   "nginx_drakon_3": "0/1",
+   "nginx_drakon_4": "0/1"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": null,
+   "p95": null
+  },
+  "average_precision": null,
+  "recall_at_fp_per_day": {
+   "1/day": 0.0,
+   "10/day": 0.0,
+   "100/day": 0.0
+  },
+  "node_level": {
+   "labelled_nodes": 12858,
+   "labelled_nodes_seen_after_warmup": 12857,
+   "flagged_nodes": 45903,
+   "true_positive_nodes": 0,
+   "node_precision": 0.0,
+   "node_recall": 0.0,
+   "attack_nodes": 12848,
+   "attack_nodes_flagged": 0,
+   "attack_node_recall": 0.0,
+   "attack_node_precision": 0.0
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 0.9,
+    "p95": 1.9,
+    "p99": 4.8,
+    "max": 222817138.7
+   },
+   "throughput_eps": 154447,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   },
+   "overload": {
+    "dropped": 0,
+    "dropped_share": 0.0,
+    "peak_backlog_s": 222.8,
+    "peak_backlog_events": 6831
+   }
+  },
+  "gnn": {
+   "train": {
+    "train_edges": 174285,
+    "held_out_edges": 1358,
+    "nodes": 171749,
+    "final_loss": 1.0721,
+    "threshold": 3.092,
+    "val_link_auc": 0.7416,
+    "epochs": 300,
+    "bias": false,
+    "dim": 32
+   },
+   "edges": {
+    "new_edges": 128742,
+    "anomalous_new_edges": 137,
+    "gnn": {
+     "auc": 0.3569,
+     "ap": 0.00109
+    },
+    "pref_att": {
+     "auc": 0.9652,
+     "ap": 0.01433
+    },
+    "unseen": {
+     "auc": 0.4853,
+     "ap": 0.00103
+    }
+   }
+  }
+ },
+ {
+  "dataset": "darpa-tc-e3-cadets",
+  "pipeline": "P6-hyper+P10",
+  "events": 41350895,
+  "cases_mode": "windows",
+  "case_sizes": {
+   "tc-cadets-nginx_drakon_2": 35,
+   "tc-cadets-nginx_drakon_3": 44709,
+   "tc-cadets-nginx_drakon_4": 20812
+  },
+  "warmup_days": 3.0,
+  "wall_s": 769.3,
+  "evidence_completeness": null,
+  "attack_coverage": "0/0",
+  "attack_missed": [],
+  "brier": 0.5619,
+  "reliability": [
+   {
+    "bin": "0.0-0.1",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.1-0.2",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.2-0.3",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.3-0.4",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.4-0.5",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.5-0.6",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.6-0.7",
+    "alerts": 0,
+    "anomaly_rate": null
+   },
+   {
+    "bin": "0.7-0.8",
+    "alerts": 83,
+    "anomaly_rate": 0.0
+   },
+   {
+    "bin": "0.8-0.9",
+    "alerts": 7,
+    "anomaly_rate": 0.0
+   },
+   {
+    "bin": "0.9-1.0",
+    "alerts": 8,
+    "anomaly_rate": 0.0
+   }
+  ],
+  "batch_s": null,
+  "alerts": 98,
+  "alerts_per_day": 12.3,
+  "precision": 0.0,
+  "fp_per_day": 12.3,
+  "fp_lookalike_per_day": 0.0,
+  "fp_lookalike_by_type": {},
+  "fp_per_day_by_rule": {
+   "risk:noisy_or": 12.3
+  },
+  "cases": 3,
+  "recall": 0.0,
+  "recall_by_family": {
+   "other": 0.0
+  },
+  "recall_by_type": {
+   "nginx_drakon_2": "0/1",
+   "nginx_drakon_3": "0/1",
+   "nginx_drakon_4": "0/1"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": null,
+   "p95": null
+  },
+  "average_precision": null,
+  "recall_at_fp_per_day": {
+   "1/day": 0.0,
+   "10/day": 0.0,
+   "100/day": 0.0
+  },
+  "node_level": {
+   "labelled_nodes": 12858,
+   "labelled_nodes_seen_after_warmup": 12857,
+   "flagged_nodes": 1864,
+   "true_positive_nodes": 5,
+   "node_precision": 0.0027,
+   "node_recall": 0.0004,
+   "attack_nodes": 12848,
+   "attack_nodes_flagged": 0,
+   "attack_node_recall": 0.0,
+   "attack_node_precision": 0.0
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 5.7,
+    "p95": 10.5,
+    "p99": 26.6,
+    "max": 188614059.4
+   },
+   "throughput_eps": 89082,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   },
+   "overload": {
+    "dropped": 0,
+    "dropped_share": 0.0,
+    "peak_backlog_s": 188.6,
+    "peak_backlog_events": 6106
+   }
+  }
+ }
+]

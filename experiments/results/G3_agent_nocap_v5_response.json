@@ -1,0 +1,34 @@
+{
+ "P8-agent-nocap": {
+  "human_all": {
+   "cases": 73,
+   "contained": 36,
+   "never_contained": 37,
+   "ttc_min_p50": 31.5,
+   "ttc_min_p95": 176.8,
+   "auto_actions_per_day": 0.0,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 76.0
+  },
+  "llm_auto": {
+   "cases": 73,
+   "contained": 10,
+   "never_contained": 63,
+   "ttc_min_p50": 0.1,
+   "ttc_min_p95": 129.1,
+   "auto_actions_per_day": 13.3,
+   "wrongful_auto_actions_per_day": 1.33,
+   "human_reviews_per_day": 0.7
+  },
+  "llm_auto_strict": {
+   "cases": 73,
+   "contained": 10,
+   "never_contained": 63,
+   "ttc_min_p50": 0.1,
+   "ttc_min_p95": 129.1,
+   "auto_actions_per_day": 8.7,
+   "wrongful_auto_actions_per_day": 0.67,
+   "human_reviews_per_day": 5.3
+  }
+ }
+}

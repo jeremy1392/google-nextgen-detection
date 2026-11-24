@@ -1,0 +1,22 @@
+{
+ "P1-tuned": {
+  "first_batch": 0.845,
+  "second_batch": 0.221,
+  "drop": 0.624
+ },
+ "P5-hyper-tuned": {
+  "first_batch": 0.968,
+  "second_batch": 0.3,
+  "drop": 0.668
+ },
+ "P6-hyper-tuned": {
+  "first_batch": 0.895,
+  "second_batch": 0.221,
+  "drop": 0.674
+ },
+ "MIX-tuned": {
+  "first_batch": 0.932,
+  "second_batch": 0.257,
+  "drop": 0.675
+ }
+}

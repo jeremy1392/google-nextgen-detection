@@ -1,0 +1,118 @@
+{
+ "malconv_scratch": {
+  "fpr_0.01": {
+   "threshold": 0.291787,
+   "tpr_loongarch": 1.0,
+   "n_loongarch_mal": 69,
+   "fpr_loongarch_benign": 0.0357,
+   "n_loongarch_ben": 504,
+   "tpr_other_arch": 0.9668,
+   "tpr_all": 0.9688,
+   "fpr_all": 0.00991
+  },
+  "fpr_0.001": {
+   "threshold": 0.997527,
+   "tpr_loongarch": 0.0,
+   "n_loongarch_mal": 69,
+   "fpr_loongarch_benign": 0.0,
+   "n_loongarch_ben": 504,
+   "tpr_other_arch": 0.8405,
+   "tpr_all": 0.7888,
+   "fpr_all": 0.00097
+  },
+  "loongarch_malware_score_quantiles": [
+   0.8529,
+   0.8529,
+   0.8529,
+   0.8529,
+   0.8529
+  ]
+ },
+ "malconv_pe_finetune": {
+  "fpr_0.01": {
+   "threshold": 0.535341,
+   "tpr_loongarch": 0.0,
+   "n_loongarch_mal": 69,
+   "fpr_loongarch_benign": 0.0099,
+   "n_loongarch_ben": 504,
+   "tpr_other_arch": 0.8775,
+   "tpr_all": 0.8235,
+   "fpr_all": 0.00991
+  },
+  "fpr_0.001": {
+   "threshold": 0.99883,
+   "tpr_loongarch": 0.0,
+   "n_loongarch_mal": 69,
+   "fpr_loongarch_benign": 0.0,
+   "n_loongarch_ben": 504,
+   "tpr_other_arch": 0.699,
+   "tpr_all": 0.656,
+   "fpr_all": 0.00097
+  },
+  "loongarch_malware_score_quantiles": [
+   0.0023,
+   0.0023,
+   0.0023,
+   0.0023,
+   0.0023
+  ]
+ },
+ "gbdt_header+bytes": {
+  "fpr_0.01": {
+   "threshold": 3.7e-05,
+   "tpr_loongarch": 0.0,
+   "n_loongarch_mal": 69,
+   "fpr_loongarch_benign": 0.004,
+   "n_loongarch_ben": 504,
+   "tpr_other_arch": 0.9943,
+   "tpr_all": 0.9332,
+   "fpr_all": 0.00991
+  },
+  "fpr_0.001": {
+   "threshold": 0.997741,
+   "tpr_loongarch": 0.0,
+   "n_loongarch_mal": 69,
+   "fpr_loongarch_benign": 0.0,
+   "n_loongarch_ben": 504,
+   "tpr_other_arch": 0.9487,
+   "tpr_all": 0.8904,
+   "fpr_all": 0.00097
+  },
+  "loongarch_malware_score_quantiles": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "gbdt_bytes": {
+  "fpr_0.01": {
+   "threshold": 0.000357,
+   "tpr_loongarch": 0.0,
+   "n_loongarch_mal": 69,
+   "fpr_loongarch_benign": 0.0079,
+   "n_loongarch_ben": 504,
+   "tpr_other_arch": 0.8528,
+   "tpr_all": 0.8004,
+   "fpr_all": 0.00991
+  },
+  "fpr_0.001": {
+   "threshold": 0.970842,
+   "tpr_loongarch": 0.0,
+   "n_loongarch_mal": 69,
+   "fpr_loongarch_benign": 0.0,
+   "n_loongarch_ben": 504,
+   "tpr_other_arch": 0.7056,
+   "tpr_all": 0.6622,
+   "fpr_all": 0.00097
+  },
+  "loongarch_malware_score_quantiles": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ }
+}

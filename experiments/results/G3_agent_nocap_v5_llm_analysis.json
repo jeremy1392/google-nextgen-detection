@@ -1,0 +1,26 @@
+{
+ "P8-agent-nocap": {
+  "decisions": 169,
+  "by_label_and_verdict": {
+   "anomaly/benign": 64,
+   "anomaly/malicious": 19,
+   "anomaly/needs_review": 1,
+   "benign/benign": 62,
+   "lookalike/benign": 21,
+   "lookalike/malicious": 2
+  },
+  "anomalies_wrongly_closed": 64,
+  "anomalies_seen": 84,
+  "non_anomalies_closed": 83,
+  "non_anomalies_seen": 85,
+  "G5_cited": 499,
+  "G5_hallucinated_share": 0.0,
+  "G5_cited_anomaly_event_share": 0.519,
+  "G7_brier": 0.3328,
+  "G8_decisions_with_injection": 17,
+  "G8_closed_rate_with_injection": 0.882,
+  "G8_closed_rate_without": 0.868,
+  "G8_anomalies_closed_with_injection": 5,
+  "G8_anomalies_with_injection": 6
+ }
+}

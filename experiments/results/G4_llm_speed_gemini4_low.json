@@ -1,0 +1,70 @@
+[
+  {
+    "model": "google/gemini-4-hydrogen",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 2.7,
+    "total_s": 3.3,
+    "out_tokens": 472,
+    "reasoning_tokens": 372,
+    "cost_usd": 0.00505,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-4-argon",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 2.93,
+    "total_s": 4.01,
+    "out_tokens": 101,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00317,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-4-neon",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 2.93,
+    "total_s": 6.87,
+    "out_tokens": 617,
+    "reasoning_tokens": 523,
+    "cost_usd": 0.01288,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-4-carbon",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 6.94,
+    "total_s": 6.98,
+    "out_tokens": 101,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00334,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  }
+]

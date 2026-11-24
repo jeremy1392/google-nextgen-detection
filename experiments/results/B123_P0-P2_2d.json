@@ -1,0 +1,226 @@
+{
+  "run": "scratch/x1",
+  "events": 829808,
+  "wall_s": 14.1,
+  "eval_from": "12h",
+  "speed": 1.0,
+  "sources": null,
+  "pipelines": {
+    "P0": {
+      "detector": "P0-static-rules",
+      "alerts": 1550,
+      "alerts_per_day": 1033.3,
+      "precision": 0.1535,
+      "fp_per_day": 874.7,
+      "fp_lookalike_per_day": 60.7,
+      "fp_lookalike_by_type": {
+        "routine_prod_session": 78,
+        "incident_response": 12,
+        "service_launch": 1
+      },
+      "fp_per_day_by_rule": {
+        "access_deny_high_tier": 338.0,
+        "ptrace_attach": 242.7,
+        "bulk_read_50gb_window": 113.3,
+        "attestation_failed": 56.7,
+        "offhours_prod_app": 42.7,
+        "usb_mass_storage": 9.3,
+        "edr_alert_medium_plus": 8.7,
+        "egress_not_allowlisted": 2.7
+      },
+      "cases": 38,
+      "recall": 0.8684,
+      "recall_by_family": {
+        "nhi": 0.571,
+        "runtime": 1.0,
+        "ueba": 0.8
+      },
+      "recall_by_type": {
+        "ebpf_bpf_load": "2/2",
+        "ebpf_kernel_module": "2/2",
+        "ebpf_memfd_exec": "2/2",
+        "ebpf_namespace_escape": "1/1",
+        "ebpf_ptrace_attach": "2/2",
+        "ebpf_sensitive_read": "3/3",
+        "ebpf_shell_in_container": "2/2",
+        "ebpf_unexpected_connect": "4/4",
+        "egress_shift": "2/2",
+        "fast_approval": "2/4",
+        "first_seen_device": "1/1",
+        "new_rpc_edge": "0/3",
+        "off_hours_access": "2/2",
+        "rare_binary": "3/3",
+        "read_volume_spike": "5/5"
+      },
+      "bundles": 5,
+      "bundle_recall": 1.0,
+      "ttd_s": {
+        "p50": 0.6,
+        "p95": 435.8
+      },
+      "average_precision": 0.3798,
+      "recall_at_fp_per_day": {
+        "1/day": 0.395,
+        "10/day": 0.395,
+        "100/day": 0.421
+      },
+      "latency": {
+        "per_event_us": {
+          "p50": 0.4,
+          "p95": 3.0,
+          "p99": 3.9,
+          "max": 1802.3
+        },
+        "throughput_eps": 1223093,
+        "detection_delay_s": {
+          "p50": 0.0,
+          "p99": 0.0
+        }
+      }
+    },
+    "P1": {
+      "detector": "P1-siem-correlation",
+      "alerts": 965,
+      "alerts_per_day": 643.3,
+      "precision": 0.171,
+      "fp_per_day": 533.3,
+      "fp_lookalike_per_day": 58.0,
+      "fp_lookalike_by_type": {
+        "routine_prod_session": 78,
+        "incident_response": 8,
+        "service_launch": 1
+      },
+      "fp_per_day_by_rule": {
+        "ptrace_attach": 242.7,
+        "bulk_read_50gb_window": 113.3,
+        "attestation_failed": 56.7,
+        "offhours_prod_app_not_oncall": 35.3,
+        "usb_mass_storage": 9.3,
+        "edr_alert_medium_plus": 8.7,
+        "access_deny_burst": 6.7,
+        "egress_not_allowlisted": 2.7
+      },
+      "cases": 38,
+      "recall": 0.8684,
+      "recall_by_family": {
+        "nhi": 0.571,
+        "runtime": 1.0,
+        "ueba": 0.8
+      },
+      "recall_by_type": {
+        "ebpf_bpf_load": "2/2",
+        "ebpf_kernel_module": "2/2",
+        "ebpf_memfd_exec": "2/2",
+        "ebpf_namespace_escape": "1/1",
+        "ebpf_ptrace_attach": "2/2",
+        "ebpf_sensitive_read": "3/3",
+        "ebpf_shell_in_container": "2/2",
+        "ebpf_unexpected_connect": "4/4",
+        "egress_shift": "2/2",
+        "fast_approval": "2/4",
+        "first_seen_device": "1/1",
+        "new_rpc_edge": "0/3",
+        "off_hours_access": "2/2",
+        "rare_binary": "3/3",
+        "read_volume_spike": "5/5"
+      },
+      "bundles": 5,
+      "bundle_recall": 1.0,
+      "ttd_s": {
+        "p50": 1.0,
+        "p95": 1426.8
+      },
+      "average_precision": 0.4311,
+      "recall_at_fp_per_day": {
+        "1/day": 0.526,
+        "10/day": 0.526,
+        "100/day": 0.526
+      },
+      "latency": {
+        "per_event_us": {
+          "p50": 1.2,
+          "p95": 3.3,
+          "p99": 3.7,
+          "max": 399.6
+        },
+        "throughput_eps": 700793,
+        "detection_delay_s": {
+          "p50": 0.0,
+          "p99": 0.0
+        }
+      }
+    },
+    "P2": {
+      "detector": "P2-entity-baselines",
+      "alerts": 478,
+      "alerts_per_day": 318.7,
+      "precision": 0.0962,
+      "fp_per_day": 288.0,
+      "fp_lookalike_per_day": 29.3,
+      "fp_lookalike_by_type": {
+        "routine_prod_session": 29,
+        "incident_response": 14,
+        "service_launch": 1
+      },
+      "fp_per_day_by_rule": {
+        "new_prod_app_for_user": 160.7,
+        "new_job_read_by_user": 58.7,
+        "new_device_for_user": 24.0,
+        "new_syscall_profile": 4.0,
+        "new_rpc_edge": 4.0,
+        "rare_hour_for_user": 4.0,
+        "new_alts_peer": 2.0,
+        "new_reader_of_dataset": 1.3
+      },
+      "cases": 38,
+      "recall": 0.8158,
+      "recall_by_family": {
+        "nhi": 0.857,
+        "runtime": 0.857,
+        "ueba": 0.7
+      },
+      "recall_by_type": {
+        "ebpf_bpf_load": "2/2",
+        "ebpf_kernel_module": "2/2",
+        "ebpf_memfd_exec": "2/2",
+        "ebpf_namespace_escape": "1/1",
+        "ebpf_ptrace_attach": "2/2",
+        "ebpf_sensitive_read": "0/3",
+        "ebpf_shell_in_container": "2/2",
+        "ebpf_unexpected_connect": "4/4",
+        "egress_shift": "2/2",
+        "fast_approval": "1/4",
+        "first_seen_device": "1/1",
+        "new_rpc_edge": "3/3",
+        "off_hours_access": "2/2",
+        "rare_binary": "3/3",
+        "read_volume_spike": "4/5"
+      },
+      "bundles": 5,
+      "bundle_recall": 1.0,
+      "ttd_s": {
+        "p50": 0.5,
+        "p95": 1426.8
+      },
+      "average_precision": 0.2987,
+      "recall_at_fp_per_day": {
+        "1/day": 0.079,
+        "10/day": 0.105,
+        "100/day": 0.711
+      },
+      "latency": {
+        "per_event_us": {
+          "p50": 0.9,
+          "p95": 5.6,
+          "p99": 11.4,
+          "max": 219.1
+        },
+        "throughput_eps": 611157,
+        "detection_delay_s": {
+          "p50": 0.0,
+          "p99": 0.0
+        }
+      }
+    }
+  }
+}

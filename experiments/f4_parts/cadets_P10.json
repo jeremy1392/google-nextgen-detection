@@ -1,0 +1,120 @@
+{
+ "dataset": "darpa-tc-e3-cadets",
+ "pipeline": "P10",
+ "events": 41350895,
+ "warmup_days": 3.0,
+ "wall_s": 215.5,
+ "evidence_completeness": 0.0,
+ "attack_coverage": "0/0",
+ "attack_missed": [],
+ "brier": 0.9694,
+ "reliability": [
+  {
+   "bin": "0.0-0.1",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.1-0.2",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.2-0.3",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.3-0.4",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.4-0.5",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.5-0.6",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.6-0.7",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.7-0.8",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.8-0.9",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.9-1.0",
+   "alerts": 1666,
+   "anomaly_rate": 0.004
+  }
+ ],
+ "batch_s": null,
+ "alerts": 1666,
+ "alerts_per_day": 208.8,
+ "precision": 0.0042,
+ "fp_per_day": 207.9,
+ "fp_lookalike_per_day": 0.0,
+ "fp_lookalike_by_type": {},
+ "fp_per_day_by_rule": {
+  "gnn_unlikely_edge:exe->o": 207.9
+ },
+ "cases": 8,
+ "recall": 0.125,
+ "recall_by_family": {
+  "other": 0.125
+ },
+ "recall_by_type": {
+  "tc_e3_attack": "1/8"
+ },
+ "bundles": 0,
+ "bundle_recall": null,
+ "ttd_s": {
+  "p50": 64930.3,
+  "p95": 64930.3
+ },
+ "average_precision": 0.0992,
+ "recall_at_fp_per_day": {
+  "1/day": 0.0,
+  "10/day": 0.125,
+  "100/day": 0.125
+ },
+ "node_level": {
+  "labelled_nodes": 12858,
+  "labelled_nodes_seen_after_warmup": 12857,
+  "flagged_nodes": 1538,
+  "true_positive_nodes": 8,
+  "node_precision": 0.0052,
+  "node_recall": 0.0006
+ },
+ "latency": {
+  "per_event_us": {
+   "p50": 0.5,
+   "p95": 1.1,
+   "p99": 1.9,
+   "max": 52309633.1
+  },
+  "throughput_eps": 540630,
+  "detection_delay_s": {
+   "p50": 0.0,
+   "p99": 0.0
+  },
+  "overload": {
+   "dropped": 0,
+   "dropped_share": 0.0,
+   "peak_backlog_s": 52.3,
+   "peak_backlog_events": 1540
+  }
+ }
+}

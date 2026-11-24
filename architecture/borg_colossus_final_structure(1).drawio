@@ -1,0 +1,282 @@
+<mxfile host="app.diagrams.net" agent="Python">
+  <diagram id="borg-colossus-arch" name="Borg and Colossus Architecture">
+    <mxGraphModel dx="3835" dy="927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="region-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#008080;strokeWidth=2;dashed=1;dashPattern=8 8;" value="" vertex="1">
+          <mxGeometry height="1130" width="2120" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="region-flag" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#20B2AA;strokeColor=#008080;fontColor=#FFFFFF;fontSize=22;fontStyle=1;" value="⚑" vertex="1">
+          <mxGeometry height="40" width="40" x="60" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="region-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#008080;" value="Region - (Europe)" vertex="1">
+          <mxGeometry height="40" width="300" x="110" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="dc1-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#B22222;strokeWidth=2;dashed=1;dashPattern=6 6;" value="" vertex="1">
+          <mxGeometry height="1040" width="1610" x="60" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dc1-flag" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9534F;strokeColor=#B22222;fontColor=#FFFFFF;fontSize=22;fontStyle=1;" value="⚑" vertex="1">
+          <mxGeometry height="40" width="40" x="80" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="dc1-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#B22222;" value="Datacenter - (Zurich)" vertex="1">
+          <mxGeometry height="40" width="350" x="130" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="cell1-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fillOpacity=40;strokeColor=default;strokeWidth=2;dashed=1;dashPattern=4 4;" value="" vertex="1">
+          <mxGeometry height="950" width="1570" x="80" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="cell1-flag" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#428BCA;strokeColor=#285E8E;fontColor=#FFFFFF;fontSize=22;fontStyle=1;" value="⚑" vertex="1">
+          <mxGeometry height="40" width="40" x="100" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="cell1-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#285E8E;" value="Borg Cell #1 (Autonomous Local Cluster)" vertex="1">
+          <mxGeometry height="40" width="500" x="150" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="col1-hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#222222;" value="Control Plane &amp; Consensus" vertex="1">
+          <mxGeometry height="30" width="320" x="110" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="col2-hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#222222;" value="Colossus Local Storage" vertex="1">
+          <mxGeometry height="30" width="340" x="480" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="col3-hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#222222;" value="Local Multi-Rack Replicas" vertex="1">
+          <mxGeometry height="30" width="340" x="870" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="col4-hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#222222;" value="Compute &amp; Accelerators" vertex="1">
+          <mxGeometry height="30" width="360" x="1260" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="chubby-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;strokeWidth=2;fontSize=14;" value="&lt;b&gt;Chubby Lock Service&lt;/b&gt;&lt;br&gt;(Lease / Leader Election)" vertex="1">
+          <mxGeometry height="75" width="310" x="115" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="paxos-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B2EBF2;strokeColor=#00838F;strokeWidth=2;fontSize=14;" value="&lt;b&gt;Paxos Consensus&lt;/b&gt;&lt;br&gt;(Real-Time RAM Sync&lt;br&gt;across 5 Racks - Quorum 3/5)" vertex="1">
+          <mxGeometry height="85" width="310" x="115" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="bm-container" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#424242;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="440" width="310" x="115" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="bm-title" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#616161;strokeWidth=1.5;fontSize=15;" value="&lt;b&gt;BorgMaster&lt;/b&gt;&lt;br&gt;(Control Plane)" vertex="1">
+          <mxGeometry height="60" width="270" x="135" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="bm-leader" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A5D6A7;strokeColor=#2E7D32;strokeWidth=2;fontSize=14;" value="&lt;b&gt;Leader (Active)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="250" x="145" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="bm-hs1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#6A1B9A;strokeWidth=1.5;fontSize=14;" value="Hot Standby #1" vertex="1">
+          <mxGeometry height="45" width="250" x="145" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="bm-hs2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#6A1B9A;strokeWidth=1.5;fontSize=14;" value="Hot Standby #2" vertex="1">
+          <mxGeometry height="45" width="250" x="145" y="725" as="geometry" />
+        </mxCell>
+        <mxCell id="bm-hs3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#6A1B9A;strokeWidth=1.5;fontSize=14;" value="Hot Standby #3" vertex="1">
+          <mxGeometry height="45" width="250" x="145" y="785" as="geometry" />
+        </mxCell>
+        <mxCell id="bm-hs4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#6A1B9A;strokeWidth=1.5;fontSize=14;" value="Hot Standby #4" vertex="1">
+          <mxGeometry height="45" width="250" x="145" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="bm-footer" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#333333;" value="&lt;b&gt;5 Isolated Racks&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="250" x="145" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="col2-node" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#424242;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="655" width="340" x="480" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="col2-borglet" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF59D;strokeColor=#F9A825;strokeWidth=2;fontSize=14;" value="&lt;b&gt;Borglet (Node Agent)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="280" x="510" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="col2-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontColor=#333333;" value="&lt;b&gt;Storage Node #1 - Rack 1&lt;/b&gt;&lt;br&gt;(Runs Borg Task: Colossus Chunkserver)" vertex="1">
+          <mxGeometry height="40" width="310" x="495" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="col2-local-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#F57F17;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="235" width="310" x="495" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="col2-local-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="&lt;b&gt;BorgMaster State Checkpoints &amp;&lt;br&gt;Persistent Paxos Log&lt;/b&gt;" vertex="1">
+          <mxGeometry height="55" width="290" x="505" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="col2-local-badge" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE082;strokeColor=#FF8F00;strokeWidth=1.5;fontSize=13;" value="&lt;b&gt;LOCAL ONLY:&lt;/b&gt;&lt;br&gt;3x Replication across&lt;br&gt;Racks 1, 2, 3&lt;br&gt;&lt;i&gt;(Never leaves Datacenter)&lt;/i&gt;" vertex="1">
+          <mxGeometry height="140" width="280" x="510" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="col2-global-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F7FA;strokeColor=#00838F;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="265" width="310" x="495" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="col2-global-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="&lt;b&gt;Critical User Data Chunks&lt;/b&gt;&lt;br&gt;(Gmail, Drive, Photos, Spanner)" vertex="1">
+          <mxGeometry height="50" width="290" x="505" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="col2-global-step1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B2DFDB;strokeColor=#00695C;strokeWidth=1.5;fontSize=13;" value="&lt;b&gt;1) Local:&lt;/b&gt; Reed-Solomon (6+3)&lt;br&gt;across Racks 1..9" vertex="1">
+          <mxGeometry height="80" width="280" x="510" y="725" as="geometry" />
+        </mxCell>
+        <mxCell id="col2-global-step2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#80DEEA;strokeColor=#00838F;strokeWidth=1.5;fontSize=13;" value="&lt;b&gt;2) Global:&lt;/b&gt; Geo-Replicated&lt;br&gt;to Remote Datacenter" vertex="1">
+          <mxGeometry height="80" width="280" x="510" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="col3-node" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#424242;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="655" width="340" x="870" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="col3-borglet" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;strokeWidth=2;fontSize=14;" value="&lt;b&gt;Borglet (Node Agent)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="290" x="895" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="col3-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontColor=#333333;" value="&lt;b&gt;Storage Nodes #2..#9&lt;/b&gt;&lt;br&gt;(Racks 2 to 9 - Same Datacenter)" vertex="1">
+          <mxGeometry height="40" width="310" x="885" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="col3-rep1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCEDC8;strokeColor=#558B2F;strokeWidth=2;fontSize=14;" value="&lt;b&gt;3x Replicas&lt;/b&gt;&lt;br&gt;(BorgMaster Checkpoints&lt;br&gt;&amp; Paxos Logs)" vertex="1">
+          <mxGeometry height="140" width="290" x="895" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="col3-and" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#333333;" value="&lt;b&gt;AND&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="990" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="col3-rep2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCEDC8;strokeColor=#558B2F;strokeWidth=2;fontSize=14;" value="&lt;b&gt;Reed-Solomon Data &amp;&lt;br&gt;Parity Chunks (6+3)&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Survives 3 Simultaneous&lt;br&gt;Rack Failures)&lt;/i&gt;" vertex="1">
+          <mxGeometry height="160" width="290" x="895" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="col3-footer" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#333333;" value="&lt;b&gt;Chunk I/O&lt;/b&gt;&lt;br&gt;(Jupiter Optical Network)" vertex="1">
+          <mxGeometry height="50" width="290" x="895" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="col4-cpu-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#424242;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="310" width="360" x="1260" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="col4-cpu-borglet" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#C62828;strokeWidth=2;fontSize=14;" value="&lt;b&gt;Borglet (Node Agent)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="300" x="1290" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="col4-cpu-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontColor=#333333;" value="&lt;b&gt;Compute Machine (CPU - x86 / Axion)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="330" x="1275" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="col4-cpu-tasks1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;strokeWidth=1.5;fontSize=14;" value="&lt;b&gt;Borg Tasks (Linux Containers)&lt;/b&gt;&lt;br&gt;Search, Gmail, GWS" vertex="1">
+          <mxGeometry height="85" width="320" x="1280" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="col4-cpu-tasks2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;strokeWidth=1.5;fontSize=14;" value="&lt;b&gt;Colossus Control Plane Tasks&lt;/b&gt;&lt;br&gt;Curators &amp; Custodians (Stateless)" vertex="1">
+          <mxGeometry height="85" width="320" x="1280" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="col4-tpu-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#424242;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="310" width="360" x="1260" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="col4-tpu-borglet" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1565C0;strokeWidth=2;fontSize=14;" value="&lt;b&gt;Borglet (Node Agent)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="300" x="1290" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="col4-tpu-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontColor=#333333;" value="&lt;b&gt;AI Accelerator Node (TPU / GPU)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="330" x="1275" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="col4-tpu-tasks" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;strokeWidth=1.5;fontSize=14;" value="&lt;b&gt;Google Cloud TPU Pods&lt;/b&gt;&lt;br&gt;Gemini Training &amp; Inference" vertex="1">
+          <mxGeometry height="160" width="320" x="1280" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="dc2-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#B22222;strokeWidth=2;dashed=1;dashPattern=6 6;" value="" vertex="1">
+          <mxGeometry height="1040" width="430" x="1710" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dc2-flag" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9534F;strokeColor=#B22222;fontColor=#FFFFFF;fontSize=22;fontStyle=1;" value="⚑" vertex="1">
+          <mxGeometry height="40" width="40" x="1730" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="dc2-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontStyle=1;fontColor=#B22222;" value="Remote Datacenter -&lt;br&gt;(e.g., Belgium)" vertex="1">
+          <mxGeometry height="50" width="340" x="1780" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cell2-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F0F8FF;fillOpacity=40;strokeColor=#337AB7;strokeWidth=2;dashed=1;dashPattern=4 4;" value="" vertex="1">
+          <mxGeometry height="950" width="390" x="1730" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="cell2-flag" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#428BCA;strokeColor=#285E8E;fontColor=#FFFFFF;fontSize=22;fontStyle=1;" value="⚑" vertex="1">
+          <mxGeometry height="40" width="40" x="1750" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="cell2-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#285E8E;" value="Borg Cell #2&lt;br&gt;(Independent Remote&lt;br&gt;BorgMaster)" vertex="1">
+          <mxGeometry height="65" width="300" x="1800" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="dc2-borg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;strokeWidth=2;fontSize=14;" value="&lt;b&gt;Remote BorgMaster&lt;br&gt;&amp; Borglets&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Manages local Belgian&lt;br&gt;servers independently)&lt;/i&gt;" vertex="1">
+          <mxGeometry height="170" width="340" x="1755" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="dc2-colossus-hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#222222;" value="&lt;b&gt;Remote Colossus&lt;br&gt;Storage (Belgium)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="340" x="1760" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="dc2-colossus-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B2EBF2;strokeColor=#00838F;strokeWidth=2;fontSize=14;" value="&lt;b&gt;Geo-Replicated&lt;br&gt;Critical User Data Chunks&lt;br&gt;&amp;&lt;br&gt;Global Spanner Metadata&lt;/b&gt;" vertex="1">
+          <mxGeometry height="260" width="340" x="1755" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="dc2-no-note" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;strokeWidth=1.5;fontSize=14;fontColor=#B71C1C;" value="&lt;b&gt;NO Zurich Checkpoints&lt;br&gt;or Paxos Logs&lt;/b&gt;" vertex="1">
+          <mxGeometry height="75" width="340" x="1755" y="865" as="geometry" />
+        </mxCell>
+        <mxCell id="e-chubby-paxos" edge="1" parent="1" source="chubby-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#2E7D32;startArrow=classic;endArrow=classic;" target="paxos-box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-paxos-bm" edge="1" parent="1" source="paxos-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#00838F;startArrow=classic;endArrow=classic;" target="bm-container">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-bm-ckpt" edge="1" parent="1" source="bm-leader" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#F57F17;dashed=1;" target="col2-local-box" value="Checkpoints &amp;&lt;br&gt;Paxos Log">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="625" />
+              <mxPoint x="450" y="512" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-local-rep" edge="1" parent="1" source="col2-local-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#558B2F;dashed=1;" target="col3-rep1" value="3x Sync">
+          <mxGeometry relative="1" x="-0.0612" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="850" y="512.5" />
+              <mxPoint x="850" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-data-rs" edge="1" parent="1" source="col2-global-step1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#558B2F;dashed=1;" target="col3-rep2" value="6+3 EC">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="845" y="765" />
+              <mxPoint x="845" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-cpu-storage" edge="1" parent="1" source="col4-cpu-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#1565C0;startArrow=classic;endArrow=classic;" target="col3-node" value="Chunk I/O">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1235" y="440" />
+              <mxPoint x="1235" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-tpu-storage" edge="1" parent="1" source="col4-tpu-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#1565C0;startArrow=classic;endArrow=classic;" target="col3-node" value="Chunk I/O">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1235" y="785" />
+              <mxPoint x="1235" y="785" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-bm-bus" edge="1" parent="1" source="bm-container" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2.5;strokeColor=#333333;endArrow=classic;" target="col4-tpu-box" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;BorgMaster Control Plane RPCs (Jupiter Network)&lt;/b&gt;&lt;/font&gt;">
+          <mxGeometry relative="1" x="-0.264" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="270" y="980" />
+              <mxPoint x="1440" y="980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-bm-bus-col2" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2.5;strokeColor=#333333;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="980" as="sourcePoint" />
+            <mxPoint x="650" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-bm-bus-col3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2.5;strokeColor=#333333;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="980" as="sourcePoint" />
+            <mxPoint x="1040" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-geo-rep" edge="1" parent="1" source="col2-global-step2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;strokeColor=#0277BD;startArrow=classic;endArrow=classic;" target="dc2-colossus-box" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Async Geo-Replication via B4 Optical WAN Backbone (Survives Full Datacenter Loss)&lt;/b&gt;&lt;/font&gt;">
+          <mxGeometry relative="1" x="0.05" y="18" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="650" y="1045" />
+              <mxPoint x="1925" y="1045" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-dc2-borg-col" edge="1" parent="1" source="dc2-borg" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#1976D2;endArrow=classic;" target="dc2-colossus-box" value="Manages Tasks">
+          <mxGeometry relative="1" x="0.4167" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FXlO4cZ6jKlkhe_1I61p-2" edge="1" parent="1" source="chubby-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;strokeWidth=2;" target="bm-leader">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-10" y="322.5" />
+              <mxPoint x="-10" y="625" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FXlO4cZ6jKlkhe_1I61p-3" connectable="0" parent="FXlO4cZ6jKlkhe_1I61p-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;Election or Lease&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

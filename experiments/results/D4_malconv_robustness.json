@@ -1,0 +1,42 @@
+{
+ "threshold_fpr_1e-3": 0.474996,
+ "malware_detected_pool": 29969,
+ "attacks": {
+  "random_pad_1024": {
+   "tried": 805,
+   "evasion_rate": 0.0
+  },
+  "random_pad_10240": {
+   "tried": 804,
+   "evasion_rate": 0.0
+  },
+  "random_pad_102400": {
+   "tried": 788,
+   "evasion_rate": 0.0
+  },
+  "benign_pad_1024": {
+   "tried": 805,
+   "evasion_rate": 0.0
+  },
+  "benign_pad_10240": {
+   "tried": 804,
+   "evasion_rate": 0.0
+  },
+  "benign_pad_102400": {
+   "tried": 788,
+   "evasion_rate": 0.0102
+  },
+  "gradient_pad_1024": {
+   "tried": 805,
+   "evasion_rate": 0.0261
+  },
+  "gradient_pad_10240": {
+   "tried": 804,
+   "evasion_rate": 0.1679
+  },
+  "dos_header_58": {
+   "tried": 1000,
+   "evasion_rate": 0.001
+  }
+ }
+}

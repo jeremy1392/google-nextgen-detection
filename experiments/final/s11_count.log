@@ -1,0 +1,8 @@
+843,703 events replayed in 34.6s (scored after 12h, speed 1.0x)
+
+          alerts/day       precision          FP/day look-alike FP/d          recall            ueba             nhi         runtime         bundles       TTD p50 s        R@10FP/d    us/event p99        events/s
+FINAL-local           156.7          0.8596            22.0            16.0          0.6087            0.69           0.478           0.647           0.909             6.5           0.594            44.8           40440
+
+FINAL-local recall by type: b4_replication_spike=0/1, bigtable_full_scan=0/4, breakglass_no_incident=1/1, ebpf_bpf_load=2/2, ebpf_namespace_escape=1/1, ebpf_sensitive_read=2/2, ebpf_shell_in_container=3/4, ebpf_unexpected_connect=1/1, egress_shift=2/3, endpoint_beaconing=0/2, fast_approval=2/3, first_seen_device=4/4, impossible_travel=0/2, new_rpc_edge=5/5, off_hours_access=4/4, priority_quota_abuse=0/3, rare_binary=2/3, read_volume_spike=9/11, review_bypass=2/4, spanner_bulk_export=0/4, titan_measurement_mismatch=0/2, tpu_unusual_checkpoint_load=1/2, unverified_build=1/1
+FINAL-local look-alike FPs: {'routine_prod_session': 35, 'incident_response': 15, 'service_launch': 5}
+FINAL-local top FP rules (per day): {'risk:noisy_or': 4.7, 'fast:denied_syscall_burst': 1.3}

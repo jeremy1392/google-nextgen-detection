@@ -1,0 +1,64 @@
+{
+ "events": 845018,
+ "anomalous_test_events": 652,
+ "schema": {
+  "auc": 0.6106,
+  "auc_by_type": {
+   "b4_replication_spike": 0.993,
+   "bigtable_full_scan": 0.819,
+   "ebpf_bpf_load": 0.914,
+   "ebpf_kernel_module": 0.987,
+   "ebpf_memfd_exec": 0.6,
+   "ebpf_namespace_escape": 0.873,
+   "ebpf_ptrace_attach": 0.961,
+   "ebpf_shell_in_container": 0.975,
+   "ebpf_unexpected_connect": 0.543,
+   "egress_shift": 0.826,
+   "endpoint_beaconing": 0.171,
+   "fast_approval": 0.971,
+   "first_seen_device": 0.834,
+   "impossible_travel": 0.898,
+   "new_rpc_edge": 0.8,
+   "off_hours_access": 0.893,
+   "priority_quota_abuse": 0.609,
+   "rare_binary": 0.669,
+   "read_volume_spike": 0.875,
+   "review_bypass": 0.617,
+   "spanner_bulk_export": 0.722,
+   "tpu_unusual_checkpoint_load": 0.949
+  }
+ },
+ "timing": {
+  "auc": 0.6334
+ },
+ "id": {
+  "auc": 0.4971
+ },
+ "content": {
+  "auc": 0.7154,
+  "auc_by_type": {
+   "b4_replication_spike": 1.0,
+   "bigtable_full_scan": 0.999,
+   "ebpf_bpf_load": 0.997,
+   "ebpf_kernel_module": 1.0,
+   "ebpf_memfd_exec": 0.981,
+   "ebpf_namespace_escape": 0.999,
+   "ebpf_ptrace_attach": 0.998,
+   "ebpf_shell_in_container": 0.998,
+   "ebpf_unexpected_connect": 0.941,
+   "egress_shift": 0.885,
+   "endpoint_beaconing": 0.319,
+   "fast_approval": 0.972,
+   "first_seen_device": 0.893,
+   "impossible_travel": 0.94,
+   "new_rpc_edge": 0.808,
+   "off_hours_access": 0.92,
+   "priority_quota_abuse": 0.78,
+   "rare_binary": 0.983,
+   "read_volume_spike": 0.952,
+   "review_bypass": 0.881,
+   "spanner_bulk_export": 0.998,
+   "tpu_unusual_checkpoint_load": 0.99
+  }
+ }
+}

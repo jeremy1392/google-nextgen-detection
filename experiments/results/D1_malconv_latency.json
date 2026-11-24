@@ -1,0 +1,1001 @@
+{
+ "cpu8": {
+  "info": {
+   "torch": "2.5.1+cu124",
+   "gpu": null,
+   "cpus": 24
+  },
+  "rows": [
+   {
+    "device": "cpu",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 1,
+    "ms_per_file_p50": 14.823,
+    "ms_per_file_p95": 20.166,
+    "ms_per_batch_p50": 14.823,
+    "model_only_ms_per_file_p50": 14.679,
+    "files_per_s": 67.5
+   },
+   {
+    "device": "cpu",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 8,
+    "ms_per_file_p50": 5.958,
+    "ms_per_file_p95": 8.494,
+    "ms_per_batch_p50": 47.667,
+    "model_only_ms_per_file_p50": 5.854,
+    "files_per_s": 167.8
+   },
+   {
+    "device": "cpu",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 32,
+    "ms_per_file_p50": 5.219,
+    "ms_per_file_p95": 5.836,
+    "ms_per_batch_p50": 166.993,
+    "model_only_ms_per_file_p50": 4.989,
+    "files_per_s": 191.6
+   },
+   {
+    "device": "cpu",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 1,
+    "ms_per_file_p50": 14.861,
+    "ms_per_file_p95": 18.635,
+    "ms_per_batch_p50": 14.861,
+    "model_only_ms_per_file_p50": 14.734,
+    "files_per_s": 67.3
+   },
+   {
+    "device": "cpu",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 8,
+    "ms_per_file_p50": 20.117,
+    "ms_per_file_p95": 24.528,
+    "ms_per_batch_p50": 160.938,
+    "model_only_ms_per_file_p50": 19.255,
+    "files_per_s": 49.7
+   },
+   {
+    "device": "cpu",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 32,
+    "ms_per_file_p50": 19.669,
+    "ms_per_file_p95": 21.262,
+    "ms_per_batch_p50": 629.414,
+    "model_only_ms_per_file_p50": 19.074,
+    "files_per_s": 50.8
+   },
+   {
+    "device": "cpu",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 1,
+    "ms_per_file_p50": 84.941,
+    "ms_per_file_p95": 96.353,
+    "ms_per_batch_p50": 84.941,
+    "model_only_ms_per_file_p50": 84.21,
+    "files_per_s": 11.8
+   },
+   {
+    "device": "cpu",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 8,
+    "ms_per_file_p50": 76.775,
+    "ms_per_file_p95": 85.317,
+    "ms_per_batch_p50": 614.2,
+    "model_only_ms_per_file_p50": 74.212,
+    "files_per_s": 13.0
+   },
+   {
+    "device": "cpu",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 32,
+    "ms_per_file_p50": 76.684,
+    "ms_per_file_p95": 84.911,
+    "ms_per_batch_p50": 2453.899,
+    "model_only_ms_per_file_p50": 74.85,
+    "files_per_s": 13.0
+   },
+   {
+    "device": "cpu",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 1,
+    "ms_per_file_p50": 150.692,
+    "ms_per_file_p95": 163.218,
+    "ms_per_batch_p50": 150.692,
+    "model_only_ms_per_file_p50": 149.245,
+    "files_per_s": 6.6
+   },
+   {
+    "device": "cpu",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 8,
+    "ms_per_file_p50": 147.657,
+    "ms_per_file_p95": 152.282,
+    "ms_per_batch_p50": 1181.26,
+    "model_only_ms_per_file_p50": 143.712,
+    "files_per_s": 6.8
+   },
+   {
+    "device": "cpu",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 32,
+    "ms_per_file_p50": 147.308,
+    "ms_per_file_p95": 186.112,
+    "ms_per_batch_p50": 4713.846,
+    "model_only_ms_per_file_p50": 144.005,
+    "files_per_s": 6.8
+   },
+   {
+    "device": "cpu",
+    "threads": 4,
+    "file_bytes": 65536,
+    "batch": 1,
+    "ms_per_file_p50": 2.459,
+    "ms_per_file_p95": 3.955,
+    "ms_per_batch_p50": 2.459,
+    "model_only_ms_per_file_p50": 2.364,
+    "files_per_s": 406.7
+   },
+   {
+    "device": "cpu",
+    "threads": 4,
+    "file_bytes": 65536,
+    "batch": 8,
+    "ms_per_file_p50": 3.235,
+    "ms_per_file_p95": 4.043,
+    "ms_per_batch_p50": 25.877,
+    "model_only_ms_per_file_p50": 3.154,
+    "files_per_s": 309.2
+   },
+   {
+    "device": "cpu",
+    "threads": 4,
+    "file_bytes": 65536,
+    "batch": 32,
+    "ms_per_file_p50": 2.055,
+    "ms_per_file_p95": 2.244,
+    "ms_per_batch_p50": 65.776,
+    "model_only_ms_per_file_p50": 1.847,
+    "files_per_s": 486.5
+   },
+   {
+    "device": "cpu",
+    "threads": 4,
+    "file_bytes": 262144,
+    "batch": 1,
+    "ms_per_file_p50": 8.116,
+    "ms_per_file_p95": 10.372,
+    "ms_per_batch_p50": 8.116,
+    "model_only_ms_per_file_p50": 8.003,
+    "files_per_s": 123.2
+   },
+   {
+    "device": "cpu",
+    "threads": 4,
+    "file_bytes": 262144,
+    "batch": 8,
+    "ms_per_file_p50": 7.846,
+    "ms_per_file_p95": 8.396,
+    "ms_per_batch_p50": 62.766,
+    "model_only_ms_per_file_p50": 7.185,
+    "files_per_s": 127.5
+   },
+   {
+    "device": "cpu",
+    "threads": 4,
+    "file_bytes": 262144,
+    "batch": 32,
+    "ms_per_file_p50": 6.352,
+    "ms_per_file_p95": 6.818,
+    "ms_per_batch_p50": 203.279,
+    "model_only_ms_per_file_p50": 6.066,
+    "files_per_s": 157.4
+   },
+   {
+    "device": "cpu",
+    "threads": 4,
+    "file_bytes": 1048576,
+    "batch": 1,
+    "ms_per_file_p50": 46.189,
+    "ms_per_file_p95": 52.011,
+    "ms_per_batch_p50": 46.189,
+    "model_only_ms_per_file_p50": 45.428,
+    "files_per_s": 21.7
+   },
+   {
+    "device": "cpu",
+    "threads": 4,
+    "file_bytes": 1048576,
+    "batch": 8,
+    "ms_per_file_p50": 28.81,
+    "ms_per_file_p95": 31.414,
+    "ms_per_batch_p50": 230.481,
+    "model_only_ms_per_file_p50": 27.546,
+    "files_per_s": 34.7
+   },
+   {
+    "device": "cpu",
+    "threads": 4,
+    "file_bytes": 1048576,
+    "batch": 32,
+    "ms_per_file_p50": 21.806,
+    "ms_per_file_p95": 22.974,
+    "ms_per_batch_p50": 697.786,
+    "model_only_ms_per_file_p50": 20.984,
+    "files_per_s": 45.9
+   },
+   {
+    "device": "cpu",
+    "threads": 4,
+    "file_bytes": 2000000,
+    "batch": 1,
+    "ms_per_file_p50": 66.861,
+    "ms_per_file_p95": 76.64,
+    "ms_per_batch_p50": 66.861,
+    "model_only_ms_per_file_p50": 65.96,
+    "files_per_s": 15.0
+   },
+   {
+    "device": "cpu",
+    "threads": 4,
+    "file_bytes": 2000000,
+    "batch": 8,
+    "ms_per_file_p50": 52.613,
+    "ms_per_file_p95": 58.295,
+    "ms_per_batch_p50": 420.904,
+    "model_only_ms_per_file_p50": 50.621,
+    "files_per_s": 19.0
+   },
+   {
+    "device": "cpu",
+    "threads": 4,
+    "file_bytes": 2000000,
+    "batch": 32,
+    "ms_per_file_p50": 48.522,
+    "ms_per_file_p95": 54.725,
+    "ms_per_batch_p50": 1552.699,
+    "model_only_ms_per_file_p50": 46.98,
+    "files_per_s": 20.6
+   },
+   {
+    "device": "cpu",
+    "threads": 8,
+    "file_bytes": 65536,
+    "batch": 1,
+    "ms_per_file_p50": 1.789,
+    "ms_per_file_p95": 5.342,
+    "ms_per_batch_p50": 1.789,
+    "model_only_ms_per_file_p50": 1.687,
+    "files_per_s": 558.9
+   },
+   {
+    "device": "cpu",
+    "threads": 8,
+    "file_bytes": 65536,
+    "batch": 8,
+    "ms_per_file_p50": 3.302,
+    "ms_per_file_p95": 4.842,
+    "ms_per_batch_p50": 26.413,
+    "model_only_ms_per_file_p50": 3.271,
+    "files_per_s": 302.9
+   },
+   {
+    "device": "cpu",
+    "threads": 8,
+    "file_bytes": 65536,
+    "batch": 32,
+    "ms_per_file_p50": 1.795,
+    "ms_per_file_p95": 2.055,
+    "ms_per_batch_p50": 57.453,
+    "model_only_ms_per_file_p50": 1.519,
+    "files_per_s": 557.0
+   },
+   {
+    "device": "cpu",
+    "threads": 8,
+    "file_bytes": 262144,
+    "batch": 1,
+    "ms_per_file_p50": 7.273,
+    "ms_per_file_p95": 8.117,
+    "ms_per_batch_p50": 7.273,
+    "model_only_ms_per_file_p50": 7.205,
+    "files_per_s": 137.5
+   },
+   {
+    "device": "cpu",
+    "threads": 8,
+    "file_bytes": 262144,
+    "batch": 8,
+    "ms_per_file_p50": 6.605,
+    "ms_per_file_p95": 9.239,
+    "ms_per_batch_p50": 52.842,
+    "model_only_ms_per_file_p50": 5.534,
+    "files_per_s": 151.4
+   },
+   {
+    "device": "cpu",
+    "threads": 8,
+    "file_bytes": 262144,
+    "batch": 32,
+    "ms_per_file_p50": 5.517,
+    "ms_per_file_p95": 6.563,
+    "ms_per_batch_p50": 176.544,
+    "model_only_ms_per_file_p50": 5.108,
+    "files_per_s": 181.3
+   },
+   {
+    "device": "cpu",
+    "threads": 8,
+    "file_bytes": 1048576,
+    "batch": 1,
+    "ms_per_file_p50": 42.091,
+    "ms_per_file_p95": 62.948,
+    "ms_per_batch_p50": 42.091,
+    "model_only_ms_per_file_p50": 41.046,
+    "files_per_s": 23.8
+   },
+   {
+    "device": "cpu",
+    "threads": 8,
+    "file_bytes": 1048576,
+    "batch": 8,
+    "ms_per_file_p50": 26.847,
+    "ms_per_file_p95": 30.181,
+    "ms_per_batch_p50": 214.775,
+    "model_only_ms_per_file_p50": 25.346,
+    "files_per_s": 37.2
+   },
+   {
+    "device": "cpu",
+    "threads": 8,
+    "file_bytes": 1048576,
+    "batch": 32,
+    "ms_per_file_p50": 19.047,
+    "ms_per_file_p95": 20.686,
+    "ms_per_batch_p50": 609.514,
+    "model_only_ms_per_file_p50": 17.947,
+    "files_per_s": 52.5
+   },
+   {
+    "device": "cpu",
+    "threads": 8,
+    "file_bytes": 2000000,
+    "batch": 1,
+    "ms_per_file_p50": 73.215,
+    "ms_per_file_p95": 96.761,
+    "ms_per_batch_p50": 73.215,
+    "model_only_ms_per_file_p50": 71.444,
+    "files_per_s": 13.7
+   },
+   {
+    "device": "cpu",
+    "threads": 8,
+    "file_bytes": 2000000,
+    "batch": 8,
+    "ms_per_file_p50": 41.214,
+    "ms_per_file_p95": 45.63,
+    "ms_per_batch_p50": 329.714,
+    "model_only_ms_per_file_p50": 38.374,
+    "files_per_s": 24.3
+   },
+   {
+    "device": "cpu",
+    "threads": 8,
+    "file_bytes": 2000000,
+    "batch": 32,
+    "ms_per_file_p50": 34.208,
+    "ms_per_file_p95": 36.933,
+    "ms_per_batch_p50": 1094.656,
+    "model_only_ms_per_file_p50": 32.392,
+    "files_per_s": 29.2
+   },
+   {
+    "device": "cpu",
+    "baseline": "byte_histogram",
+    "file_bytes": 2000000,
+    "ms_per_file_p50": 4.032
+   }
+  ]
+ },
+ "T4": {
+  "info": {
+   "torch": "2.5.1+cu124",
+   "gpu": "Tesla T4",
+   "cpus": 17
+  },
+  "rows": [
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 1,
+    "ms_per_file_p50": 1.318,
+    "ms_per_file_p95": 1.333,
+    "ms_per_batch_p50": 1.318,
+    "model_only_ms_per_file_p50": 1.23,
+    "files_per_s": 758.7
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 8,
+    "ms_per_file_p50": 0.489,
+    "ms_per_file_p95": 0.493,
+    "ms_per_batch_p50": 3.916,
+    "model_only_ms_per_file_p50": 0.458,
+    "files_per_s": 2042.9
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 32,
+    "ms_per_file_p50": 0.243,
+    "ms_per_file_p95": 0.345,
+    "ms_per_batch_p50": 7.771,
+    "model_only_ms_per_file_p50": 0.223,
+    "files_per_s": 4118.0
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 1,
+    "ms_per_file_p50": 2.128,
+    "ms_per_file_p95": 2.136,
+    "ms_per_batch_p50": 2.128,
+    "model_only_ms_per_file_p50": 1.971,
+    "files_per_s": 470.0
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 8,
+    "ms_per_file_p50": 1.199,
+    "ms_per_file_p95": 1.208,
+    "ms_per_batch_p50": 9.596,
+    "model_only_ms_per_file_p50": 1.117,
+    "files_per_s": 833.7
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 32,
+    "ms_per_file_p50": 1.168,
+    "ms_per_file_p95": 1.189,
+    "ms_per_batch_p50": 37.371,
+    "model_only_ms_per_file_p50": 1.104,
+    "files_per_s": 856.3
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 1,
+    "ms_per_file_p50": 6.453,
+    "ms_per_file_p95": 6.534,
+    "ms_per_batch_p50": 6.453,
+    "model_only_ms_per_file_p50": 6.009,
+    "files_per_s": 155.0
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 8,
+    "ms_per_file_p50": 4.666,
+    "ms_per_file_p95": 4.752,
+    "ms_per_batch_p50": 37.33,
+    "model_only_ms_per_file_p50": 4.423,
+    "files_per_s": 214.3
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 32,
+    "ms_per_file_p50": 4.65,
+    "ms_per_file_p95": 4.665,
+    "ms_per_batch_p50": 148.798,
+    "model_only_ms_per_file_p50": 4.421,
+    "files_per_s": 215.1
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 1,
+    "ms_per_file_p50": 11.984,
+    "ms_per_file_p95": 12.449,
+    "ms_per_batch_p50": 11.984,
+    "model_only_ms_per_file_p50": 11.375,
+    "files_per_s": 83.4
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 8,
+    "ms_per_file_p50": 8.982,
+    "ms_per_file_p95": 9.026,
+    "ms_per_batch_p50": 71.859,
+    "model_only_ms_per_file_p50": 8.527,
+    "files_per_s": 111.3
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 32,
+    "ms_per_file_p50": 8.911,
+    "ms_per_file_p95": 9.054,
+    "ms_per_batch_p50": 285.163,
+    "model_only_ms_per_file_p50": 8.478,
+    "files_per_s": 112.2
+   },
+   {
+    "device": "cpu",
+    "baseline": "byte_histogram",
+    "file_bytes": 2000000,
+    "ms_per_file_p50": 6.576
+   }
+  ]
+ },
+ "L4": {
+  "info": {
+   "torch": "2.5.1+cu124",
+   "gpu": "NVIDIA L4",
+   "cpus": 17
+  },
+  "rows": [
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 1,
+    "ms_per_file_p50": 0.628,
+    "ms_per_file_p95": 0.718,
+    "ms_per_batch_p50": 0.628,
+    "model_only_ms_per_file_p50": 0.525,
+    "files_per_s": 1593.3
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 8,
+    "ms_per_file_p50": 0.157,
+    "ms_per_file_p95": 0.161,
+    "ms_per_batch_p50": 1.256,
+    "model_only_ms_per_file_p50": 0.127,
+    "files_per_s": 6371.1
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 32,
+    "ms_per_file_p50": 0.143,
+    "ms_per_file_p95": 0.147,
+    "ms_per_batch_p50": 4.585,
+    "model_only_ms_per_file_p50": 0.124,
+    "files_per_s": 6979.0
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 1,
+    "ms_per_file_p50": 0.797,
+    "ms_per_file_p95": 0.821,
+    "ms_per_batch_p50": 0.797,
+    "model_only_ms_per_file_p50": 0.633,
+    "files_per_s": 1254.7
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 8,
+    "ms_per_file_p50": 0.58,
+    "ms_per_file_p95": 0.592,
+    "ms_per_batch_p50": 4.643,
+    "model_only_ms_per_file_p50": 0.502,
+    "files_per_s": 1723.2
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 32,
+    "ms_per_file_p50": 0.55,
+    "ms_per_file_p95": 0.569,
+    "ms_per_batch_p50": 17.587,
+    "model_only_ms_per_file_p50": 0.486,
+    "files_per_s": 1819.6
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 1,
+    "ms_per_file_p50": 2.642,
+    "ms_per_file_p95": 2.806,
+    "ms_per_batch_p50": 2.642,
+    "model_only_ms_per_file_p50": 2.202,
+    "files_per_s": 378.6
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 8,
+    "ms_per_file_p50": 2.239,
+    "ms_per_file_p95": 2.311,
+    "ms_per_batch_p50": 17.909,
+    "model_only_ms_per_file_p50": 1.997,
+    "files_per_s": 446.7
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 32,
+    "ms_per_file_p50": 2.253,
+    "ms_per_file_p95": 2.294,
+    "ms_per_batch_p50": 72.085,
+    "model_only_ms_per_file_p50": 2.017,
+    "files_per_s": 443.9
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 1,
+    "ms_per_file_p50": 8.389,
+    "ms_per_file_p95": 8.823,
+    "ms_per_batch_p50": 8.389,
+    "model_only_ms_per_file_p50": 7.732,
+    "files_per_s": 119.2
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 8,
+    "ms_per_file_p50": 7.468,
+    "ms_per_file_p95": 7.515,
+    "ms_per_batch_p50": 59.747,
+    "model_only_ms_per_file_p50": 7.004,
+    "files_per_s": 133.9
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 32,
+    "ms_per_file_p50": 7.54,
+    "ms_per_file_p95": 7.586,
+    "ms_per_batch_p50": 241.268,
+    "model_only_ms_per_file_p50": 7.105,
+    "files_per_s": 132.6
+   },
+   {
+    "device": "cpu",
+    "baseline": "byte_histogram",
+    "file_bytes": 2000000,
+    "ms_per_file_p50": 8.214
+   }
+  ]
+ },
+ "A10G": {
+  "info": {
+   "torch": "2.5.1+cu124",
+   "gpu": "NVIDIA A10G",
+   "cpus": 17
+  },
+  "rows": [
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 1,
+    "ms_per_file_p50": 0.782,
+    "ms_per_file_p95": 0.839,
+    "ms_per_batch_p50": 0.782,
+    "model_only_ms_per_file_p50": 0.713,
+    "files_per_s": 1278.4
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 8,
+    "ms_per_file_p50": 0.168,
+    "ms_per_file_p95": 0.17,
+    "ms_per_batch_p50": 1.346,
+    "model_only_ms_per_file_p50": 0.152,
+    "files_per_s": 5944.8
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 32,
+    "ms_per_file_p50": 0.07,
+    "ms_per_file_p95": 0.071,
+    "ms_per_batch_p50": 2.249,
+    "model_only_ms_per_file_p50": 0.062,
+    "files_per_s": 14229.1
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 1,
+    "ms_per_file_p50": 1.089,
+    "ms_per_file_p95": 1.102,
+    "ms_per_batch_p50": 1.089,
+    "model_only_ms_per_file_p50": 0.993,
+    "files_per_s": 918.5
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 8,
+    "ms_per_file_p50": 0.489,
+    "ms_per_file_p95": 0.491,
+    "ms_per_batch_p50": 3.912,
+    "model_only_ms_per_file_p50": 0.455,
+    "files_per_s": 2044.8
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 32,
+    "ms_per_file_p50": 0.474,
+    "ms_per_file_p95": 0.5,
+    "ms_per_batch_p50": 15.177,
+    "model_only_ms_per_file_p50": 0.449,
+    "files_per_s": 2108.5
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 1,
+    "ms_per_file_p50": 2.306,
+    "ms_per_file_p95": 2.526,
+    "ms_per_batch_p50": 2.306,
+    "model_only_ms_per_file_p50": 2.107,
+    "files_per_s": 433.7
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 8,
+    "ms_per_file_p50": 1.949,
+    "ms_per_file_p95": 2.035,
+    "ms_per_batch_p50": 15.595,
+    "model_only_ms_per_file_p50": 1.845,
+    "files_per_s": 513.0
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 32,
+    "ms_per_file_p50": 1.922,
+    "ms_per_file_p95": 1.939,
+    "ms_per_batch_p50": 61.514,
+    "model_only_ms_per_file_p50": 1.817,
+    "files_per_s": 520.2
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 1,
+    "ms_per_file_p50": 4.09,
+    "ms_per_file_p95": 4.128,
+    "ms_per_batch_p50": 4.09,
+    "model_only_ms_per_file_p50": 3.824,
+    "files_per_s": 244.5
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 8,
+    "ms_per_file_p50": 3.738,
+    "ms_per_file_p95": 3.761,
+    "ms_per_batch_p50": 29.904,
+    "model_only_ms_per_file_p50": 3.561,
+    "files_per_s": 267.5
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 32,
+    "ms_per_file_p50": 3.648,
+    "ms_per_file_p95": 3.658,
+    "ms_per_batch_p50": 116.742,
+    "model_only_ms_per_file_p50": 3.481,
+    "files_per_s": 274.1
+   },
+   {
+    "device": "cpu",
+    "baseline": "byte_histogram",
+    "file_bytes": 2000000,
+    "ms_per_file_p50": 7.725
+   }
+  ]
+ },
+ "H100": {
+  "info": {
+   "torch": "2.5.1+cu124",
+   "gpu": "NVIDIA H100 80GB HBM3",
+   "cpus": 17
+  },
+  "rows": [
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 1,
+    "ms_per_file_p50": 0.711,
+    "ms_per_file_p95": 0.788,
+    "ms_per_batch_p50": 0.711,
+    "model_only_ms_per_file_p50": 0.638,
+    "files_per_s": 1406.1
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 8,
+    "ms_per_file_p50": 0.103,
+    "ms_per_file_p95": 0.106,
+    "ms_per_batch_p50": 0.826,
+    "model_only_ms_per_file_p50": 0.086,
+    "files_per_s": 9682.5
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 65536,
+    "batch": 32,
+    "ms_per_file_p50": 0.04,
+    "ms_per_file_p95": 0.049,
+    "ms_per_batch_p50": 1.27,
+    "model_only_ms_per_file_p50": 0.031,
+    "files_per_s": 25187.0
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 1,
+    "ms_per_file_p50": 0.759,
+    "ms_per_file_p95": 0.786,
+    "ms_per_batch_p50": 0.759,
+    "model_only_ms_per_file_p50": 0.663,
+    "files_per_s": 1317.1
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 8,
+    "ms_per_file_p50": 0.161,
+    "ms_per_file_p95": 0.168,
+    "ms_per_batch_p50": 1.29,
+    "model_only_ms_per_file_p50": 0.128,
+    "files_per_s": 6200.4
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 262144,
+    "batch": 32,
+    "ms_per_file_p50": 0.102,
+    "ms_per_file_p95": 0.105,
+    "ms_per_batch_p50": 3.264,
+    "model_only_ms_per_file_p50": 0.079,
+    "files_per_s": 9804.0
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 1,
+    "ms_per_file_p50": 1.035,
+    "ms_per_file_p95": 1.08,
+    "ms_per_batch_p50": 1.035,
+    "model_only_ms_per_file_p50": 0.849,
+    "files_per_s": 965.8
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 8,
+    "ms_per_file_p50": 0.453,
+    "ms_per_file_p95": 0.486,
+    "ms_per_batch_p50": 3.622,
+    "model_only_ms_per_file_p50": 0.361,
+    "files_per_s": 2208.5
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 1048576,
+    "batch": 32,
+    "ms_per_file_p50": 0.43,
+    "ms_per_file_p95": 0.452,
+    "ms_per_batch_p50": 13.764,
+    "model_only_ms_per_file_p50": 0.349,
+    "files_per_s": 2324.9
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 1,
+    "ms_per_file_p50": 1.509,
+    "ms_per_file_p95": 1.544,
+    "ms_per_batch_p50": 1.509,
+    "model_only_ms_per_file_p50": 1.252,
+    "files_per_s": 662.8
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 8,
+    "ms_per_file_p50": 1.073,
+    "ms_per_file_p95": 2.439,
+    "ms_per_batch_p50": 8.582,
+    "model_only_ms_per_file_p50": 0.838,
+    "files_per_s": 932.2
+   },
+   {
+    "device": "cuda",
+    "threads": 1,
+    "file_bytes": 2000000,
+    "batch": 32,
+    "ms_per_file_p50": 1.005,
+    "ms_per_file_p95": 1.1,
+    "ms_per_batch_p50": 32.164,
+    "model_only_ms_per_file_p50": 0.815,
+    "files_per_s": 994.9
+   },
+   {
+    "device": "cpu",
+    "baseline": "byte_histogram",
+    "file_bytes": 2000000,
+    "ms_per_file_p50": 4.48
+   }
+  ]
+ }
+}

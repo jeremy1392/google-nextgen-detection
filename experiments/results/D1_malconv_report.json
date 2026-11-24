@@ -1,0 +1,263 @@
+{
+ "test": {
+  "n_mal": 29992,
+  "n_ben": 13423,
+  "roc_auc": 0.9999932162992353,
+  "pr_auc": 0.9999969346313834,
+  "tpr_at_fpr": [
+   {
+    "fpr_target": 0.01,
+    "threshold": 3.5e-05,
+    "tpr": 0.9999666577754067,
+    "tpr_ci95": [
+     0.9998,
+     1.0
+    ],
+    "negatives": 13423
+   },
+   {
+    "fpr_target": 0.001,
+    "threshold": 0.474996,
+    "tpr": 0.9992331288343558,
+    "tpr_ci95": [
+     0.9988,
+     0.9995
+    ],
+    "negatives": 13423
+   },
+   {
+    "fpr_target": 0.0001,
+    "threshold": 0.999851,
+    "tpr": 0.9874633235529474,
+    "tpr_ci95": [
+     0.9861,
+     0.9887
+    ],
+    "negatives": 13423
+   }
+  ],
+  "sandbox_sweep": [
+   {
+    "threshold": 0.01,
+    "escalated_share": 0.6918346193711851,
+    "malware_missed": 0.00013336889837289943,
+    "benign_escalated": 0.003575951724651717
+   },
+   {
+    "threshold": 0.05,
+    "escalated_share": 0.6913739490959346,
+    "malware_missed": 0.0003334222459322486,
+    "benign_escalated": 0.002532965804961633
+   },
+   {
+    "threshold": 0.1,
+    "escalated_share": 0.6911666474720719,
+    "malware_missed": 0.00043344891971192317,
+    "benign_escalated": 0.0020859718393801685
+   },
+   {
+    "threshold": 0.2,
+    "escalated_share": 0.6909593458482092,
+    "malware_missed": 0.0005001333688983729,
+    "benign_escalated": 0.0015644788795351264
+   },
+   {
+    "threshold": 0.3,
+    "escalated_share": 0.6908441782793965,
+    "malware_missed": 0.0005668178180848226,
+    "benign_escalated": 0.001340981896744394
+   },
+   {
+    "threshold": 0.5,
+    "escalated_share": 0.6905447426004837,
+    "malware_missed": 0.0008002133902373967,
+    "benign_escalated": 0.0008939879311629293
+   },
+   {
+    "threshold": 0.7,
+    "escalated_share": 0.6902913739490959,
+    "malware_missed": 0.0011336356361696452,
+    "benign_escalated": 0.0008194889368993519
+   },
+   {
+    "threshold": 0.9,
+    "escalated_share": 0.6897155361050328,
+    "malware_missed": 0.001900506801813817,
+    "benign_escalated": 0.000670490948372197
+   },
+   {
+    "threshold": 0.95,
+    "escalated_share": 0.6893930669123575,
+    "malware_missed": 0.00233395572152574,
+    "benign_escalated": 0.0005959919541086195
+   },
+   {
+    "threshold": 0.99,
+    "escalated_share": 0.6883565587930439,
+    "malware_missed": 0.0037343291544411844,
+    "benign_escalated": 0.0003724949713178872
+   }
+  ],
+  "tpr_by_month_at_fpr_1e-3": {
+   "2019-01": 0.9995,
+   "2019-02": 0.9996,
+   "2019-03": 0.9985,
+   "2019-04": 0.9992
+  }
+ },
+ "test_unseen_toolchain": {
+  "n_mal": 29992,
+  "n_ben": 3634,
+  "roc_auc": 0.958353153025727,
+  "pr_auc": 0.9903978316546173,
+  "tpr_at_fpr": [
+   {
+    "fpr_target": 0.01,
+    "threshold": 1.0,
+    "tpr": 0.0,
+    "tpr_ci95": [
+     0.0,
+     0.0001
+    ],
+    "negatives": 3634
+   },
+   {
+    "fpr_target": 0.001,
+    "threshold": 1.0,
+    "tpr": 0.0,
+    "tpr_ci95": [
+     0.0,
+     0.0001
+    ],
+    "negatives": 3634
+   },
+   {
+    "fpr_target": 0.0001,
+    "threshold": 1.0,
+    "tpr": 0.0,
+    "tpr_ci95": [
+     0.0,
+     0.0001
+    ],
+    "negatives": 3634
+   }
+  ],
+  "sandbox_sweep": [
+   {
+    "threshold": 0.01,
+    "escalated_share": 0.9367453756022126,
+    "malware_missed": 0.00013336889837289943,
+    "benign_escalated": 0.4157952669235003
+   },
+   {
+    "threshold": 0.05,
+    "escalated_share": 0.9308570748825313,
+    "malware_missed": 0.0003334222459322486,
+    "benign_escalated": 0.36296092460099066
+   },
+   {
+    "threshold": 0.1,
+    "escalated_share": 0.9288645690834473,
+    "malware_missed": 0.00043344891971192317,
+    "benign_escalated": 0.3453494771601541
+   },
+   {
+    "threshold": 0.2,
+    "escalated_share": 0.9266936299292214,
+    "malware_missed": 0.0005001333688983729,
+    "benign_escalated": 0.3258117776554761
+   },
+   {
+    "threshold": 0.3,
+    "escalated_share": 0.9253256408731338,
+    "malware_missed": 0.0005668178180848226,
+    "benign_escalated": 0.31370390753990096
+   },
+   {
+    "threshold": 0.5,
+    "escalated_share": 0.9235115684291917,
+    "malware_missed": 0.0008002133902373967,
+    "benign_escalated": 0.2988442487616951
+   },
+   {
+    "threshold": 0.7,
+    "escalated_share": 0.9216974959852495,
+    "malware_missed": 0.0011336356361696452,
+    "benign_escalated": 0.2848101265822785
+   },
+   {
+    "threshold": 0.9,
+    "escalated_share": 0.9179503955272705,
+    "malware_missed": 0.001900506801813817,
+    "benign_escalated": 0.2564667033571822
+   },
+   {
+    "threshold": 0.95,
+    "escalated_share": 0.9164634509010885,
+    "malware_missed": 0.00233395572152574,
+    "benign_escalated": 0.24628508530544854
+   },
+   {
+    "threshold": 0.99,
+    "escalated_share": 0.9122107892702076,
+    "malware_missed": 0.0037343291544411844,
+    "benign_escalated": 0.21849201981287836
+   }
+  ],
+  "tpr_by_month_at_fpr_1e-3": {
+   "2019-01": 0.0,
+   "2019-02": 0.0,
+   "2019-03": 0.0,
+   "2019-04": 0.0
+  }
+ },
+ "train": {
+  "history": [
+   {
+    "epoch": 0,
+    "train_loss": 0.020146506804735495,
+    "val_auc": 0.994728689725904,
+    "seconds": 2779.7,
+    "samples": 113775
+   },
+   {
+    "epoch": 1,
+    "train_loss": 0.0036797307440182324,
+    "val_auc": 0.9999133264354896,
+    "seconds": 2759.9,
+    "samples": 113775
+   },
+   {
+    "epoch": 2,
+    "train_loss": 0.003247525751453713,
+    "val_auc": 0.9978027891710013,
+    "seconds": 2762.4,
+    "samples": 113775
+   },
+   {
+    "epoch": 3,
+    "train_loss": 0.0022629949594022173,
+    "val_auc": 0.9999625653474207,
+    "seconds": 2762.8,
+    "samples": 113775
+   },
+   {
+    "epoch": 4,
+    "train_loss": 0.002307626768463192,
+    "val_auc": 0.9999025467378914,
+    "seconds": 2762.0,
+    "samples": 113775
+   },
+   {
+    "epoch": 5,
+    "train_loss": 0.0035662606821628986,
+    "val_auc": 0.9999407443619892,
+    "seconds": 2761.3,
+    "samples": 113775
+   }
+  ],
+  "best_epoch": 3,
+  "train_mal": 59638,
+  "train_ben": 54137
+ }
+}

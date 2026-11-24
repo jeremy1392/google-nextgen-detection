@@ -1,0 +1,751 @@
+{
+ "run": "experiments\\cache\\d6_unseen_s3_nov300_binary",
+ "events": 859910,
+ "wall_s": 47.6,
+ "eval_from": "12h",
+ "speed": 1.0,
+ "sources": null,
+ "pipelines": {
+  "P6-hyper": {
+   "detector": "P6-hyper",
+   "evidence_completeness": null,
+   "attack_coverage": "0/1",
+   "attack_missed": [
+    "T1204.002"
+   ],
+   "brier": 0.5596,
+   "reliability": [
+    {
+     "bin": "0.0-0.1",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.1-0.2",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.2-0.3",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.3-0.4",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.4-0.5",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.5-0.6",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.6-0.7",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.7-0.8",
+     "alerts": 61,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.8-0.9",
+     "alerts": 4,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.9-1.0",
+     "alerts": 0,
+     "anomaly_rate": null
+    }
+   ],
+   "batch_s": null,
+   "alerts": 65,
+   "alerts_per_day": 43.3,
+   "precision": 0.0,
+   "fp_per_day": 43.3,
+   "fp_lookalike_per_day": 28.0,
+   "fp_lookalike_by_type": {
+    "incident_response": 16,
+    "routine_prod_session": 66,
+    "new_binary": 2
+   },
+   "fp_per_day_by_rule": {
+    "risk:noisy_or": 15.3
+   },
+   "cases": 20,
+   "recall": 0.0,
+   "recall_by_family": {
+    "runtime": 0.0
+   },
+   "recall_by_type": {
+    "rare_binary": "0/20"
+   },
+   "bundles": 0,
+   "bundle_recall": null,
+   "ttd_s": {
+    "p50": null,
+    "p95": null
+   },
+   "average_precision": null,
+   "recall_at_fp_per_day": {
+    "1/day": 0.0,
+    "10/day": 0.0,
+    "100/day": 0.0
+   },
+   "latency": {
+    "per_event_us": {
+     "p50": 4.5,
+     "p95": 11.5,
+     "p99": 20.6,
+     "max": 642.2
+    },
+    "throughput_eps": 177651,
+    "detection_delay_s": {
+     "p50": 0.0,
+     "p99": 0.0
+    }
+   }
+  },
+  "P7": {
+   "detector": "P7",
+   "evidence_completeness": 0.249,
+   "attack_coverage": "1/1",
+   "attack_missed": [],
+   "brier": 0.754,
+   "reliability": [
+    {
+     "bin": "0.0-0.1",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.1-0.2",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.2-0.3",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.3-0.4",
+     "alerts": 1,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.4-0.5",
+     "alerts": 1,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.5-0.6",
+     "alerts": 3,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.6-0.7",
+     "alerts": 1,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.7-0.8",
+     "alerts": 6,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.8-0.9",
+     "alerts": 5,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.9-1.0",
+     "alerts": 99,
+     "anomaly_rate": 0.192
+    }
+   ],
+   "batch_s": null,
+   "alerts": 116,
+   "alerts_per_day": 77.3,
+   "precision": 0.1638,
+   "fp_per_day": 64.7,
+   "fp_lookalike_per_day": 64.7,
+   "fp_lookalike_by_type": {
+    "new_binary": 97
+   },
+   "fp_per_day_by_rule": {},
+   "cases": 20,
+   "recall": 0.95,
+   "recall_by_family": {
+    "runtime": 0.95
+   },
+   "recall_by_type": {
+    "rare_binary": "19/20"
+   },
+   "bundles": 0,
+   "bundle_recall": null,
+   "ttd_s": {
+    "p50": 0.0,
+    "p95": 0.0
+   },
+   "average_precision": 0.6319,
+   "recall_at_fp_per_day": {
+    "1/day": 0.1,
+    "10/day": 0.8,
+    "100/day": 0.95
+   },
+   "latency": {
+    "per_event_us": {
+     "p50": 0.3,
+     "p95": 0.4,
+     "p99": 0.5,
+     "max": 110.6
+    },
+    "throughput_eps": 3367989,
+    "detection_delay_s": {
+     "p50": 0.0,
+     "p99": 0.0
+    }
+   }
+  },
+  "P7-1e-2": {
+   "detector": "P7-1e-2",
+   "evidence_completeness": 0.247,
+   "attack_coverage": "1/1",
+   "attack_missed": [],
+   "brier": 0.3954,
+   "reliability": [
+    {
+     "bin": "0.0-0.1",
+     "alerts": 96,
+     "anomaly_rate": 0.01
+    },
+    {
+     "bin": "0.1-0.2",
+     "alerts": 6,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.2-0.3",
+     "alerts": 7,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.3-0.4",
+     "alerts": 1,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.4-0.5",
+     "alerts": 1,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.5-0.6",
+     "alerts": 3,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.6-0.7",
+     "alerts": 1,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.7-0.8",
+     "alerts": 6,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.8-0.9",
+     "alerts": 5,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.9-1.0",
+     "alerts": 99,
+     "anomaly_rate": 0.192
+    }
+   ],
+   "batch_s": null,
+   "alerts": 225,
+   "alerts_per_day": 150.0,
+   "precision": 0.0889,
+   "fp_per_day": 136.7,
+   "fp_lookalike_per_day": 136.7,
+   "fp_lookalike_by_type": {
+    "new_binary": 205
+   },
+   "fp_per_day_by_rule": {},
+   "cases": 20,
+   "recall": 1.0,
+   "recall_by_family": {
+    "runtime": 1.0
+   },
+   "recall_by_type": {
+    "rare_binary": "20/20"
+   },
+   "bundles": 0,
+   "bundle_recall": null,
+   "ttd_s": {
+    "p50": 0.0,
+    "p95": 0.0
+   },
+   "average_precision": 0.6047,
+   "recall_at_fp_per_day": {
+    "1/day": 0.1,
+    "10/day": 0.8,
+    "100/day": 0.95
+   },
+   "latency": {
+    "per_event_us": {
+     "p50": 0.2,
+     "p95": 0.3,
+     "p99": 0.4,
+     "max": 236.3
+    },
+    "throughput_eps": 4204486,
+    "detection_delay_s": {
+     "p50": 0.0,
+     "p99": 0.0
+    }
+   }
+  },
+  "P6-hyper+P7": {
+   "detector": "P6-hyper+P7",
+   "evidence_completeness": 0.736,
+   "attack_coverage": "1/1",
+   "attack_missed": [],
+   "brier": 0.4287,
+   "reliability": [
+    {
+     "bin": "0.0-0.1",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.1-0.2",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.2-0.3",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.3-0.4",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.4-0.5",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.5-0.6",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.6-0.7",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.7-0.8",
+     "alerts": 96,
+     "anomaly_rate": 0.25
+    },
+    {
+     "bin": "0.8-0.9",
+     "alerts": 8,
+     "anomaly_rate": 0.5
+    },
+    {
+     "bin": "0.9-1.0",
+     "alerts": 0,
+     "anomaly_rate": null
+    }
+   ],
+   "batch_s": null,
+   "alerts": 104,
+   "alerts_per_day": 69.3,
+   "precision": 0.2692,
+   "fp_per_day": 50.7,
+   "fp_lookalike_per_day": 35.3,
+   "fp_lookalike_by_type": {
+    "new_binary": 21,
+    "incident_response": 16,
+    "routine_prod_session": 66
+   },
+   "fp_per_day_by_rule": {
+    "risk:noisy_or": 15.3
+   },
+   "cases": 20,
+   "recall": 0.7,
+   "recall_by_family": {
+    "runtime": 0.7
+   },
+   "recall_by_type": {
+    "rare_binary": "14/20"
+   },
+   "bundles": 0,
+   "bundle_recall": null,
+   "ttd_s": {
+    "p50": 5.1,
+    "p95": 18.2
+   },
+   "average_precision": 0.3397,
+   "recall_at_fp_per_day": {
+    "1/day": 0.05,
+    "10/day": 0.15,
+    "100/day": 0.7
+   },
+   "latency": {
+    "per_event_us": {
+     "p50": 3.8,
+     "p95": 7.8,
+     "p99": 16.5,
+     "max": 28271.4
+    },
+    "throughput_eps": 213032,
+    "detection_delay_s": {
+     "p50": 0.0,
+     "p99": 0.0
+    }
+   }
+  },
+  "MIX-tuned": {
+   "detector": "MIX-tuned",
+   "evidence_completeness": null,
+   "attack_coverage": "0/1",
+   "attack_missed": [
+    "T1204.002"
+   ],
+   "brier": 0.5634,
+   "reliability": [
+    {
+     "bin": "0.0-0.1",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.1-0.2",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.2-0.3",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.3-0.4",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.4-0.5",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.5-0.6",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.6-0.7",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.7-0.8",
+     "alerts": 61,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.8-0.9",
+     "alerts": 4,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.9-1.0",
+     "alerts": 1,
+     "anomaly_rate": 0.0
+    }
+   ],
+   "batch_s": null,
+   "alerts": 66,
+   "alerts_per_day": 44.0,
+   "precision": 0.0,
+   "fp_per_day": 44.0,
+   "fp_lookalike_per_day": 28.0,
+   "fp_lookalike_by_type": {
+    "incident_response": 16,
+    "routine_prod_session": 66,
+    "new_binary": 2
+   },
+   "fp_per_day_by_rule": {
+    "risk:noisy_or": 15.3,
+    "denied_syscall_burst": 0.7
+   },
+   "cases": 20,
+   "recall": 0.0,
+   "recall_by_family": {
+    "runtime": 0.0
+   },
+   "recall_by_type": {
+    "rare_binary": "0/20"
+   },
+   "bundles": 0,
+   "bundle_recall": null,
+   "ttd_s": {
+    "p50": null,
+    "p95": null
+   },
+   "average_precision": null,
+   "recall_at_fp_per_day": {
+    "1/day": 0.0,
+    "10/day": 0.0,
+    "100/day": 0.0
+   },
+   "latency": {
+    "per_event_us": {
+     "p50": 4.9,
+     "p95": 10.9,
+     "p99": 21.7,
+     "max": 1746.4
+    },
+    "throughput_eps": 166641,
+    "detection_delay_s": {
+     "p50": 0.0,
+     "p99": 0.0
+    }
+   }
+  },
+  "MIX-tuned+P7": {
+   "detector": "MIX-tuned+P7",
+   "evidence_completeness": 0.736,
+   "attack_coverage": "1/1",
+   "attack_missed": [],
+   "brier": 0.4323,
+   "reliability": [
+    {
+     "bin": "0.0-0.1",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.1-0.2",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.2-0.3",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.3-0.4",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.4-0.5",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.5-0.6",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.6-0.7",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.7-0.8",
+     "alerts": 96,
+     "anomaly_rate": 0.25
+    },
+    {
+     "bin": "0.8-0.9",
+     "alerts": 8,
+     "anomaly_rate": 0.5
+    },
+    {
+     "bin": "0.9-1.0",
+     "alerts": 1,
+     "anomaly_rate": 0.0
+    }
+   ],
+   "batch_s": null,
+   "alerts": 105,
+   "alerts_per_day": 70.0,
+   "precision": 0.2667,
+   "fp_per_day": 51.3,
+   "fp_lookalike_per_day": 35.3,
+   "fp_lookalike_by_type": {
+    "new_binary": 21,
+    "incident_response": 16,
+    "routine_prod_session": 66
+   },
+   "fp_per_day_by_rule": {
+    "risk:noisy_or": 15.3,
+    "denied_syscall_burst": 0.7
+   },
+   "cases": 20,
+   "recall": 0.7,
+   "recall_by_family": {
+    "runtime": 0.7
+   },
+   "recall_by_type": {
+    "rare_binary": "14/20"
+   },
+   "bundles": 0,
+   "bundle_recall": null,
+   "ttd_s": {
+    "p50": 5.1,
+    "p95": 18.2
+   },
+   "average_precision": 0.2992,
+   "recall_at_fp_per_day": {
+    "1/day": 0.05,
+    "10/day": 0.15,
+    "100/day": 0.7
+   },
+   "latency": {
+    "per_event_us": {
+     "p50": 4.7,
+     "p95": 10.6,
+     "p99": 20.8,
+     "max": 575.6
+    },
+    "throughput_eps": 173011,
+    "detection_delay_s": {
+     "p50": 0.0,
+     "p99": 0.0
+    }
+   }
+  },
+  "MIX-tuned+P7direct": {
+   "detector": "MIX-tuned+P7direct",
+   "evidence_completeness": 0.249,
+   "attack_coverage": "1/1",
+   "attack_missed": [],
+   "brier": 0.6849,
+   "reliability": [
+    {
+     "bin": "0.0-0.1",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.1-0.2",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.2-0.3",
+     "alerts": 0,
+     "anomaly_rate": null
+    },
+    {
+     "bin": "0.3-0.4",
+     "alerts": 1,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.4-0.5",
+     "alerts": 1,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.5-0.6",
+     "alerts": 3,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.6-0.7",
+     "alerts": 1,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.7-0.8",
+     "alerts": 67,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.8-0.9",
+     "alerts": 9,
+     "anomaly_rate": 0.0
+    },
+    {
+     "bin": "0.9-1.0",
+     "alerts": 100,
+     "anomaly_rate": 0.19
+    }
+   ],
+   "batch_s": null,
+   "alerts": 182,
+   "alerts_per_day": 121.3,
+   "precision": 0.1044,
+   "fp_per_day": 108.7,
+   "fp_lookalike_per_day": 92.7,
+   "fp_lookalike_by_type": {
+    "new_binary": 99,
+    "incident_response": 16,
+    "routine_prod_session": 66
+   },
+   "fp_per_day_by_rule": {
+    "risk:noisy_or": 15.3,
+    "denied_syscall_burst": 0.7
+   },
+   "cases": 20,
+   "recall": 0.95,
+   "recall_by_family": {
+    "runtime": 0.95
+   },
+   "recall_by_type": {
+    "rare_binary": "19/20"
+   },
+   "bundles": 0,
+   "bundle_recall": null,
+   "ttd_s": {
+    "p50": 0.0,
+    "p95": 0.0
+   },
+   "average_precision": 0.6319,
+   "recall_at_fp_per_day": {
+    "1/day": 0.1,
+    "10/day": 0.8,
+    "100/day": 0.95
+   },
+   "latency": {
+    "per_event_us": {
+     "p50": 6.7,
+     "p95": 16.1,
+     "p99": 28.7,
+     "max": 23593.4
+    },
+    "throughput_eps": 121003,
+    "detection_delay_s": {
+     "p50": 0.0,
+     "p99": 0.0
+    }
+   }
+  }
+ }
+}

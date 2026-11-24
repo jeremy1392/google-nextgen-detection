@@ -1,0 +1,536 @@
+{
+ "L4": {
+  "gpu": "NVIDIA L4",
+  "files": 4000,
+  "median_file_bytes": 234758,
+  "stage1_ms": {
+   "p50": 0.2429014999982826,
+   "p95": 6.3513039999975245,
+   "p99": 22.937539559998918,
+   "max": 163.05550100000232,
+   "share_under_5ms": 0.92125
+  },
+  "buckets": [
+   65536,
+   262144,
+   1048576,
+   2000000
+  ],
+  "modes": {
+   "single_pad": [
+    {
+     "mode": "single_pad",
+     "files_per_s": 50,
+     "served": 961,
+     "achieved_files_per_s": 48.0,
+     "total_ms": {
+      "p50": 8.531433000001698,
+      "p95": 22.391635000005294,
+      "p99": 90.98386660000695
+     },
+     "queue_and_batch_ms_p50": 5.329289000002291,
+     "gpu_ms_p50": 2.4373440000005075,
+     "mean_batch": 1.7200832466181062,
+     "share_under_50ms": 0.9760665972944849,
+     "gpu_label": "L4"
+    },
+    {
+     "mode": "single_pad",
+     "files_per_s": 200,
+     "served": 3932,
+     "achieved_files_per_s": 196.6,
+     "total_ms": {
+      "p50": 25.838695499999176,
+      "p95": 63.307815349995145,
+      "p99": 97.4566718299903
+     },
+     "queue_and_batch_ms_p50": 7.467335000001185,
+     "gpu_ms_p50": 17.043295000007674,
+     "mean_batch": 5.195829094608341,
+     "share_under_50ms": 0.8723296032553408,
+     "gpu_label": "L4"
+    },
+    {
+     "mode": "single_pad",
+     "files_per_s": 500,
+     "served": 9389,
+     "achieved_files_per_s": 469.4,
+     "total_ms": {
+      "p50": 7222.769237999998,
+      "p95": 13637.344210199997,
+      "p99": 14197.230082080016
+     },
+     "queue_and_batch_ms_p50": 7106.641621999998,
+     "gpu_ms_p50": 116.25716999999725,
+     "mean_batch": 31.953243156885716,
+     "share_under_50ms": 0.0,
+     "gpu_label": "L4"
+    },
+    {
+     "mode": "single_pad",
+     "files_per_s": 1000,
+     "served": 17209,
+     "achieved_files_per_s": 860.5,
+     "total_ms": {
+      "p50": 22479.46820999999,
+      "p95": 42145.19883859999,
+      "p99": 43925.871090079985
+     },
+     "queue_and_batch_ms_p50": 22360.51861600001,
+     "gpu_ms_p50": 117.37136700000406,
+     "mean_batch": 31.980068568772154,
+     "share_under_50ms": 0.0,
+     "gpu_label": "L4"
+    },
+    {
+     "mode": "single_pad",
+     "files_per_s": 2000,
+     "served": 26394,
+     "achieved_files_per_s": 1319.7,
+     "total_ms": {
+      "p50": 40059.735477999995,
+      "p95": 74271.54917885,
+      "p99": 77301.38422995001
+     },
+     "queue_and_batch_ms_p50": 39938.9107105,
+     "gpu_ms_p50": 117.04794199999924,
+     "mean_batch": 31.99219519587785,
+     "share_under_50ms": 0.0,
+     "gpu_label": "L4"
+    }
+   ],
+   "bucketed": [
+    {
+     "mode": "bucketed",
+     "files_per_s": 50,
+     "served": 961,
+     "achieved_files_per_s": 48.0,
+     "total_ms": {
+      "p50": 8.286162999979751,
+      "p95": 15.368055999999797,
+      "p99": 40.43660079997833
+     },
+     "queue_and_batch_ms_p50": 5.333226999994167,
+     "gpu_ms_p50": 2.231998000013391,
+     "mean_batch": 1.6951092611862644,
+     "share_under_50ms": 0.9927159209157128,
+     "gpu_label": "L4"
+    },
+    {
+     "mode": "bucketed",
+     "files_per_s": 200,
+     "served": 3935,
+     "achieved_files_per_s": 196.8,
+     "total_ms": {
+      "p50": 9.731611000006524,
+      "p95": 22.74865629997862,
+      "p99": 34.795079100011804
+     },
+     "queue_and_batch_ms_p50": 5.433999999979733,
+     "gpu_ms_p50": 2.678599999967446,
+     "mean_batch": 3.327827191867853,
+     "share_under_50ms": 0.9972045743329098,
+     "gpu_label": "L4"
+    },
+    {
+     "mode": "bucketed",
+     "files_per_s": 500,
+     "served": 9473,
+     "achieved_files_per_s": 473.6,
+     "total_ms": {
+      "p50": 35.855462999961674,
+      "p95": 95.82655940001813,
+      "p99": 123.20255175999142
+     },
+     "queue_and_batch_ms_p50": 20.355753999979243,
+     "gpu_ms_p50": 7.169284000042353,
+     "mean_batch": 21.767233189063656,
+     "share_under_50ms": 0.6764488546395018,
+     "gpu_label": "L4"
+    },
+    {
+     "mode": "bucketed",
+     "files_per_s": 1000,
+     "served": 17285,
+     "achieved_files_per_s": 864.2,
+     "total_ms": {
+      "p50": 5934.844945000009,
+      "p95": 11575.78565179998,
+      "p99": 11713.708431680014
+     },
+     "queue_and_batch_ms_p50": 5905.74022300001,
+     "gpu_ms_p50": 10.991783999998006,
+     "mean_batch": 31.967312698871854,
+     "share_under_50ms": 0.00404975412207116,
+     "gpu_label": "L4"
+    },
+    {
+     "mode": "bucketed",
+     "files_per_s": 2000,
+     "served": 26794,
+     "achieved_files_per_s": 1339.7,
+     "total_ms": {
+      "p50": 17660.536887500002,
+      "p95": 29796.111738700038,
+      "p99": 30952.442424060016
+     },
+     "queue_and_batch_ms_p50": 17634.253832499977,
+     "gpu_ms_p50": 15.256684999997105,
+     "mean_batch": 31.98544450250056,
+     "share_under_50ms": 0.0015301933268642234,
+     "gpu_label": "L4"
+    }
+   ]
+  },
+  "warmup_s": 1.66,
+  "rates": [
+   {
+    "mode": "bucketed",
+    "files_per_s": 50,
+    "served": 961,
+    "achieved_files_per_s": 48.0,
+    "total_ms": {
+     "p50": 8.286162999979751,
+     "p95": 15.368055999999797,
+     "p99": 40.43660079997833
+    },
+    "queue_and_batch_ms_p50": 5.333226999994167,
+    "gpu_ms_p50": 2.231998000013391,
+    "mean_batch": 1.6951092611862644,
+    "share_under_50ms": 0.9927159209157128,
+    "gpu_label": "L4"
+   },
+   {
+    "mode": "bucketed",
+    "files_per_s": 200,
+    "served": 3935,
+    "achieved_files_per_s": 196.8,
+    "total_ms": {
+     "p50": 9.731611000006524,
+     "p95": 22.74865629997862,
+     "p99": 34.795079100011804
+    },
+    "queue_and_batch_ms_p50": 5.433999999979733,
+    "gpu_ms_p50": 2.678599999967446,
+    "mean_batch": 3.327827191867853,
+    "share_under_50ms": 0.9972045743329098,
+    "gpu_label": "L4"
+   },
+   {
+    "mode": "bucketed",
+    "files_per_s": 500,
+    "served": 9473,
+    "achieved_files_per_s": 473.6,
+    "total_ms": {
+     "p50": 35.855462999961674,
+     "p95": 95.82655940001813,
+     "p99": 123.20255175999142
+    },
+    "queue_and_batch_ms_p50": 20.355753999979243,
+    "gpu_ms_p50": 7.169284000042353,
+    "mean_batch": 21.767233189063656,
+    "share_under_50ms": 0.6764488546395018,
+    "gpu_label": "L4"
+   },
+   {
+    "mode": "bucketed",
+    "files_per_s": 1000,
+    "served": 17285,
+    "achieved_files_per_s": 864.2,
+    "total_ms": {
+     "p50": 5934.844945000009,
+     "p95": 11575.78565179998,
+     "p99": 11713.708431680014
+    },
+    "queue_and_batch_ms_p50": 5905.74022300001,
+    "gpu_ms_p50": 10.991783999998006,
+    "mean_batch": 31.967312698871854,
+    "share_under_50ms": 0.00404975412207116,
+    "gpu_label": "L4"
+   },
+   {
+    "mode": "bucketed",
+    "files_per_s": 2000,
+    "served": 26794,
+    "achieved_files_per_s": 1339.7,
+    "total_ms": {
+     "p50": 17660.536887500002,
+     "p95": 29796.111738700038,
+     "p99": 30952.442424060016
+    },
+    "queue_and_batch_ms_p50": 17634.253832499977,
+    "gpu_ms_p50": 15.256684999997105,
+    "mean_batch": 31.98544450250056,
+    "share_under_50ms": 0.0015301933268642234,
+    "gpu_label": "L4"
+   }
+  ]
+ },
+ "H100": {
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "files": 4000,
+  "median_file_bytes": 234758,
+  "stage1_ms": {
+   "p50": 0.25225099999914846,
+   "p95": 6.201937000002994,
+   "p99": 28.869817099996077,
+   "max": 218.3652110000054,
+   "share_under_5ms": 0.92975
+  },
+  "buckets": [
+   65536,
+   262144,
+   1048576,
+   2000000
+  ],
+  "modes": {
+   "single_pad": [
+    {
+     "mode": "single_pad",
+     "files_per_s": 50,
+     "served": 959,
+     "achieved_files_per_s": 48.0,
+     "total_ms": {
+      "p50": 7.849910999993881,
+      "p95": 19.3322830999989,
+      "p99": 61.0872029199899
+     },
+     "queue_and_batch_ms_p50": 5.230410999999435,
+     "gpu_ms_p50": 1.7622679999931279,
+     "mean_batch": 1.7194994786235662,
+     "share_under_50ms": 0.9749739311783108,
+     "gpu_label": "H100"
+    },
+    {
+     "mode": "single_pad",
+     "files_per_s": 200,
+     "served": 3910,
+     "achieved_files_per_s": 195.5,
+     "total_ms": {
+      "p50": 8.685324500000036,
+      "p95": 17.552167649995454,
+      "p99": 45.443782530007994
+     },
+     "queue_and_batch_ms_p50": 5.213442999995266,
+     "gpu_ms_p50": 2.8577549999937446,
+     "mean_batch": 2.8900255754475705,
+     "share_under_50ms": 0.9943734015345268,
+     "gpu_label": "H100"
+    },
+    {
+     "mode": "single_pad",
+     "files_per_s": 500,
+     "served": 9349,
+     "achieved_files_per_s": 467.4,
+     "total_ms": {
+      "p50": 15.501368999991882,
+      "p95": 29.549507199996583,
+      "p99": 49.275134800000785
+     },
+     "queue_and_batch_ms_p50": 6.236959999995406,
+     "gpu_ms_p50": 7.962729000013269,
+     "mean_batch": 7.200449245908653,
+     "share_under_50ms": 0.9905872285805969,
+     "gpu_label": "H100"
+    },
+    {
+     "mode": "single_pad",
+     "files_per_s": 1000,
+     "served": 16927,
+     "achieved_files_per_s": 846.4,
+     "total_ms": {
+      "p50": 1173.5720719999847,
+      "p95": 2019.5862715999965,
+      "p99": 2055.798555099998
+     },
+     "queue_and_batch_ms_p50": 1128.4033190000002,
+     "gpu_ms_p50": 38.96006600001556,
+     "mean_batch": 31.95669640219767,
+     "share_under_50ms": 0.0036037100490340875,
+     "gpu_label": "H100"
+    },
+    {
+     "mode": "single_pad",
+     "files_per_s": 2000,
+     "served": 25584,
+     "achieved_files_per_s": 1279.2,
+     "total_ms": {
+      "p50": 8696.073732999992,
+      "p95": 12380.039349999985,
+      "p99": 12637.874664600002
+     },
+     "queue_and_batch_ms_p50": 8574.182393499996,
+     "gpu_ms_p50": 36.07548599998722,
+     "mean_batch": 31.985694183864915,
+     "share_under_50ms": 0.0014071294559099437,
+     "gpu_label": "H100"
+    }
+   ],
+   "bucketed": [
+    {
+     "mode": "bucketed",
+     "files_per_s": 50,
+     "served": 960,
+     "achieved_files_per_s": 48.0,
+     "total_ms": {
+      "p50": 7.406787999997277,
+      "p95": 14.423066199999823,
+      "p99": 45.79920451999327
+     },
+     "queue_and_batch_ms_p50": 5.214478999988614,
+     "gpu_ms_p50": 1.4324820000126692,
+     "mean_batch": 1.7125,
+     "share_under_50ms": 0.9927083333333333,
+     "gpu_label": "H100"
+    },
+    {
+     "mode": "bucketed",
+     "files_per_s": 200,
+     "served": 3913,
+     "achieved_files_per_s": 195.7,
+     "total_ms": {
+      "p50": 7.531771000003573,
+      "p95": 14.54862039998943,
+      "p99": 28.254614119995427
+     },
+     "queue_and_batch_ms_p50": 5.206434000001536,
+     "gpu_ms_p50": 1.9560460000036528,
+     "mean_batch": 2.774597495527728,
+     "share_under_50ms": 0.9969332992588806,
+     "gpu_label": "H100"
+    },
+    {
+     "mode": "bucketed",
+     "files_per_s": 500,
+     "served": 9388,
+     "achieved_files_per_s": 469.4,
+     "total_ms": {
+      "p50": 9.644212000011976,
+      "p95": 20.3933651000014,
+      "p99": 40.18694240000748
+     },
+     "queue_and_batch_ms_p50": 5.490973500002383,
+     "gpu_ms_p50": 2.5210809999975936,
+     "mean_batch": 6.115892628887942,
+     "share_under_50ms": 0.9946740519812527,
+     "gpu_label": "H100"
+    },
+    {
+     "mode": "bucketed",
+     "files_per_s": 1000,
+     "served": 17668,
+     "achieved_files_per_s": 883.4,
+     "total_ms": {
+      "p50": 14.451856000007979,
+      "p95": 31.974181999987646,
+      "p99": 49.060520379993946
+     },
+     "queue_and_batch_ms_p50": 8.360386999996194,
+     "gpu_ms_p50": 3.447190000017031,
+     "mean_batch": 15.911817976001812,
+     "share_under_50ms": 0.9907176816844012,
+     "gpu_label": "H100"
+    },
+    {
+     "mode": "bucketed",
+     "files_per_s": 2000,
+     "served": 29120,
+     "achieved_files_per_s": 1456.0,
+     "total_ms": {
+      "p50": 515.8309960000054,
+      "p95": 2281.3004445500096,
+      "p99": 2415.364194560025
+     },
+     "queue_and_batch_ms_p50": 503.1035924999685,
+     "gpu_ms_p50": 6.404348999978993,
+     "mean_batch": 31.981043956043955,
+     "share_under_50ms": 0.017925824175824175,
+     "gpu_label": "H100"
+    }
+   ]
+  },
+  "warmup_s": 0.75,
+  "rates": [
+   {
+    "mode": "bucketed",
+    "files_per_s": 50,
+    "served": 960,
+    "achieved_files_per_s": 48.0,
+    "total_ms": {
+     "p50": 7.406787999997277,
+     "p95": 14.423066199999823,
+     "p99": 45.79920451999327
+    },
+    "queue_and_batch_ms_p50": 5.214478999988614,
+    "gpu_ms_p50": 1.4324820000126692,
+    "mean_batch": 1.7125,
+    "share_under_50ms": 0.9927083333333333,
+    "gpu_label": "H100"
+   },
+   {
+    "mode": "bucketed",
+    "files_per_s": 200,
+    "served": 3913,
+    "achieved_files_per_s": 195.7,
+    "total_ms": {
+     "p50": 7.531771000003573,
+     "p95": 14.54862039998943,
+     "p99": 28.254614119995427
+    },
+    "queue_and_batch_ms_p50": 5.206434000001536,
+    "gpu_ms_p50": 1.9560460000036528,
+    "mean_batch": 2.774597495527728,
+    "share_under_50ms": 0.9969332992588806,
+    "gpu_label": "H100"
+   },
+   {
+    "mode": "bucketed",
+    "files_per_s": 500,
+    "served": 9388,
+    "achieved_files_per_s": 469.4,
+    "total_ms": {
+     "p50": 9.644212000011976,
+     "p95": 20.3933651000014,
+     "p99": 40.18694240000748
+    },
+    "queue_and_batch_ms_p50": 5.490973500002383,
+    "gpu_ms_p50": 2.5210809999975936,
+    "mean_batch": 6.115892628887942,
+    "share_under_50ms": 0.9946740519812527,
+    "gpu_label": "H100"
+   },
+   {
+    "mode": "bucketed",
+    "files_per_s": 1000,
+    "served": 17668,
+    "achieved_files_per_s": 883.4,
+    "total_ms": {
+     "p50": 14.451856000007979,
+     "p95": 31.974181999987646,
+     "p99": 49.060520379993946
+    },
+    "queue_and_batch_ms_p50": 8.360386999996194,
+    "gpu_ms_p50": 3.447190000017031,
+    "mean_batch": 15.911817976001812,
+    "share_under_50ms": 0.9907176816844012,
+    "gpu_label": "H100"
+   },
+   {
+    "mode": "bucketed",
+    "files_per_s": 2000,
+    "served": 29120,
+    "achieved_files_per_s": 1456.0,
+    "total_ms": {
+     "p50": 515.8309960000054,
+     "p95": 2281.3004445500096,
+     "p99": 2415.364194560025
+    },
+    "queue_and_batch_ms_p50": 503.1035924999685,
+    "gpu_ms_p50": 6.404348999978993,
+    "mean_batch": 31.981043956043955,
+    "share_under_50ms": 0.017925824175824175,
+    "gpu_label": "H100"
+   }
+  ]
+ }
+}

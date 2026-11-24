@@ -1,0 +1,396 @@
+{
+ "data": "BODMAS",
+ "files": 134435,
+ "malware": 57293,
+ "benign": 77142,
+ "months": {
+  "2019-08": {
+   "mal": 680,
+   "ben": 3371
+  },
+  "2019-09": {
+   "mal": 4061,
+   "ben": 3463
+  },
+  "2019-10": {
+   "mal": 4549,
+   "ben": 3925
+  },
+  "2019-11": {
+   "mal": 2494,
+   "ben": 3718
+  },
+  "2019-12": {
+   "mal": 4039,
+   "ben": 6120
+  },
+  "2020-01": {
+   "mal": 4510,
+   "ben": 5926
+  },
+  "2020-02": {
+   "mal": 4269,
+   "ben": 3703
+  },
+  "2020-03": {
+   "mal": 4990,
+   "ben": 3577
+  },
+  "2020-04": {
+   "mal": 4640,
+   "ben": 5201
+  },
+  "2020-05": {
+   "mal": 5449,
+   "ben": 6121
+  },
+  "2020-06": {
+   "mal": 4217,
+   "ben": 8182
+  },
+  "2020-07": {
+   "mal": 4995,
+   "ben": 6392
+  },
+  "2020-08": {
+   "mal": 3823,
+   "ben": 2514
+  },
+  "2020-09": {
+   "mal": 4577,
+   "ben": 4198
+  }
+ },
+ "benign_before_window": 10731,
+ "train_months": [
+  "2019-08",
+  "2019-09",
+  "2019-10"
+ ],
+ "params": {
+  "objective": "binary",
+  "learning_rate": 0.05,
+  "num_leaves": 256,
+  "feature_fraction": 0.5,
+  "bagging_fraction": 0.5,
+  "bagging_freq": 1,
+  "min_data_in_leaf": 20,
+  "verbose": -1,
+  "num_threads": 12,
+  "seed": 0
+ },
+ "rounds": 600,
+ "static": {
+  "2019-11": {
+   "n_mal": 2494,
+   "n_ben": 3718,
+   "auc": 0.99925,
+   "tpr_at_train_thr_1e-3": 0.9779,
+   "real_fpr_at_train_thr_1e-3": 0.00054,
+   "tpr_at_month_thr_1e-3": 0.9796,
+   "tpr_at_train_thr_1e-2": 0.994,
+   "real_fpr_at_train_thr_1e-2": 0.02152,
+   "tpr_at_month_thr_1e-2": 0.9912,
+   "share_malware_new_family": 0.0132,
+   "tpr_known_family_1e-3": 0.9817,
+   "tpr_new_family_1e-3": 0.697
+  },
+  "2019-12": {
+   "n_mal": 4039,
+   "n_ben": 6120,
+   "auc": 0.99995,
+   "tpr_at_train_thr_1e-3": 0.9943,
+   "real_fpr_at_train_thr_1e-3": 0.00114,
+   "tpr_at_month_thr_1e-3": 0.9913,
+   "tpr_at_train_thr_1e-2": 0.9993,
+   "real_fpr_at_train_thr_1e-2": 0.01307,
+   "tpr_at_month_thr_1e-2": 0.9993,
+   "share_malware_new_family": 0.0087,
+   "tpr_known_family_1e-3": 0.9955,
+   "tpr_new_family_1e-3": 0.8571
+  },
+  "2020-01": {
+   "n_mal": 4510,
+   "n_ben": 5926,
+   "auc": 0.99951,
+   "tpr_at_train_thr_1e-3": 0.9849,
+   "real_fpr_at_train_thr_1e-3": 0.00354,
+   "tpr_at_month_thr_1e-3": 0.9583,
+   "tpr_at_train_thr_1e-2": 0.9978,
+   "real_fpr_at_train_thr_1e-2": 0.05113,
+   "tpr_at_month_thr_1e-2": 0.9938,
+   "share_malware_new_family": 0.0175,
+   "tpr_known_family_1e-3": 0.9885,
+   "tpr_new_family_1e-3": 0.7848
+  },
+  "2020-02": {
+   "n_mal": 4269,
+   "n_ben": 3703,
+   "auc": 0.99857,
+   "tpr_at_train_thr_1e-3": 0.9859,
+   "real_fpr_at_train_thr_1e-3": 0.00621,
+   "tpr_at_month_thr_1e-3": 0.9653,
+   "tpr_at_train_thr_1e-2": 0.9955,
+   "real_fpr_at_train_thr_1e-2": 0.1091,
+   "tpr_at_month_thr_1e-2": 0.9876,
+   "share_malware_new_family": 0.0227,
+   "tpr_known_family_1e-3": 0.9914,
+   "tpr_new_family_1e-3": 0.7526
+  },
+  "2020-03": {
+   "n_mal": 4990,
+   "n_ben": 3577,
+   "auc": 0.99867,
+   "tpr_at_train_thr_1e-3": 0.9689,
+   "real_fpr_at_train_thr_1e-3": 0.00028,
+   "tpr_at_month_thr_1e-3": 0.9735,
+   "tpr_at_train_thr_1e-2": 0.9914,
+   "real_fpr_at_train_thr_1e-2": 0.0232,
+   "tpr_at_month_thr_1e-2": 0.9884,
+   "share_malware_new_family": 0.0261,
+   "tpr_known_family_1e-3": 0.9724,
+   "tpr_new_family_1e-3": 0.8385
+  },
+  "2020-04": {
+   "n_mal": 4640,
+   "n_ben": 5201,
+   "auc": 0.9997,
+   "tpr_at_train_thr_1e-3": 0.9834,
+   "real_fpr_at_train_thr_1e-3": 0.00058,
+   "tpr_at_month_thr_1e-3": 0.9843,
+   "tpr_at_train_thr_1e-2": 0.9972,
+   "real_fpr_at_train_thr_1e-2": 0.0248,
+   "tpr_at_month_thr_1e-2": 0.9873,
+   "share_malware_new_family": 0.0446,
+   "tpr_known_family_1e-3": 0.9851,
+   "tpr_new_family_1e-3": 0.9469
+  },
+  "2020-05": {
+   "n_mal": 5449,
+   "n_ben": 6121,
+   "auc": 0.99982,
+   "tpr_at_train_thr_1e-3": 0.9761,
+   "real_fpr_at_train_thr_1e-3": 0.00049,
+   "tpr_at_month_thr_1e-3": 0.9883,
+   "tpr_at_train_thr_1e-2": 0.9967,
+   "real_fpr_at_train_thr_1e-2": 0.00604,
+   "tpr_at_month_thr_1e-2": 0.998,
+   "share_malware_new_family": 0.1189,
+   "tpr_known_family_1e-3": 0.9788,
+   "tpr_new_family_1e-3": 0.9568
+  },
+  "2020-06": {
+   "n_mal": 4217,
+   "n_ben": 8182,
+   "auc": 0.99987,
+   "tpr_at_train_thr_1e-3": 0.9789,
+   "real_fpr_at_train_thr_1e-3": 0.0011,
+   "tpr_at_month_thr_1e-3": 0.9779,
+   "tpr_at_train_thr_1e-2": 0.9962,
+   "real_fpr_at_train_thr_1e-2": 0.00978,
+   "tpr_at_month_thr_1e-2": 0.9962,
+   "share_malware_new_family": 0.0507,
+   "tpr_known_family_1e-3": 0.9805,
+   "tpr_new_family_1e-3": 0.9486
+  },
+  "2020-07": {
+   "n_mal": 4995,
+   "n_ben": 6392,
+   "auc": 0.99949,
+   "tpr_at_train_thr_1e-3": 0.962,
+   "real_fpr_at_train_thr_1e-3": 0.00063,
+   "tpr_at_month_thr_1e-3": 0.972,
+   "tpr_at_train_thr_1e-2": 0.996,
+   "real_fpr_at_train_thr_1e-2": 0.00845,
+   "tpr_at_month_thr_1e-2": 0.9962,
+   "share_malware_new_family": 0.1814,
+   "tpr_known_family_1e-3": 0.9663,
+   "tpr_new_family_1e-3": 0.9426
+  },
+  "2020-08": {
+   "n_mal": 3823,
+   "n_ben": 2514,
+   "auc": 0.99985,
+   "tpr_at_train_thr_1e-3": 0.9731,
+   "real_fpr_at_train_thr_1e-3": 0.0,
+   "tpr_at_month_thr_1e-3": 0.9908,
+   "tpr_at_train_thr_1e-2": 0.9966,
+   "real_fpr_at_train_thr_1e-2": 0.00557,
+   "tpr_at_month_thr_1e-2": 0.9984,
+   "share_malware_new_family": 0.063,
+   "tpr_known_family_1e-3": 0.9791,
+   "tpr_new_family_1e-3": 0.8838
+  },
+  "2020-09": {
+   "n_mal": 4577,
+   "n_ben": 4198,
+   "auc": 0.99965,
+   "tpr_at_train_thr_1e-3": 0.9618,
+   "real_fpr_at_train_thr_1e-3": 0.00095,
+   "tpr_at_month_thr_1e-3": 0.9838,
+   "tpr_at_train_thr_1e-2": 0.9967,
+   "real_fpr_at_train_thr_1e-2": 0.00572,
+   "tpr_at_month_thr_1e-2": 0.9969,
+   "share_malware_new_family": 0.1167,
+   "tpr_known_family_1e-3": 0.9713,
+   "tpr_new_family_1e-3": 0.8895
+  }
+ },
+ "retrain": {
+  "2019-11": {
+   "n_mal": 2494,
+   "n_ben": 3718,
+   "auc": 0.99925,
+   "tpr_at_train_thr_1e-3": 0.9779,
+   "real_fpr_at_train_thr_1e-3": 0.00054,
+   "tpr_at_month_thr_1e-3": 0.9796,
+   "tpr_at_train_thr_1e-2": 0.994,
+   "real_fpr_at_train_thr_1e-2": 0.02152,
+   "tpr_at_month_thr_1e-2": 0.9912,
+   "share_malware_new_family": 0.0132,
+   "tpr_known_family_1e-3": 0.9817,
+   "tpr_new_family_1e-3": 0.697
+  },
+  "2019-12": {
+   "n_mal": 4039,
+   "n_ben": 6120,
+   "auc": 0.99996,
+   "tpr_at_train_thr_1e-3": 0.9955,
+   "real_fpr_at_train_thr_1e-3": 0.00114,
+   "tpr_at_month_thr_1e-3": 0.9955,
+   "tpr_at_train_thr_1e-2": 0.997,
+   "real_fpr_at_train_thr_1e-2": 0.00278,
+   "tpr_at_month_thr_1e-2": 0.9993,
+   "share_malware_new_family": 0.0064,
+   "tpr_known_family_1e-3": 0.9963,
+   "tpr_new_family_1e-3": 0.8846
+  },
+  "2020-01": {
+   "n_mal": 4510,
+   "n_ben": 5926,
+   "auc": 0.99961,
+   "tpr_at_train_thr_1e-3": 0.9911,
+   "real_fpr_at_train_thr_1e-3": 0.00337,
+   "tpr_at_month_thr_1e-3": 0.9789,
+   "tpr_at_train_thr_1e-2": 0.998,
+   "real_fpr_at_train_thr_1e-2": 0.03949,
+   "tpr_at_month_thr_1e-2": 0.9949,
+   "share_malware_new_family": 0.0106,
+   "tpr_known_family_1e-3": 0.9933,
+   "tpr_new_family_1e-3": 0.7917
+  },
+  "2020-02": {
+   "n_mal": 4269,
+   "n_ben": 3703,
+   "auc": 0.99901,
+   "tpr_at_train_thr_1e-3": 0.9588,
+   "real_fpr_at_train_thr_1e-3": 0.00027,
+   "tpr_at_month_thr_1e-3": 0.9712,
+   "tpr_at_train_thr_1e-2": 0.9918,
+   "real_fpr_at_train_thr_1e-2": 0.03025,
+   "tpr_at_month_thr_1e-2": 0.9895,
+   "share_malware_new_family": 0.0126,
+   "tpr_known_family_1e-3": 0.9635,
+   "tpr_new_family_1e-3": 0.5926
+  },
+  "2020-03": {
+   "n_mal": 4990,
+   "n_ben": 3577,
+   "auc": 0.99917,
+   "tpr_at_train_thr_1e-3": 0.9645,
+   "real_fpr_at_train_thr_1e-3": 0.0,
+   "tpr_at_month_thr_1e-3": 0.9772,
+   "tpr_at_train_thr_1e-2": 0.9772,
+   "real_fpr_at_train_thr_1e-2": 0.00112,
+   "tpr_at_month_thr_1e-2": 0.9902,
+   "share_malware_new_family": 0.0078,
+   "tpr_known_family_1e-3": 0.9677,
+   "tpr_new_family_1e-3": 0.5641
+  },
+  "2020-04": {
+   "n_mal": 4640,
+   "n_ben": 5201,
+   "auc": 0.99994,
+   "tpr_at_train_thr_1e-3": 0.9929,
+   "real_fpr_at_train_thr_1e-3": 0.0,
+   "tpr_at_month_thr_1e-3": 0.9942,
+   "tpr_at_train_thr_1e-2": 0.997,
+   "real_fpr_at_train_thr_1e-2": 0.00692,
+   "tpr_at_month_thr_1e-2": 0.997,
+   "share_malware_new_family": 0.0045,
+   "tpr_known_family_1e-3": 0.9939,
+   "tpr_new_family_1e-3": 0.7619
+  },
+  "2020-05": {
+   "n_mal": 5449,
+   "n_ben": 6121,
+   "auc": 0.99995,
+   "tpr_at_train_thr_1e-3": 0.9919,
+   "real_fpr_at_train_thr_1e-3": 0.00082,
+   "tpr_at_month_thr_1e-3": 0.9971,
+   "tpr_at_train_thr_1e-2": 0.9972,
+   "real_fpr_at_train_thr_1e-2": 0.00147,
+   "tpr_at_month_thr_1e-2": 0.9993,
+   "share_malware_new_family": 0.0161,
+   "tpr_known_family_1e-3": 0.9935,
+   "tpr_new_family_1e-3": 0.8977
+  },
+  "2020-06": {
+   "n_mal": 4217,
+   "n_ben": 8182,
+   "auc": 0.99999,
+   "tpr_at_train_thr_1e-3": 0.9988,
+   "real_fpr_at_train_thr_1e-3": 0.00147,
+   "tpr_at_month_thr_1e-3": 0.9974,
+   "tpr_at_train_thr_1e-2": 1.0,
+   "real_fpr_at_train_thr_1e-2": 0.01076,
+   "tpr_at_month_thr_1e-2": 1.0,
+   "share_malware_new_family": 0.0036,
+   "tpr_known_family_1e-3": 0.9988,
+   "tpr_new_family_1e-3": 1.0
+  },
+  "2020-07": {
+   "n_mal": 4995,
+   "n_ben": 6392,
+   "auc": 0.99995,
+   "tpr_at_train_thr_1e-3": 0.9952,
+   "real_fpr_at_train_thr_1e-3": 0.00188,
+   "tpr_at_month_thr_1e-3": 0.9922,
+   "tpr_at_train_thr_1e-2": 0.9978,
+   "real_fpr_at_train_thr_1e-2": 0.01064,
+   "tpr_at_month_thr_1e-2": 0.9978,
+   "share_malware_new_family": 0.0098,
+   "tpr_known_family_1e-3": 0.9978,
+   "tpr_new_family_1e-3": 0.7347
+  },
+  "2020-08": {
+   "n_mal": 3823,
+   "n_ben": 2514,
+   "auc": 0.99999,
+   "tpr_at_train_thr_1e-3": 0.9961,
+   "real_fpr_at_train_thr_1e-3": 0.0004,
+   "tpr_at_month_thr_1e-3": 0.9971,
+   "tpr_at_train_thr_1e-2": 0.9992,
+   "real_fpr_at_train_thr_1e-2": 0.00597,
+   "tpr_at_month_thr_1e-2": 1.0,
+   "share_malware_new_family": 0.0084,
+   "tpr_known_family_1e-3": 0.9963,
+   "tpr_new_family_1e-3": 0.9688
+  },
+  "2020-09": {
+   "n_mal": 4577,
+   "n_ben": 4198,
+   "auc": 0.99995,
+   "tpr_at_train_thr_1e-3": 0.9954,
+   "real_fpr_at_train_thr_1e-3": 0.00119,
+   "tpr_at_month_thr_1e-3": 0.9937,
+   "tpr_at_train_thr_1e-2": 0.9993,
+   "real_fpr_at_train_thr_1e-2": 0.01239,
+   "tpr_at_month_thr_1e-2": 0.9993,
+   "share_malware_new_family": 0.0111,
+   "tpr_known_family_1e-3": 0.9958,
+   "tpr_new_family_1e-3": 0.9608
+  }
+ },
+ "static_train_s": 133.2
+}

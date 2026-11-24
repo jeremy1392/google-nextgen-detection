@@ -1,0 +1,119 @@
+{
+ "gbdt": {
+  "census": {
+   "benign": {
+    "files": 3008,
+    "archs": {
+     "arm64": 2327,
+     "x86_64": 681
+    },
+    "fat": {
+     "False": 3008
+    },
+    "pie": {
+     "True": 2970,
+     "False": 38
+    },
+    "code_signature": {
+     "True": 2336,
+     "False": 672
+    },
+    "lc_main": {
+     "True": 2924,
+     "False": 84
+    },
+    "upx": {
+     "False": 3008
+    }
+   },
+   "malware": {
+    "files": 1036,
+    "archs": {
+     "arm64+x86_64": 558,
+     "arm64": 244,
+     "x86_64": 234
+    },
+    "fat": {
+     "True": 558,
+     "False": 478
+    },
+    "pie": {
+     "True": 1035,
+     "False": 1
+    },
+    "code_signature": {
+     "True": 855,
+     "False": 181
+    },
+    "lc_main": {
+     "True": 1021,
+     "False": 15
+    },
+    "upx": {
+     "False": 1036
+    }
+   }
+  },
+  "days": [
+   "2026-05-29",
+   "2026-11-22"
+  ],
+  "test_days_from": "2026-11-07",
+  "counts": {
+   "train": {
+    "mal": 388,
+    "ben": 2135
+   },
+   "val": {
+    "mal": 414,
+    "ben": 477
+   },
+   "test": {
+    "mal": 234,
+    "ben": 396
+   }
+  },
+  "models": {
+   "gbdt_header": {
+    "iterations": 50,
+    "val_auc": 0.9987,
+    "test_auc": 0.53867,
+    "tpr_at_1e-2": 0.4957,
+    "tpr_at_1e-3": 0.4957
+   },
+   "gbdt_bytes": {
+    "iterations": 200,
+    "val_auc": 0.9987,
+    "test_auc": 0.97772,
+    "tpr_at_1e-2": 0.7479,
+    "tpr_at_1e-3": 0.7479
+   },
+   "gbdt_header+bytes": {
+    "iterations": 100,
+    "val_auc": 0.99877,
+    "test_auc": 0.98509,
+    "tpr_at_1e-2": 0.4957,
+    "tpr_at_1e-3": 0.4957
+   }
+  }
+ },
+ "malconv_pe_zeroshot": {
+  "test_files": 630,
+  "auc": 0.65607,
+  "tpr_at_1e-2": 0.1325,
+  "tpr_at_1e-3": 0.0,
+  "benign_flagged_at_0.5": 0.4343,
+  "malware_missed_at_0.5": 0.3162
+ },
+ "collect": {
+  "malware_days": 180,
+  "malware": 1042,
+  "benign": 3008,
+  "day_errors": [
+   {
+    "day": "2026-11-23",
+    "error": "http 404"
+   }
+  ]
+ }
+}

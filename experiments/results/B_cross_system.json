@@ -1,0 +1,1137 @@
+{
+ "footprint": {
+  "ebpf_kernel_module": [
+   "host.ebpf"
+  ],
+  "off_hours_access": [
+   "bc.mtls",
+   "bc.uberproxy",
+   "borg.master_audit"
+  ],
+  "review_bypass": [
+   "admin.build",
+   "admin.code_review"
+  ],
+  "fast_approval": [
+   "admin.mpa",
+   "borg.master_audit"
+  ],
+  "titan_measurement_mismatch": [
+   "borg.bab",
+   "borg.scheduler",
+   "host.ebpf",
+   "host.titan"
+  ],
+  "impossible_travel": [
+   "bc.loas",
+   "bc.mtls",
+   "bc.uberproxy"
+  ],
+  "breakglass_no_incident": [
+   "admin.breakglass",
+   "admin.prod_ssh",
+   "borg.borglet_priv",
+   "host.ebpf"
+  ],
+  "read_volume_spike": [
+   "colossus.chunkserver",
+   "colossus.curator"
+  ],
+  "b4_replication_spike": [
+   "net.b4"
+  ],
+  "rare_binary": [
+   "corp.auditd",
+   "corp.edr",
+   "corp.santa"
+  ],
+  "bigtable_full_scan": [
+   "bigtable.audit"
+  ],
+  "tpu_unusual_checkpoint_load": [
+   "colossus.curator",
+   "tpu.runtime"
+  ],
+  "ebpf_memfd_exec": [
+   "host.ebpf"
+  ],
+  "priority_quota_abuse": [
+   "borg.master_audit",
+   "borg.scheduler"
+  ],
+  "first_seen_device": [
+   "bc.device_posture",
+   "bc.mtls",
+   "bc.uberproxy"
+  ],
+  "ebpf_bpf_load": [
+   "host.ebpf"
+  ],
+  "spanner_bulk_export": [
+   "spanner.audit"
+  ],
+  "ebpf_sensitive_read": [
+   "host.ebpf"
+  ],
+  "ebpf_namespace_escape": [
+   "host.ebpf"
+  ],
+  "ebpf_ptrace_attach": [
+   "host.ebpf"
+  ],
+  "egress_shift": [
+   "net.jupiter",
+   "obs.monarch"
+  ],
+  "unverified_build": [
+   "admin.build",
+   "borg.bab",
+   "borg.master_audit",
+   "borg.scheduler",
+   "host.ebpf"
+  ],
+  "new_rpc_edge": [
+   "net.alts",
+   "obs.rpc_edge"
+  ],
+  "ebpf_shell_in_container": [
+   "host.ebpf"
+  ],
+  "endpoint_beaconing": [
+   "corp.dns",
+   "corp.netflow"
+  ],
+  "ebpf_unexpected_connect": [
+   "host.ebpf",
+   "net.jupiter"
+  ]
+ },
+ "layers": {
+  "ebpf_kernel_module": [
+   "prod.runtime"
+  ],
+  "off_hours_access": [
+   "corp.identity",
+   "prod.control_plane"
+  ],
+  "review_bypass": [
+   "corp.admin"
+  ],
+  "fast_approval": [
+   "corp.admin",
+   "prod.control_plane"
+  ],
+  "titan_measurement_mismatch": [
+   "prod.control_plane",
+   "prod.runtime"
+  ],
+  "impossible_travel": [
+   "corp.identity"
+  ],
+  "breakglass_no_incident": [
+   "corp.admin",
+   "prod.control_plane",
+   "prod.runtime"
+  ],
+  "read_volume_spike": [
+   "prod.data_plane"
+  ],
+  "b4_replication_spike": [
+   "prod.data_plane"
+  ],
+  "rare_binary": [
+   "corp.endpoint"
+  ],
+  "bigtable_full_scan": [
+   "prod.data_plane"
+  ],
+  "tpu_unusual_checkpoint_load": [
+   "prod.data_plane",
+   "prod.runtime"
+  ],
+  "ebpf_memfd_exec": [
+   "prod.runtime"
+  ],
+  "priority_quota_abuse": [
+   "prod.control_plane"
+  ],
+  "first_seen_device": [
+   "corp.identity"
+  ],
+  "ebpf_bpf_load": [
+   "prod.runtime"
+  ],
+  "spanner_bulk_export": [
+   "prod.data_plane"
+  ],
+  "ebpf_sensitive_read": [
+   "prod.runtime"
+  ],
+  "ebpf_namespace_escape": [
+   "prod.runtime"
+  ],
+  "ebpf_ptrace_attach": [
+   "prod.runtime"
+  ],
+  "egress_shift": [
+   "observability",
+   "prod.runtime"
+  ],
+  "unverified_build": [
+   "corp.admin",
+   "prod.control_plane",
+   "prod.runtime"
+  ],
+  "new_rpc_edge": [
+   "observability",
+   "prod.runtime"
+  ],
+  "ebpf_shell_in_container": [
+   "prod.runtime"
+  ],
+  "endpoint_beaconing": [
+   "corp.endpoint"
+  ],
+  "ebpf_unexpected_connect": [
+   "prod.runtime"
+  ]
+ },
+ "recall_by_type_base": {
+  "P0|unverified_build": [
+   15,
+   15
+  ],
+  "P0|breakglass_no_incident": [
+   13,
+   13
+  ],
+  "P0|titan_measurement_mismatch": [
+   17,
+   17
+  ],
+  "P0|first_seen_device": [
+   14,
+   14
+  ],
+  "P0|impossible_travel": [
+   1,
+   13
+  ],
+  "P0|off_hours_access": [
+   15,
+   15
+  ],
+  "P0|rare_binary": [
+   13,
+   13
+  ],
+  "P0|ebpf_unexpected_connect": [
+   13,
+   13
+  ],
+  "P0|egress_shift": [
+   11,
+   14
+  ],
+  "P0|endpoint_beaconing": [
+   0,
+   15
+  ],
+  "P0|fast_approval": [
+   17,
+   17
+  ],
+  "P0|new_rpc_edge": [
+   0,
+   15
+  ],
+  "P0|priority_quota_abuse": [
+   0,
+   14
+  ],
+  "P0|read_volume_spike": [
+   13,
+   13
+  ],
+  "P0|review_bypass": [
+   14,
+   14
+  ],
+  "P0|tpu_unusual_checkpoint_load": [
+   15,
+   15
+  ],
+  "P0|b4_replication_spike": [
+   0,
+   14
+  ],
+  "P0|bigtable_full_scan": [
+   0,
+   10
+  ],
+  "P0|ebpf_bpf_load": [
+   10,
+   10
+  ],
+  "P0|ebpf_kernel_module": [
+   10,
+   10
+  ],
+  "P0|ebpf_memfd_exec": [
+   11,
+   11
+  ],
+  "P0|ebpf_namespace_escape": [
+   14,
+   14
+  ],
+  "P0|ebpf_ptrace_attach": [
+   20,
+   20
+  ],
+  "P0|ebpf_sensitive_read": [
+   14,
+   14
+  ],
+  "P0|ebpf_shell_in_container": [
+   11,
+   11
+  ],
+  "P0|spanner_bulk_export": [
+   0,
+   15
+  ],
+  "P1|unverified_build": [
+   15,
+   15
+  ],
+  "P1|breakglass_no_incident": [
+   13,
+   13
+  ],
+  "P1|titan_measurement_mismatch": [
+   17,
+   17
+  ],
+  "P1|first_seen_device": [
+   14,
+   14
+  ],
+  "P1|impossible_travel": [
+   1,
+   13
+  ],
+  "P1|off_hours_access": [
+   15,
+   15
+  ],
+  "P1|rare_binary": [
+   13,
+   13
+  ],
+  "P1|ebpf_unexpected_connect": [
+   13,
+   13
+  ],
+  "P1|egress_shift": [
+   11,
+   14
+  ],
+  "P1|endpoint_beaconing": [
+   0,
+   15
+  ],
+  "P1|fast_approval": [
+   17,
+   17
+  ],
+  "P1|new_rpc_edge": [
+   0,
+   15
+  ],
+  "P1|priority_quota_abuse": [
+   0,
+   14
+  ],
+  "P1|read_volume_spike": [
+   13,
+   13
+  ],
+  "P1|review_bypass": [
+   14,
+   14
+  ],
+  "P1|tpu_unusual_checkpoint_load": [
+   3,
+   15
+  ],
+  "P1|b4_replication_spike": [
+   0,
+   14
+  ],
+  "P1|bigtable_full_scan": [
+   0,
+   10
+  ],
+  "P1|ebpf_bpf_load": [
+   10,
+   10
+  ],
+  "P1|ebpf_kernel_module": [
+   10,
+   10
+  ],
+  "P1|ebpf_memfd_exec": [
+   11,
+   11
+  ],
+  "P1|ebpf_namespace_escape": [
+   14,
+   14
+  ],
+  "P1|ebpf_ptrace_attach": [
+   20,
+   20
+  ],
+  "P1|ebpf_sensitive_read": [
+   14,
+   14
+  ],
+  "P1|ebpf_shell_in_container": [
+   11,
+   11
+  ],
+  "P1|spanner_bulk_export": [
+   0,
+   15
+  ],
+  "P2|unverified_build": [
+   0,
+   15
+  ],
+  "P2|breakglass_no_incident": [
+   13,
+   13
+  ],
+  "P2|titan_measurement_mismatch": [
+   0,
+   17
+  ],
+  "P2|first_seen_device": [
+   14,
+   14
+  ],
+  "P2|impossible_travel": [
+   1,
+   13
+  ],
+  "P2|off_hours_access": [
+   14,
+   15
+  ],
+  "P2|rare_binary": [
+   13,
+   13
+  ],
+  "P2|ebpf_unexpected_connect": [
+   13,
+   13
+  ],
+  "P2|egress_shift": [
+   14,
+   14
+  ],
+  "P2|endpoint_beaconing": [
+   0,
+   15
+  ],
+  "P2|fast_approval": [
+   7,
+   17
+  ],
+  "P2|new_rpc_edge": [
+   15,
+   15
+  ],
+  "P2|priority_quota_abuse": [
+   0,
+   14
+  ],
+  "P2|read_volume_spike": [
+   10,
+   13
+  ],
+  "P2|review_bypass": [
+   0,
+   14
+  ],
+  "P2|tpu_unusual_checkpoint_load": [
+   15,
+   15
+  ],
+  "P2|b4_replication_spike": [
+   0,
+   14
+  ],
+  "P2|bigtable_full_scan": [
+   0,
+   10
+  ],
+  "P2|ebpf_bpf_load": [
+   10,
+   10
+  ],
+  "P2|ebpf_kernel_module": [
+   8,
+   10
+  ],
+  "P2|ebpf_memfd_exec": [
+   10,
+   11
+  ],
+  "P2|ebpf_namespace_escape": [
+   14,
+   14
+  ],
+  "P2|ebpf_ptrace_attach": [
+   20,
+   20
+  ],
+  "P2|ebpf_sensitive_read": [
+   0,
+   14
+  ],
+  "P2|ebpf_shell_in_container": [
+   11,
+   11
+  ],
+  "P2|spanner_bulk_export": [
+   0,
+   15
+  ],
+  "P3|unverified_build": [
+   7,
+   15
+  ],
+  "P3|breakglass_no_incident": [
+   8,
+   13
+  ],
+  "P3|titan_measurement_mismatch": [
+   6,
+   17
+  ],
+  "P3|first_seen_device": [
+   10,
+   14
+  ],
+  "P3|impossible_travel": [
+   5,
+   13
+  ],
+  "P3|off_hours_access": [
+   13,
+   15
+  ],
+  "P3|rare_binary": [
+   1,
+   13
+  ],
+  "P3|ebpf_unexpected_connect": [
+   8,
+   13
+  ],
+  "P3|egress_shift": [
+   5,
+   14
+  ],
+  "P3|endpoint_beaconing": [
+   0,
+   15
+  ],
+  "P3|fast_approval": [
+   4,
+   17
+  ],
+  "P3|new_rpc_edge": [
+   8,
+   15
+  ],
+  "P3|priority_quota_abuse": [
+   12,
+   14
+  ],
+  "P3|read_volume_spike": [
+   0,
+   13
+  ],
+  "P3|review_bypass": [
+   4,
+   14
+  ],
+  "P3|tpu_unusual_checkpoint_load": [
+   10,
+   15
+  ],
+  "P3|b4_replication_spike": [
+   0,
+   14
+  ],
+  "P3|bigtable_full_scan": [
+   0,
+   10
+  ],
+  "P3|ebpf_bpf_load": [
+   2,
+   10
+  ],
+  "P3|ebpf_kernel_module": [
+   3,
+   10
+  ],
+  "P3|ebpf_memfd_exec": [
+   0,
+   11
+  ],
+  "P3|ebpf_namespace_escape": [
+   7,
+   14
+  ],
+  "P3|ebpf_ptrace_attach": [
+   2,
+   20
+  ],
+  "P3|ebpf_sensitive_read": [
+   11,
+   14
+  ],
+  "P3|ebpf_shell_in_container": [
+   3,
+   11
+  ],
+  "P3|spanner_bulk_export": [
+   0,
+   15
+  ],
+  "P4|unverified_build": [
+   13,
+   15
+  ],
+  "P4|breakglass_no_incident": [
+   12,
+   13
+  ],
+  "P4|titan_measurement_mismatch": [
+   8,
+   17
+  ],
+  "P4|first_seen_device": [
+   9,
+   14
+  ],
+  "P4|impossible_travel": [
+   10,
+   13
+  ],
+  "P4|off_hours_access": [
+   14,
+   15
+  ],
+  "P4|rare_binary": [
+   5,
+   13
+  ],
+  "P4|ebpf_unexpected_connect": [
+   6,
+   13
+  ],
+  "P4|egress_shift": [
+   12,
+   14
+  ],
+  "P4|endpoint_beaconing": [
+   11,
+   15
+  ],
+  "P4|fast_approval": [
+   16,
+   17
+  ],
+  "P4|new_rpc_edge": [
+   13,
+   15
+  ],
+  "P4|priority_quota_abuse": [
+   13,
+   14
+  ],
+  "P4|read_volume_spike": [
+   9,
+   13
+  ],
+  "P4|review_bypass": [
+   9,
+   14
+  ],
+  "P4|tpu_unusual_checkpoint_load": [
+   10,
+   15
+  ],
+  "P4|b4_replication_spike": [
+   0,
+   14
+  ],
+  "P4|bigtable_full_scan": [
+   4,
+   10
+  ],
+  "P4|ebpf_bpf_load": [
+   3,
+   10
+  ],
+  "P4|ebpf_kernel_module": [
+   4,
+   10
+  ],
+  "P4|ebpf_memfd_exec": [
+   2,
+   11
+  ],
+  "P4|ebpf_namespace_escape": [
+   6,
+   14
+  ],
+  "P4|ebpf_ptrace_attach": [
+   6,
+   20
+  ],
+  "P4|ebpf_sensitive_read": [
+   5,
+   14
+  ],
+  "P4|ebpf_shell_in_container": [
+   5,
+   11
+  ],
+  "P4|spanner_bulk_export": [
+   3,
+   15
+  ],
+  "P5|unverified_build": [
+   15,
+   15
+  ],
+  "P5|breakglass_no_incident": [
+   13,
+   13
+  ],
+  "P5|titan_measurement_mismatch": [
+   16,
+   17
+  ],
+  "P5|first_seen_device": [
+   14,
+   14
+  ],
+  "P5|impossible_travel": [
+   1,
+   13
+  ],
+  "P5|off_hours_access": [
+   15,
+   15
+  ],
+  "P5|rare_binary": [
+   11,
+   13
+  ],
+  "P5|ebpf_unexpected_connect": [
+   13,
+   13
+  ],
+  "P5|egress_shift": [
+   14,
+   14
+  ],
+  "P5|endpoint_beaconing": [
+   0,
+   15
+  ],
+  "P5|fast_approval": [
+   17,
+   17
+  ],
+  "P5|new_rpc_edge": [
+   15,
+   15
+  ],
+  "P5|priority_quota_abuse": [
+   0,
+   14
+  ],
+  "P5|read_volume_spike": [
+   13,
+   13
+  ],
+  "P5|review_bypass": [
+   13,
+   14
+  ],
+  "P5|tpu_unusual_checkpoint_load": [
+   14,
+   15
+  ],
+  "P5|b4_replication_spike": [
+   0,
+   14
+  ],
+  "P5|bigtable_full_scan": [
+   0,
+   10
+  ],
+  "P5|ebpf_bpf_load": [
+   10,
+   10
+  ],
+  "P5|ebpf_kernel_module": [
+   10,
+   10
+  ],
+  "P5|ebpf_memfd_exec": [
+   11,
+   11
+  ],
+  "P5|ebpf_namespace_escape": [
+   14,
+   14
+  ],
+  "P5|ebpf_ptrace_attach": [
+   20,
+   20
+  ],
+  "P5|ebpf_sensitive_read": [
+   14,
+   14
+  ],
+  "P5|ebpf_shell_in_container": [
+   11,
+   11
+  ],
+  "P5|spanner_bulk_export": [
+   0,
+   15
+  ],
+  "P6|unverified_build": [
+   15,
+   15
+  ],
+  "P6|breakglass_no_incident": [
+   13,
+   13
+  ],
+  "P6|titan_measurement_mismatch": [
+   14,
+   17
+  ],
+  "P6|first_seen_device": [
+   14,
+   14
+  ],
+  "P6|impossible_travel": [
+   0,
+   13
+  ],
+  "P6|off_hours_access": [
+   14,
+   15
+  ],
+  "P6|rare_binary": [
+   7,
+   13
+  ],
+  "P6|ebpf_unexpected_connect": [
+   12,
+   13
+  ],
+  "P6|egress_shift": [
+   14,
+   14
+  ],
+  "P6|endpoint_beaconing": [
+   0,
+   15
+  ],
+  "P6|fast_approval": [
+   0,
+   17
+  ],
+  "P6|new_rpc_edge": [
+   15,
+   15
+  ],
+  "P6|priority_quota_abuse": [
+   0,
+   14
+  ],
+  "P6|read_volume_spike": [
+   12,
+   13
+  ],
+  "P6|review_bypass": [
+   1,
+   14
+  ],
+  "P6|tpu_unusual_checkpoint_load": [
+   2,
+   15
+  ],
+  "P6|b4_replication_spike": [
+   0,
+   14
+  ],
+  "P6|bigtable_full_scan": [
+   0,
+   10
+  ],
+  "P6|ebpf_bpf_load": [
+   10,
+   10
+  ],
+  "P6|ebpf_kernel_module": [
+   10,
+   10
+  ],
+  "P6|ebpf_memfd_exec": [
+   11,
+   11
+  ],
+  "P6|ebpf_namespace_escape": [
+   14,
+   14
+  ],
+  "P6|ebpf_ptrace_attach": [
+   20,
+   20
+  ],
+  "P6|ebpf_sensitive_read": [
+   14,
+   14
+  ],
+  "P6|ebpf_shell_in_container": [
+   11,
+   11
+  ],
+  "P6|spanner_bulk_export": [
+   0,
+   15
+  ],
+  "P6-hyper|unverified_build": [
+   15,
+   15
+  ],
+  "P6-hyper|breakglass_no_incident": [
+   13,
+   13
+  ],
+  "P6-hyper|titan_measurement_mismatch": [
+   5,
+   17
+  ],
+  "P6-hyper|first_seen_device": [
+   14,
+   14
+  ],
+  "P6-hyper|impossible_travel": [
+   1,
+   13
+  ],
+  "P6-hyper|off_hours_access": [
+   11,
+   15
+  ],
+  "P6-hyper|rare_binary": [
+   13,
+   13
+  ],
+  "P6-hyper|ebpf_unexpected_connect": [
+   13,
+   13
+  ],
+  "P6-hyper|egress_shift": [
+   13,
+   14
+  ],
+  "P6-hyper|endpoint_beaconing": [
+   0,
+   15
+  ],
+  "P6-hyper|fast_approval": [
+   9,
+   17
+  ],
+  "P6-hyper|new_rpc_edge": [
+   15,
+   15
+  ],
+  "P6-hyper|priority_quota_abuse": [
+   0,
+   14
+  ],
+  "P6-hyper|read_volume_spike": [
+   11,
+   13
+  ],
+  "P6-hyper|review_bypass": [
+   12,
+   14
+  ],
+  "P6-hyper|tpu_unusual_checkpoint_load": [
+   5,
+   15
+  ],
+  "P6-hyper|b4_replication_spike": [
+   0,
+   14
+  ],
+  "P6-hyper|bigtable_full_scan": [
+   0,
+   10
+  ],
+  "P6-hyper|ebpf_bpf_load": [
+   8,
+   10
+  ],
+  "P6-hyper|ebpf_kernel_module": [
+   10,
+   10
+  ],
+  "P6-hyper|ebpf_memfd_exec": [
+   7,
+   11
+  ],
+  "P6-hyper|ebpf_namespace_escape": [
+   13,
+   14
+  ],
+  "P6-hyper|ebpf_ptrace_attach": [
+   11,
+   20
+  ],
+  "P6-hyper|ebpf_sensitive_read": [
+   14,
+   14
+  ],
+  "P6-hyper|ebpf_shell_in_container": [
+   11,
+   11
+  ],
+  "P6-hyper|spanner_bulk_export": [
+   0,
+   15
+  ],
+  "P6+P4|unverified_build": [
+   15,
+   15
+  ],
+  "P6+P4|breakglass_no_incident": [
+   12,
+   13
+  ],
+  "P6+P4|titan_measurement_mismatch": [
+   5,
+   17
+  ],
+  "P6+P4|first_seen_device": [
+   14,
+   14
+  ],
+  "P6+P4|impossible_travel": [
+   4,
+   13
+  ],
+  "P6+P4|off_hours_access": [
+   13,
+   15
+  ],
+  "P6+P4|rare_binary": [
+   13,
+   13
+  ],
+  "P6+P4|ebpf_unexpected_connect": [
+   12,
+   13
+  ],
+  "P6+P4|egress_shift": [
+   14,
+   14
+  ],
+  "P6+P4|endpoint_beaconing": [
+   1,
+   15
+  ],
+  "P6+P4|fast_approval": [
+   15,
+   17
+  ],
+  "P6+P4|new_rpc_edge": [
+   14,
+   15
+  ],
+  "P6+P4|priority_quota_abuse": [
+   5,
+   14
+  ],
+  "P6+P4|read_volume_spike": [
+   10,
+   13
+  ],
+  "P6+P4|review_bypass": [
+   14,
+   14
+  ],
+  "P6+P4|tpu_unusual_checkpoint_load": [
+   14,
+   15
+  ],
+  "P6+P4|b4_replication_spike": [
+   0,
+   14
+  ],
+  "P6+P4|bigtable_full_scan": [
+   2,
+   10
+  ],
+  "P6+P4|ebpf_bpf_load": [
+   10,
+   10
+  ],
+  "P6+P4|ebpf_kernel_module": [
+   10,
+   10
+  ],
+  "P6+P4|ebpf_memfd_exec": [
+   7,
+   11
+  ],
+  "P6+P4|ebpf_namespace_escape": [
+   12,
+   14
+  ],
+  "P6+P4|ebpf_ptrace_attach": [
+   13,
+   20
+  ],
+  "P6+P4|ebpf_sensitive_read": [
+   14,
+   14
+  ],
+  "P6+P4|ebpf_shell_in_container": [
+   11,
+   11
+  ],
+  "P6+P4|spanner_bulk_export": [
+   0,
+   15
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "train": {
+  "cases": 1208,
+  "other_fp": 289,
+  "benign_lookalike": 229,
+  "anomaly": 690,
+  "seeds": [
+   101,
+   102,
+   103,
+   104,
+   105,
+   106,
+   107,
+   108,
+   109,
+   110
+  ]
+ },
+ "test": {
+  "cases": 345,
+  "anomaly": 186,
+  "other_fp": 91,
+  "benign_lookalike": 68,
+  "seeds": [
+   7,
+   8,
+   9
+  ]
+ }
+}

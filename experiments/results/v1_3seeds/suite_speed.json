@@ -1,0 +1,1583 @@
+[
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 1,
+  "pipeline": "P0",
+  "alerts": 1041,
+  "alerts_per_day": 1041.0,
+  "precision": 0.1633,
+  "fp_per_day": 871.0,
+  "fp_lookalike_per_day": 92.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 80,
+   "incident_response": 12
+  },
+  "fp_per_day_by_rule": {
+   "access_deny_high_tier": 318.0,
+   "ptrace_attach": 226.0,
+   "bulk_read_50gb_window": 112.0,
+   "attestation_failed": 59.0,
+   "offhours_prod_app": 45.0,
+   "edr_alert_medium_plus": 10.0,
+   "usb_mass_storage": 9.0
+  },
+  "cases": 36,
+  "recall": 0.7222,
+  "recall_by_family": {
+   "nhi": 0.455,
+   "runtime": 0.882,
+   "ueba": 0.75
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "0/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "1/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "1/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 0.0,
+   "p95": 138.4
+  },
+  "average_precision": 0.4159,
+  "recall_at_fp_per_day": {
+   "1/day": 0.417,
+   "10/day": 0.417,
+   "100/day": 0.417
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 0.4,
+    "p95": 3.2,
+    "p99": 4.8,
+    "max": 105.8
+   },
+   "throughput_eps": 1158226,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 1,
+  "pipeline": "P2",
+  "alerts": 370,
+  "alerts_per_day": 370.0,
+  "precision": 0.1,
+  "fp_per_day": 333.0,
+  "fp_lookalike_per_day": 51.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 44,
+   "incident_response": 7
+  },
+  "fp_per_day_by_rule": {
+   "new_prod_app_for_user": 200.0,
+   "new_job_read_by_user": 52.0,
+   "new_device_for_user": 30.0
+  },
+  "cases": 36,
+  "recall": 0.5278,
+  "recall_by_family": {
+   "nhi": 0.364,
+   "runtime": 0.647,
+   "ueba": 0.5
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "0/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "0/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "0/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "0/1",
+   "review_bypass": "0/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "0/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "0/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 0.0,
+   "p95": 352.7
+  },
+  "average_precision": 0.2368,
+  "recall_at_fp_per_day": {
+   "1/day": 0.028,
+   "10/day": 0.028,
+   "100/day": 0.5
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 1.0,
+    "p95": 5.5,
+    "p99": 11.5,
+    "max": 208.7
+   },
+   "throughput_eps": 567676,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 1,
+  "pipeline": "P5",
+  "alerts": 419,
+  "alerts_per_day": 419.0,
+  "precision": 0.7064,
+  "fp_per_day": 123.0,
+  "fp_lookalike_per_day": 123.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 1097
+  },
+  "fp_per_day_by_rule": {},
+  "cases": 36,
+  "recall": 0.7778,
+  "recall_by_family": {
+   "nhi": 0.636,
+   "runtime": 0.882,
+   "ueba": 0.75
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "1/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "1/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 28.1,
+   "p95": 1095.2
+  },
+  "average_precision": 0.7792,
+  "recall_at_fp_per_day": {
+   "1/day": 0.556,
+   "10/day": 0.611,
+   "100/day": 0.75
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 6.2,
+    "p95": 11.5,
+    "p99": 14.4,
+    "max": 1027.7
+   },
+   "throughput_eps": 138139,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 1,
+  "pipeline": "P6",
+  "alerts": 63,
+  "alerts_per_day": 63.0,
+  "precision": 0.7937,
+  "fp_per_day": 13.0,
+  "fp_lookalike_per_day": 13.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 36,
+   "incident_response": 1
+  },
+  "fp_per_day_by_rule": {},
+  "cases": 36,
+  "recall": 0.6667,
+  "recall_by_family": {
+   "nhi": 0.636,
+   "runtime": 0.824,
+   "ueba": 0.375
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "0/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "0/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "0/1",
+   "tpu_unusual_checkpoint_load": "0/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 15.0,
+   "p95": 14943.0
+  },
+  "average_precision": 0.868,
+  "recall_at_fp_per_day": {
+   "1/day": 0.194,
+   "10/day": 0.667,
+   "100/day": 0.667
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 3.5,
+    "p95": 7.0,
+    "p99": 12.4,
+    "max": 219.3
+   },
+   "throughput_eps": 236875,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 1000,
+  "pipeline": "P0",
+  "alerts": 1041,
+  "alerts_per_day": 1041.0,
+  "precision": 0.1633,
+  "fp_per_day": 871.0,
+  "fp_lookalike_per_day": 92.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 80,
+   "incident_response": 12
+  },
+  "fp_per_day_by_rule": {
+   "access_deny_high_tier": 318.0,
+   "ptrace_attach": 226.0,
+   "bulk_read_50gb_window": 112.0,
+   "attestation_failed": 59.0,
+   "offhours_prod_app": 45.0,
+   "edr_alert_medium_plus": 10.0,
+   "usb_mass_storage": 9.0
+  },
+  "cases": 36,
+  "recall": 0.7222,
+  "recall_by_family": {
+   "nhi": 0.455,
+   "runtime": 0.882,
+   "ueba": 0.75
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "0/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "1/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "1/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 0.0,
+   "p95": 138.4
+  },
+  "average_precision": 0.4159,
+  "recall_at_fp_per_day": {
+   "1/day": 0.417,
+   "10/day": 0.417,
+   "100/day": 0.417
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 0.4,
+    "p95": 3.2,
+    "p99": 4.7,
+    "max": 204.9
+   },
+   "throughput_eps": 1147705,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 1000,
+  "pipeline": "P2",
+  "alerts": 370,
+  "alerts_per_day": 370.0,
+  "precision": 0.1,
+  "fp_per_day": 333.0,
+  "fp_lookalike_per_day": 51.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 44,
+   "incident_response": 7
+  },
+  "fp_per_day_by_rule": {
+   "new_prod_app_for_user": 200.0,
+   "new_job_read_by_user": 52.0,
+   "new_device_for_user": 30.0
+  },
+  "cases": 36,
+  "recall": 0.5278,
+  "recall_by_family": {
+   "nhi": 0.364,
+   "runtime": 0.647,
+   "ueba": 0.5
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "0/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "0/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "0/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "0/1",
+   "review_bypass": "0/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "0/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "0/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 0.0,
+   "p95": 352.7
+  },
+  "average_precision": 0.2368,
+  "recall_at_fp_per_day": {
+   "1/day": 0.028,
+   "10/day": 0.028,
+   "100/day": 0.5
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 1.0,
+    "p95": 5.7,
+    "p99": 12.1,
+    "max": 245.6
+   },
+   "throughput_eps": 545548,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 1000,
+  "pipeline": "P5",
+  "alerts": 419,
+  "alerts_per_day": 419.0,
+  "precision": 0.7064,
+  "fp_per_day": 123.0,
+  "fp_lookalike_per_day": 123.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 1097
+  },
+  "fp_per_day_by_rule": {},
+  "cases": 36,
+  "recall": 0.7778,
+  "recall_by_family": {
+   "nhi": 0.636,
+   "runtime": 0.882,
+   "ueba": 0.75
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "1/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "1/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 28.1,
+   "p95": 1095.3
+  },
+  "average_precision": 0.7792,
+  "recall_at_fp_per_day": {
+   "1/day": 0.556,
+   "10/day": 0.611,
+   "100/day": 0.75
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 6.3,
+    "p95": 11.7,
+    "p99": 15.1,
+    "max": 22143.9
+   },
+   "throughput_eps": 134883,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 1000,
+  "pipeline": "P6",
+  "alerts": 63,
+  "alerts_per_day": 63.0,
+  "precision": 0.7937,
+  "fp_per_day": 13.0,
+  "fp_lookalike_per_day": 13.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 36,
+   "incident_response": 1
+  },
+  "fp_per_day_by_rule": {},
+  "cases": 36,
+  "recall": 0.6667,
+  "recall_by_family": {
+   "nhi": 0.636,
+   "runtime": 0.824,
+   "ueba": 0.375
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "0/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "0/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "0/1",
+   "tpu_unusual_checkpoint_load": "0/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 15.1,
+   "p95": 14943.0
+  },
+  "average_precision": 0.868,
+  "recall_at_fp_per_day": {
+   "1/day": 0.194,
+   "10/day": 0.667,
+   "100/day": 0.667
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 3.5,
+    "p95": 7.1,
+    "p99": 13.3,
+    "max": 237.4
+   },
+   "throughput_eps": 231719,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.0
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 10000,
+  "pipeline": "P0",
+  "alerts": 1041,
+  "alerts_per_day": 1041.0,
+  "precision": 0.1633,
+  "fp_per_day": 871.0,
+  "fp_lookalike_per_day": 92.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 80,
+   "incident_response": 12
+  },
+  "fp_per_day_by_rule": {
+   "access_deny_high_tier": 318.0,
+   "ptrace_attach": 226.0,
+   "bulk_read_50gb_window": 112.0,
+   "attestation_failed": 59.0,
+   "offhours_prod_app": 45.0,
+   "edr_alert_medium_plus": 10.0,
+   "usb_mass_storage": 9.0
+  },
+  "cases": 36,
+  "recall": 0.7222,
+  "recall_by_family": {
+   "nhi": 0.455,
+   "runtime": 0.882,
+   "ueba": 0.75
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "0/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "1/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "1/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 0.1,
+   "p95": 138.4
+  },
+  "average_precision": 0.4159,
+  "recall_at_fp_per_day": {
+   "1/day": 0.417,
+   "10/day": 0.417,
+   "100/day": 0.417
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 0.4,
+    "p95": 3.3,
+    "p99": 5.7,
+    "max": 96.8
+   },
+   "throughput_eps": 1095088,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 0.1
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 10000,
+  "pipeline": "P2",
+  "alerts": 370,
+  "alerts_per_day": 370.0,
+  "precision": 0.1,
+  "fp_per_day": 333.0,
+  "fp_lookalike_per_day": 51.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 44,
+   "incident_response": 7
+  },
+  "fp_per_day_by_rule": {
+   "new_prod_app_for_user": 200.0,
+   "new_job_read_by_user": 52.0,
+   "new_device_for_user": 30.0
+  },
+  "cases": 36,
+  "recall": 0.5278,
+  "recall_by_family": {
+   "nhi": 0.364,
+   "runtime": 0.647,
+   "ueba": 0.5
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "0/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "0/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "0/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "0/1",
+   "review_bypass": "0/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "0/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "0/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 0.1,
+   "p95": 352.7
+  },
+  "average_precision": 0.2368,
+  "recall_at_fp_per_day": {
+   "1/day": 0.028,
+   "10/day": 0.028,
+   "100/day": 0.5
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 1.0,
+    "p95": 5.8,
+    "p99": 12.3,
+    "max": 186.5
+   },
+   "throughput_eps": 538238,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 6.2
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 10000,
+  "pipeline": "P5",
+  "alerts": 419,
+  "alerts_per_day": 419.0,
+  "precision": 0.7064,
+  "fp_per_day": 123.0,
+  "fp_lookalike_per_day": 123.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 1097
+  },
+  "fp_per_day_by_rule": {},
+  "cases": 36,
+  "recall": 0.7778,
+  "recall_by_family": {
+   "nhi": 0.636,
+   "runtime": 0.882,
+   "ueba": 0.75
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "1/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "1/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 36.4,
+   "p95": 1096.0
+  },
+  "average_precision": 0.7792,
+  "recall_at_fp_per_day": {
+   "1/day": 0.556,
+   "10/day": 0.611,
+   "100/day": 0.75
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 6.4,
+    "p95": 12.2,
+    "p99": 15.7,
+    "max": 1252.6
+   },
+   "throughput_eps": 132486,
+   "detection_delay_s": {
+    "p50": 0.1,
+    "p99": 12.2
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 10000,
+  "pipeline": "P6",
+  "alerts": 63,
+  "alerts_per_day": 63.0,
+  "precision": 0.7937,
+  "fp_per_day": 13.0,
+  "fp_lookalike_per_day": 13.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 36,
+   "incident_response": 1
+  },
+  "fp_per_day_by_rule": {},
+  "cases": 36,
+  "recall": 0.6667,
+  "recall_by_family": {
+   "nhi": 0.636,
+   "runtime": 0.824,
+   "ueba": 0.375
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "0/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "0/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "0/1",
+   "tpu_unusual_checkpoint_load": "0/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 15.3,
+   "p95": 14943.3
+  },
+  "average_precision": 0.868,
+  "recall_at_fp_per_day": {
+   "1/day": 0.194,
+   "10/day": 0.667,
+   "100/day": 0.667
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 3.5,
+    "p95": 7.3,
+    "p99": 13.6,
+    "max": 229.1
+   },
+   "throughput_eps": 228964,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 7.9
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 50000,
+  "pipeline": "P0",
+  "alerts": 1041,
+  "alerts_per_day": 1041.0,
+  "precision": 0.1633,
+  "fp_per_day": 871.0,
+  "fp_lookalike_per_day": 92.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 80,
+   "incident_response": 12
+  },
+  "fp_per_day_by_rule": {
+   "access_deny_high_tier": 318.0,
+   "ptrace_attach": 226.0,
+   "bulk_read_50gb_window": 112.0,
+   "attestation_failed": 59.0,
+   "offhours_prod_app": 45.0,
+   "edr_alert_medium_plus": 10.0,
+   "usb_mass_storage": 9.0
+  },
+  "cases": 36,
+  "recall": 0.7222,
+  "recall_by_family": {
+   "nhi": 0.455,
+   "runtime": 0.882,
+   "ueba": 0.75
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "0/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "1/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "1/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 0.4,
+   "p95": 138.6
+  },
+  "average_precision": 0.4159,
+  "recall_at_fp_per_day": {
+   "1/day": 0.417,
+   "10/day": 0.417,
+   "100/day": 0.417
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 0.4,
+    "p95": 3.2,
+    "p99": 5.1,
+    "max": 211.9
+   },
+   "throughput_eps": 1124726,
+   "detection_delay_s": {
+    "p50": 0.0,
+    "p99": 1.2
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 50000,
+  "pipeline": "P2",
+  "alerts": 370,
+  "alerts_per_day": 370.0,
+  "precision": 0.1,
+  "fp_per_day": 333.0,
+  "fp_lookalike_per_day": 51.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 44,
+   "incident_response": 7
+  },
+  "fp_per_day_by_rule": {
+   "new_prod_app_for_user": 200.0,
+   "new_job_read_by_user": 52.0,
+   "new_device_for_user": 30.0
+  },
+  "cases": 36,
+  "recall": 0.5278,
+  "recall_by_family": {
+   "nhi": 0.364,
+   "runtime": 0.647,
+   "ueba": 0.5
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "0/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "0/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "0/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "0/1",
+   "review_bypass": "0/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "0/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "0/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 0.4,
+   "p95": 352.9
+  },
+  "average_precision": 0.2368,
+  "recall_at_fp_per_day": {
+   "1/day": 0.028,
+   "10/day": 0.028,
+   "100/day": 0.5
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 1.0,
+    "p95": 5.8,
+    "p99": 12.2,
+    "max": 150.8
+   },
+   "throughput_eps": 540642,
+   "detection_delay_s": {
+    "p50": 0.1,
+    "p99": 48.1
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 50000,
+  "pipeline": "P5",
+  "alerts": 449,
+  "alerts_per_day": 449.0,
+  "precision": 0.6592,
+  "fp_per_day": 153.0,
+  "fp_lookalike_per_day": 152.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 1242
+  },
+  "fp_per_day_by_rule": {
+   "risk:noisy_or": 1.0
+  },
+  "cases": 36,
+  "recall": 0.7778,
+  "recall_by_family": {
+   "nhi": 0.636,
+   "runtime": 0.882,
+   "ueba": 0.75
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "1/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "1/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 73576.0,
+   "p95": 77836.3
+  },
+  "average_precision": 0.7689,
+  "recall_at_fp_per_day": {
+   "1/day": 0.556,
+   "10/day": 0.611,
+   "100/day": 0.75
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 6.4,
+    "p95": 11.9,
+    "p99": 15.3,
+    "max": 2184.0
+   },
+   "throughput_eps": 133510,
+   "detection_delay_s": {
+    "p50": 58174.0,
+    "p99": 101460.6
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 50000,
+  "pipeline": "P6",
+  "alerts": 64,
+  "alerts_per_day": 64.0,
+  "precision": 0.7812,
+  "fp_per_day": 14.0,
+  "fp_lookalike_per_day": 14.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 41,
+   "incident_response": 1
+  },
+  "fp_per_day_by_rule": {},
+  "cases": 36,
+  "recall": 0.6667,
+  "recall_by_family": {
+   "nhi": 0.636,
+   "runtime": 0.824,
+   "ueba": 0.375
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "0/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "0/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "0/1",
+   "tpu_unusual_checkpoint_load": "0/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 17833.8,
+   "p95": 31883.7
+  },
+  "average_precision": 0.8669,
+  "recall_at_fp_per_day": {
+   "1/day": 0.194,
+   "10/day": 0.667,
+   "100/day": 0.667
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 3.5,
+    "p95": 7.2,
+    "p99": 13.5,
+    "max": 260.0
+   },
+   "throughput_eps": 229957,
+   "detection_delay_s": {
+    "p50": 10341.8,
+    "p99": 22639.2
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 100000,
+  "pipeline": "P0",
+  "alerts": 1041,
+  "alerts_per_day": 1041.0,
+  "precision": 0.1633,
+  "fp_per_day": 871.0,
+  "fp_lookalike_per_day": 92.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 80,
+   "incident_response": 12
+  },
+  "fp_per_day_by_rule": {
+   "access_deny_high_tier": 318.0,
+   "ptrace_attach": 226.0,
+   "bulk_read_50gb_window": 112.0,
+   "attestation_failed": 59.0,
+   "offhours_prod_app": 45.0,
+   "edr_alert_medium_plus": 10.0,
+   "usb_mass_storage": 9.0
+  },
+  "cases": 36,
+  "recall": 0.7222,
+  "recall_by_family": {
+   "nhi": 0.455,
+   "runtime": 0.882,
+   "ueba": 0.75
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "0/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "1/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "1/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 0.7,
+   "p95": 138.9
+  },
+  "average_precision": 0.4159,
+  "recall_at_fp_per_day": {
+   "1/day": 0.417,
+   "10/day": 0.417,
+   "100/day": 0.417
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 0.4,
+    "p95": 3.2,
+    "p99": 4.5,
+    "max": 204.6
+   },
+   "throughput_eps": 1154373,
+   "detection_delay_s": {
+    "p50": 0.2,
+    "p99": 6.3
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 100000,
+  "pipeline": "P2",
+  "alerts": 370,
+  "alerts_per_day": 370.0,
+  "precision": 0.1,
+  "fp_per_day": 333.0,
+  "fp_lookalike_per_day": 51.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 44,
+   "incident_response": 7
+  },
+  "fp_per_day_by_rule": {
+   "new_prod_app_for_user": 200.0,
+   "new_job_read_by_user": 52.0,
+   "new_device_for_user": 30.0
+  },
+  "cases": 36,
+  "recall": 0.5278,
+  "recall_by_family": {
+   "nhi": 0.364,
+   "runtime": 0.647,
+   "ueba": 0.5
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "0/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "0/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "0/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "0/1",
+   "review_bypass": "0/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "0/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "0/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 690.1,
+   "p95": 9268.7
+  },
+  "average_precision": 0.2368,
+  "recall_at_fp_per_day": {
+   "1/day": 0.028,
+   "10/day": 0.028,
+   "100/day": 0.5
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 1.0,
+    "p95": 5.7,
+    "p99": 12.1,
+    "max": 218.1
+   },
+   "throughput_eps": 549170,
+   "detection_delay_s": {
+    "p50": 2614.5,
+    "p99": 9420.1
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 100000,
+  "pipeline": "P5",
+  "alerts": 462,
+  "alerts_per_day": 462.0,
+  "precision": 0.6407,
+  "fp_per_day": 166.0,
+  "fp_lookalike_per_day": 160.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 1254
+  },
+  "fp_per_day_by_rule": {
+   "risk:noisy_or": 6.0
+  },
+  "cases": 36,
+  "recall": 0.7778,
+  "recall_by_family": {
+   "nhi": 0.636,
+   "runtime": 0.882,
+   "ueba": 0.75
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "1/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "1/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "1/1",
+   "tpu_unusual_checkpoint_load": "1/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 223789.3,
+   "p95": 260626.1
+  },
+  "average_precision": 0.7658,
+  "recall_at_fp_per_day": {
+   "1/day": 0.556,
+   "10/day": 0.611,
+   "100/day": 0.75
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 6.3,
+    "p95": 11.6,
+    "p99": 15.1,
+    "max": 24021.3
+   },
+   "throughput_eps": 135160,
+   "detection_delay_s": {
+    "p50": 167239.0,
+    "p99": 323545.5
+   }
+  }
+ },
+ {
+  "plan": "speed",
+  "seed": 1,
+  "speed": 100000,
+  "pipeline": "P6",
+  "alerts": 67,
+  "alerts_per_day": 67.0,
+  "precision": 0.7463,
+  "fp_per_day": 17.0,
+  "fp_lookalike_per_day": 16.0,
+  "fp_lookalike_by_type": {
+   "routine_prod_session": 45,
+   "incident_response": 1
+  },
+  "fp_per_day_by_rule": {
+   "risk:noisy_or": 1.0
+  },
+  "cases": 36,
+  "recall": 0.6667,
+  "recall_by_family": {
+   "nhi": 0.636,
+   "runtime": 0.824,
+   "ueba": 0.375
+  },
+  "recall_by_type": {
+   "b4_replication_spike": "0/1",
+   "bigtable_full_scan": "0/1",
+   "breakglass_no_incident": "1/1",
+   "ebpf_bpf_load": "1/1",
+   "ebpf_kernel_module": "1/1",
+   "ebpf_memfd_exec": "1/1",
+   "ebpf_namespace_escape": "2/2",
+   "ebpf_ptrace_attach": "2/2",
+   "ebpf_sensitive_read": "2/2",
+   "ebpf_shell_in_container": "2/2",
+   "ebpf_unexpected_connect": "2/2",
+   "egress_shift": "2/2",
+   "endpoint_beaconing": "0/2",
+   "fast_approval": "0/1",
+   "first_seen_device": "1/1",
+   "impossible_travel": "0/1",
+   "new_rpc_edge": "2/2",
+   "off_hours_access": "1/1",
+   "priority_quota_abuse": "0/1",
+   "rare_binary": "1/1",
+   "read_volume_spike": "1/1",
+   "review_bypass": "0/1",
+   "spanner_bulk_export": "0/2",
+   "titan_measurement_mismatch": "0/1",
+   "tpu_unusual_checkpoint_load": "0/1",
+   "unverified_build": "2/2"
+  },
+  "bundles": 0,
+  "bundle_recall": null,
+  "ttd_s": {
+   "p50": 97603.4,
+   "p95": 111279.2
+  },
+  "average_precision": 0.8457,
+  "recall_at_fp_per_day": {
+   "1/day": 0.194,
+   "10/day": 0.611,
+   "100/day": 0.667
+  },
+  "latency": {
+   "per_event_us": {
+    "p50": 3.5,
+    "p95": 7.2,
+    "p99": 13.4,
+    "max": 239.0
+   },
+   "throughput_eps": 230525,
+   "detection_delay_s": {
+    "p50": 74584.8,
+    "p99": 136525.7
+   }
+  }
+ }
+]

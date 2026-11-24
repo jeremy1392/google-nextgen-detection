@@ -1,0 +1,132 @@
+{
+ "dataset": "darpa-tc-e3-cadets",
+ "pipeline": "P6",
+ "events": 41350895,
+ "cases_mode": "windows",
+ "case_sizes": {
+  "tc-cadets-nginx_drakon_2": 35,
+  "tc-cadets-nginx_drakon_3": 44709,
+  "tc-cadets-nginx_drakon_4": 20812
+ },
+ "warmup_days": 3.0,
+ "wall_s": 269.6,
+ "evidence_completeness": 0.002,
+ "attack_coverage": "0/0",
+ "attack_missed": [],
+ "brier": 0.5736,
+ "reliability": [
+  {
+   "bin": "0.0-0.1",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.1-0.2",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.2-0.3",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.3-0.4",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.4-0.5",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.5-0.6",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.6-0.7",
+   "alerts": 0,
+   "anomaly_rate": null
+  },
+  {
+   "bin": "0.7-0.8",
+   "alerts": 584,
+   "anomaly_rate": 0.045
+  },
+  {
+   "bin": "0.8-0.9",
+   "alerts": 61,
+   "anomaly_rate": 0.098
+  },
+  {
+   "bin": "0.9-1.0",
+   "alerts": 115,
+   "anomaly_rate": 0.0
+  }
+ ],
+ "batch_s": null,
+ "alerts": 760,
+ "alerts_per_day": 95.3,
+ "precision": 0.0421,
+ "fp_per_day": 91.3,
+ "fp_lookalike_per_day": 0.0,
+ "fp_lookalike_by_type": {},
+ "fp_per_day_by_rule": {
+  "risk:noisy_or": 91.3
+ },
+ "cases": 3,
+ "recall": 0.6667,
+ "recall_by_family": {
+  "other": 0.667
+ },
+ "recall_by_type": {
+  "nginx_drakon_2": "0/1",
+  "nginx_drakon_3": "1/1",
+  "nginx_drakon_4": "1/1"
+ },
+ "bundles": 0,
+ "bundle_recall": null,
+ "ttd_s": {
+  "p50": 140.2,
+  "p95": 140.2
+ },
+ "average_precision": 0.043,
+ "recall_at_fp_per_day": {
+  "1/day": 0.0,
+  "10/day": 0.0,
+  "100/day": 0.667
+ },
+ "node_level": {
+  "labelled_nodes": 12858,
+  "labelled_nodes_seen_after_warmup": 12857,
+  "flagged_nodes": 9303,
+  "true_positive_nodes": 40,
+  "node_precision": 0.0043,
+  "node_recall": 0.0031,
+  "attack_nodes": 12848,
+  "attack_nodes_flagged": 32,
+  "attack_node_recall": 0.0025,
+  "attack_node_precision": 0.0034
+ },
+ "latency": {
+  "per_event_us": {
+   "p50": 2.5,
+   "p95": 3.5,
+   "p99": 6.9,
+   "max": 245241.1
+  },
+  "throughput_eps": 368762,
+  "detection_delay_s": {
+   "p50": 0.0,
+   "p99": 0.0
+  },
+  "overload": {
+   "dropped": 0,
+   "dropped_share": 0.0,
+   "peak_backlog_s": 0.2,
+   "peak_backlog_events": 618
+  }
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "model": "MalConvGCT (C=256, W=256, S=64), whole files up to 64 MB",
+ "history": [
+  {
+   "epoch": 0,
+   "train_loss": 0.04643249104485803,
+   "val_auc": 0.9998716954395579,
+   "seconds": 1136.5,
+   "samples": 113775
+  },
+  {
+   "epoch": 1,
+   "train_loss": 0.009604623708637993,
+   "val_auc": 0.99267344064753,
+   "seconds": 1025.8,
+   "samples": 113775
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.008295078737947562,
+   "val_auc": 0.9998291052794316,
+   "seconds": 1026.4,
+   "samples": 113775
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.010900698178257966,
+   "val_auc": 0.9999925446783042,
+   "seconds": 1019.4,
+   "samples": 113775
+  }
+ ],
+ "best_epoch": 3,
+ "train_mal": 59638,
+ "train_ben": 54137,
+ "test": {
+  "n_mal": 29992.0,
+  "n_ben": 13423.0,
+  "roc_auc": 0.999993036211976,
+  "tpr_at_fpr": [
+   {
+    "fpr_target": 0.01,
+    "threshold": 0.00021654405281879008,
+    "tpr": 0.9999666577754067,
+    "tpr_ci95": [
+     0.9998,
+     1.0
+    ]
+   },
+   {
+    "fpr_target": 0.001,
+    "threshold": 0.3821414113044739,
+    "tpr": 0.9987996799146439,
+    "tpr_ci95": [
+     0.9983,
+     0.9992
+    ]
+   },
+   {
+    "fpr_target": 0.0001,
+    "threshold": 0.9314625263214111,
+    "tpr": 0.9953654307815417,
+    "tpr_ci95": [
+     0.9945,
+     0.9961
+    ]
+   }
+  ],
+  "sandbox_sweep": [
+   {
+    "threshold": 0.01,
+    "malware_missed": 0.0003334222459322486,
+    "benign_escalated": 0.002160470833643746
+   },
+   {
+    "threshold": 0.1,
+    "malware_missed": 0.00046679114430514806,
+    "benign_escalated": 0.0014154808910079714
+   },
+   {
+    "threshold": 0.5,
+    "malware_missed": 0.002100560149373166,
+    "benign_escalated": 0.0007449899426357744
+   },
+   {
+    "threshold": 0.9,
+    "malware_missed": 0.0038676980528140835,
+    "benign_escalated": 0.00014899798852715488
+   },
+   {
+    "threshold": 0.99,
+    "malware_missed": 0.0122032542011203,
+    "benign_escalated": 7.449899426357744e-05
+   }
+  ],
+  "files_over_2mb": 6956,
+  "files_over_64mb": 65,
+  "roc_auc_files_over_2mb": 0.9999384016664181
+ },
+ "test_unseen_toolchain": {
+  "n_mal": 29992.0,
+  "n_ben": 3634.0,
+  "roc_auc": 0.9471583589048806,
+  "tpr_at_fpr": [
+   {
+    "fpr_target": 0.01,
+    "threshold": 0.9998089671134949,
+    "tpr": 0.2152574019738597,
+    "tpr_ci95": [
+     0.2106,
+     0.22
+    ]
+   },
+   {
+    "fpr_target": 0.001,
+    "threshold": 0.9999417066574097,
+    "tpr": 0.03184182448652974,
+    "tpr_ci95": [
+     0.0299,
+     0.0339
+    ]
+   },
+   {
+    "fpr_target": 0.0001,
+    "threshold": 0.9999798536300659,
+    "tpr": 0.004534542544678581,
+    "tpr_ci95": [
+     0.0038,
+     0.0054
+    ]
+   }
+  ],
+  "sandbox_sweep": [
+   {
+    "threshold": 0.01,
+    "malware_missed": 0.0003334222459322486,
+    "benign_escalated": 0.5569620253164557
+   },
+   {
+    "threshold": 0.1,
+    "malware_missed": 0.00046679114430514806,
+    "benign_escalated": 0.42019812878370943
+   },
+   {
+    "threshold": 0.5,
+    "malware_missed": 0.002100560149373166,
+    "benign_escalated": 0.31150247660979635
+   },
+   {
+    "threshold": 0.9,
+    "malware_missed": 0.0038676980528140835,
+    "benign_escalated": 0.23555310952118877
+   },
+   {
+    "threshold": 0.99,
+    "malware_missed": 0.0122032542011203,
+    "benign_escalated": 0.19400110071546506
+   }
+  ],
+  "files_over_2mb": 5731,
+  "files_over_64mb": 45,
+  "roc_auc_files_over_2mb": 0.8573089993908499
+ },
+ "inference": {
+  "files_per_s": 153.3,
+  "mb_per_s": 230.6,
+  "batch": 16
+ }
+}

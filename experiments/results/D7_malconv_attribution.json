@@ -1,0 +1,13 @@
+{
+ "files": 4000,
+ "attribution_share_mean": {
+  "dos_header": 0.0077,
+  "dos_stub": 0.0183,
+  "pe_headers": 0.0547,
+  "section_table": 0.0232,
+  "first_4kb_rest": 0.0384,
+  "body": 0.8579
+ },
+ "auc_full": 0.9999979999999999,
+ "auc_first_4kb_only": 0.99999675
+}

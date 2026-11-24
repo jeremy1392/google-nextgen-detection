@@ -1,0 +1,18 @@
+✓ Initialized. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-0dpwk1bJTgRWRnppgCfeK5
+✓ Created objects.
+├── ✓ Uploaded modal_apps\macho_d5.py
+├── ✓ Uploaded PythonPackage:bench
+├── ✓ Created Function malware_day.
+├── ✓ Created Function benign_chunk.
+├── ✓ Created Function upload_index.
+├── ✓ Created Function gbdt.
+└── ✓ Created Function malconv_zeroshot.
+Container terminated due to preemption. For more details, see https://modal.com/docs/guide/preemption
+Container terminated due to preemption. For more details, see https://modal.com/docs/guide/preemption
+Container terminated due to preemption. For more details, see https://modal.com/docs/guide/preemption
+malware Mach-O: 1042 days with errors: 1
+benign Mach-O executables: 3008 from 1247 formulae
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-0dpwk1bJTgRWRnppgCfeK5

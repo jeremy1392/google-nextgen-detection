@@ -1,0 +1,44 @@
+{
+ "real": {
+  "machines": 12579,
+  "hours": 697,
+  "termination_mix": {
+   "EVICT": 0.12148929954799959,
+   "FAIL": 0.2865054250180094,
+   "FINISH": 0.37741401684601317,
+   "KILL": 0.21440990570416554,
+   "LOST": 0.00018135288381227875
+  },
+  "schedule_per_machine_hour_mean": 5.385554800119486,
+  "share_zero": 0.15815067425235496,
+  "priority_mix": {
+   "free (0-1)": 0.6000101528667203,
+   "batch / middle (2-8)": 0.36520996748901285,
+   "production (9-11)": 0.034779879644266765
+  }
+ },
+ "simulated": {
+  "machines": 112,
+  "hours": 36,
+  "termination_mix": {
+   "FAIL": 0.5018129079042785,
+   "EVICT": 0.1969654710771462,
+   "FINISH": 0.15412506275450438,
+   "KILL": 0.14709655826407095,
+   "LOST": 0.0
+  },
+  "schedule_per_machine_hour_mean": 4.4764,
+  "share_zero": 0.0863,
+  "priority_mix": {
+   "free (0-1)": 0.21098121779599976,
+   "batch / middle (2-8)": 0.22189594991412268,
+   "production (9-11)": 0.5671228322898776
+  }
+ },
+ "distance": {
+  "termination_mix_tvd": 0.2908,
+  "priority_mix_tvd": 0.5323,
+  "schedule_per_machine_hour_ks": 0.1096,
+  "schedule_rate_ratio_sim_over_real": 0.8312
+ }
+}

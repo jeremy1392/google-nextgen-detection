@@ -1,0 +1,1586 @@
+{
+ "note": "B6: closing the single-log exfiltration gap.",
+ "datasets": [
+  "experiments/cache_protocol/s1",
+  "experiments/cache_protocol/s2",
+  "experiments/cache_protocol/s3",
+  "experiments/cache_protocol/s4",
+  "experiments/cache_protocol/s5",
+  "experiments/cache_protocol/s6",
+  "experiments/cache_protocol/s7",
+  "experiments/cache_protocol/s8",
+  "experiments/cache_protocol/s9",
+  "experiments/cache_protocol/s10"
+ ],
+ "aggregate": {
+  "P2": {
+   "worlds": 10,
+   "recall_mean": 0.561,
+   "fp_per_day_mean": 317.0,
+   "r10_mean": 0.065,
+   "exfil_detected": 0,
+   "exfil_cases": 39,
+   "exfil_by_type": {
+    "spanner_bulk_export": "0/15",
+    "bigtable_full_scan": "0/10",
+    "b4_replication_spike": "0/14"
+   },
+   "volume_rule_fp": 0,
+   "volume_rule_fp_in_backup_window": 0,
+   "volume_rule_fp_on_backup_entities": 0
+  },
+  "P2-vol": {
+   "worlds": 10,
+   "recall_mean": 0.652,
+   "fp_per_day_mean": 317.5,
+   "r10_mean": 0.137,
+   "exfil_detected": 33,
+   "exfil_cases": 39,
+   "exfil_by_type": {
+    "spanner_bulk_export": "14/15",
+    "bigtable_full_scan": "8/10",
+    "b4_replication_spike": "11/14"
+   },
+   "volume_rule_fp": 5,
+   "volume_rule_fp_in_backup_window": 0,
+   "volume_rule_fp_on_backup_entities": 4
+  },
+  "P2-volflat": {
+   "worlds": 10,
+   "recall_mean": 0.649,
+   "fp_per_day_mean": 318.0,
+   "r10_mean": 0.126,
+   "exfil_detected": 32,
+   "exfil_cases": 39,
+   "exfil_by_type": {
+    "spanner_bulk_export": "14/15",
+    "bigtable_full_scan": "8/10",
+    "b4_replication_spike": "10/14"
+   },
+   "volume_rule_fp": 10,
+   "volume_rule_fp_in_backup_window": 10,
+   "volume_rule_fp_on_backup_entities": 10
+  },
+  "FINAL-nollm": {
+   "worlds": 10,
+   "recall_mean": 0.71,
+   "fp_per_day_mean": 18.6,
+   "r10_mean": 0.71,
+   "exfil_detected": 0,
+   "exfil_cases": 39,
+   "exfil_by_type": {
+    "spanner_bulk_export": "0/15",
+    "bigtable_full_scan": "0/10",
+    "b4_replication_spike": "0/14"
+   },
+   "volume_rule_fp": 0,
+   "volume_rule_fp_in_backup_window": 0,
+   "volume_rule_fp_on_backup_entities": 0
+  },
+  "FINAL-vol-nollm": {
+   "worlds": 10,
+   "recall_mean": 0.798,
+   "fp_per_day_mean": 17.4,
+   "r10_mean": 0.799,
+   "exfil_detected": 29,
+   "exfil_cases": 39,
+   "exfil_by_type": {
+    "spanner_bulk_export": "14/15",
+    "bigtable_full_scan": "8/10",
+    "b4_replication_spike": "7/14"
+   },
+   "volume_rule_fp": 0,
+   "volume_rule_fp_in_backup_window": 0,
+   "volume_rule_fp_on_backup_entities": 0
+  },
+  "FINAL-volflat-nollm": {
+   "worlds": 10,
+   "recall_mean": 0.785,
+   "fp_per_day_mean": 19.4,
+   "r10_mean": 0.782,
+   "exfil_detected": 24,
+   "exfil_cases": 39,
+   "exfil_by_type": {
+    "spanner_bulk_export": "14/15",
+    "bigtable_full_scan": "8/10",
+    "b4_replication_spike": "2/14"
+   },
+   "volume_rule_fp": 10,
+   "volume_rule_fp_in_backup_window": 10,
+   "volume_rule_fp_on_backup_entities": 10
+  }
+ },
+ "runs": [
+  {
+   "dataset": "experiments/cache_protocol/s1",
+   "days_scored": 1.0,
+   "pipelines": {
+    "P2": {
+     "recall": 0.5556,
+     "precision": 0.1147,
+     "fp_per_day": 301.0,
+     "recall_at_10fp": 0.028,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/2",
+      "bigtable_full_scan": "0/1",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 192.0,
+      "new_job_read_by_user": 39.0,
+      "new_device_for_user": 30.0,
+      "rare_hour_for_user": 1.0
+     }
+    },
+    "P2-vol": {
+     "recall": 0.6111,
+     "precision": 0.1246,
+     "fp_per_day": 302.0,
+     "recall_at_10fp": 0.083,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "0/1",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 2,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 4,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 192.0,
+      "new_job_read_by_user": 39.0,
+      "new_device_for_user": 30.0,
+      "rare_hour_for_user": 1.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "P2-volflat": {
+     "recall": 0.6111,
+     "precision": 0.1246,
+     "fp_per_day": 302.0,
+     "recall_at_10fp": 0.083,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "0/1",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 2,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 4,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 192.0,
+      "new_job_read_by_user": 39.0,
+      "new_device_for_user": 30.0,
+      "rare_hour_for_user": 1.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "FINAL-nollm": {
+     "recall": 0.7222,
+     "precision": 0.8984,
+     "fp_per_day": 19.0,
+     "recall_at_10fp": 0.722,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/2",
+      "bigtable_full_scan": "0/1",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 1.0
+     }
+    },
+    "FINAL-vol-nollm": {
+     "recall": 0.7778,
+     "precision": 0.9439,
+     "fp_per_day": 11.0,
+     "recall_at_10fp": 0.778,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "0/1",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 2,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 4,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 1.0
+     }
+    },
+    "FINAL-volflat-nollm": {
+     "recall": 0.7778,
+     "precision": 0.9343,
+     "fp_per_day": 13.0,
+     "recall_at_10fp": 0.778,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "0/1",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 2,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 4,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 2.0,
+      "fast:b4_bytes_volume": 1.0
+     }
+    }
+   }
+  },
+  {
+   "dataset": "experiments/cache_protocol/s2",
+   "days_scored": 1.0,
+   "pipelines": {
+    "P2": {
+     "recall": 0.6364,
+     "precision": 0.1257,
+     "fp_per_day": 299.0,
+     "recall_at_10fp": 0.045,
+     "cases": 44,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/2",
+      "bigtable_full_scan": "0/2",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 184.0,
+      "new_device_for_user": 41.0,
+      "new_job_read_by_user": 30.0
+     }
+    },
+    "P2-vol": {
+     "recall": 0.75,
+     "precision": 0.1481,
+     "fp_per_day": 299.0,
+     "recall_at_10fp": 0.136,
+     "cases": 44,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "2/2",
+      "b4_replication_spike": "1/1"
+     },
+     "exfil_detected": 5,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 9,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 184.0,
+      "new_device_for_user": 41.0,
+      "new_job_read_by_user": 30.0
+     }
+    },
+    "P2-volflat": {
+     "recall": 0.75,
+     "precision": 0.1477,
+     "fp_per_day": 300.0,
+     "recall_at_10fp": 0.114,
+     "cases": 44,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "2/2",
+      "b4_replication_spike": "1/1"
+     },
+     "exfil_detected": 5,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 9,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 184.0,
+      "new_device_for_user": 41.0,
+      "new_job_read_by_user": 30.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "FINAL-nollm": {
+     "recall": 0.7273,
+     "precision": 0.9369,
+     "fp_per_day": 13.0,
+     "recall_at_10fp": 0.727,
+     "cases": 44,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/2",
+      "bigtable_full_scan": "0/2",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 5.0
+     }
+    },
+    "FINAL-vol-nollm": {
+     "recall": 0.8636,
+     "precision": 0.9401,
+     "fp_per_day": 13.0,
+     "recall_at_10fp": 0.864,
+     "cases": 44,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "2/2",
+      "b4_replication_spike": "1/1"
+     },
+     "exfil_detected": 5,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 5,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 5.0
+     }
+    },
+    "FINAL-volflat-nollm": {
+     "recall": 0.8409,
+     "precision": 0.9309,
+     "fp_per_day": 15.0,
+     "recall_at_10fp": 0.841,
+     "cases": 44,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "2/2",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 4,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 4,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 6.0,
+      "fast:b4_bytes_volume": 1.0
+     }
+    }
+   }
+  },
+  {
+   "dataset": "experiments/cache_protocol/s3",
+   "days_scored": 1.0,
+   "pipelines": {
+    "P2": {
+     "recall": 0.5429,
+     "precision": 0.0897,
+     "fp_per_day": 355.0,
+     "recall_at_10fp": 0.057,
+     "cases": 35,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/1",
+      "bigtable_full_scan": "0/1",
+      "b4_replication_spike": "0/2"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 190.0,
+      "new_job_read_by_user": 49.0,
+      "new_device_for_user": 49.0
+     }
+    },
+    "P2-vol": {
+     "recall": 0.6571,
+     "precision": 0.1103,
+     "fp_per_day": 355.0,
+     "recall_at_10fp": 0.143,
+     "cases": 35,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/1",
+      "bigtable_full_scan": "1/1",
+      "b4_replication_spike": "2/2"
+     },
+     "exfil_detected": 4,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 9,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 190.0,
+      "new_job_read_by_user": 49.0,
+      "new_device_for_user": 49.0
+     }
+    },
+    "P2-volflat": {
+     "recall": 0.6571,
+     "precision": 0.1033,
+     "fp_per_day": 356.0,
+     "recall_at_10fp": 0.114,
+     "cases": 35,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/1",
+      "bigtable_full_scan": "1/1",
+      "b4_replication_spike": "2/2"
+     },
+     "exfil_detected": 4,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 6,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 190.0,
+      "new_job_read_by_user": 49.0,
+      "new_device_for_user": 49.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "FINAL-nollm": {
+     "recall": 0.6571,
+     "precision": 0.8827,
+     "fp_per_day": 19.0,
+     "recall_at_10fp": 0.657,
+     "cases": 35,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/1",
+      "bigtable_full_scan": "0/1",
+      "b4_replication_spike": "0/2"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 2.0
+     }
+    },
+    "FINAL-vol-nollm": {
+     "recall": 0.8,
+     "precision": 0.8902,
+     "fp_per_day": 19.0,
+     "recall_at_10fp": 0.8,
+     "cases": 35,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/1",
+      "bigtable_full_scan": "1/1",
+      "b4_replication_spike": "2/2"
+     },
+     "exfil_detected": 4,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 4,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 2.0
+     }
+    },
+    "FINAL-volflat-nollm": {
+     "recall": 0.7429,
+     "precision": 0.8786,
+     "fp_per_day": 21.0,
+     "recall_at_10fp": 0.743,
+     "cases": 35,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/1",
+      "bigtable_full_scan": "1/1",
+      "b4_replication_spike": "0/2"
+     },
+     "exfil_detected": 2,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 3,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 3.0,
+      "fast:b4_bytes_volume": 1.0
+     }
+    }
+   }
+  },
+  {
+   "dataset": "experiments/cache_protocol/s4",
+   "days_scored": 1.0,
+   "pipelines": {
+    "P2": {
+     "recall": 0.5135,
+     "precision": 0.096,
+     "fp_per_day": 320.0,
+     "recall_at_10fp": 0.054,
+     "cases": 37,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/1",
+      "bigtable_full_scan": "0/2",
+      "b4_replication_spike": "0/2"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 202.0,
+      "new_device_for_user": 39.0,
+      "new_job_read_by_user": 37.0
+     }
+    },
+    "P2-vol": {
+     "recall": 0.5946,
+     "precision": 0.1058,
+     "fp_per_day": 321.0,
+     "recall_at_10fp": 0.108,
+     "cases": 37,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/1",
+      "bigtable_full_scan": "1/2",
+      "b4_replication_spike": "1/2"
+     },
+     "exfil_detected": 3,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 4,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 202.0,
+      "new_device_for_user": 39.0,
+      "new_job_read_by_user": 37.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "P2-volflat": {
+     "recall": 0.5946,
+     "precision": 0.1058,
+     "fp_per_day": 321.0,
+     "recall_at_10fp": 0.108,
+     "cases": 37,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/1",
+      "bigtable_full_scan": "1/2",
+      "b4_replication_spike": "1/2"
+     },
+     "exfil_detected": 3,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 4,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 202.0,
+      "new_device_for_user": 39.0,
+      "new_job_read_by_user": 37.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "FINAL-nollm": {
+     "recall": 0.7027,
+     "precision": 0.8772,
+     "fp_per_day": 21.0,
+     "recall_at_10fp": 0.703,
+     "cases": 37,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/1",
+      "bigtable_full_scan": "0/2",
+      "b4_replication_spike": "0/2"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 4.0
+     }
+    },
+    "FINAL-vol-nollm": {
+     "recall": 0.7568,
+     "precision": 0.8833,
+     "fp_per_day": 21.0,
+     "recall_at_10fp": 0.757,
+     "cases": 37,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/1",
+      "bigtable_full_scan": "1/2",
+      "b4_replication_spike": "0/2"
+     },
+     "exfil_detected": 2,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 3,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 4.0
+     }
+    },
+    "FINAL-volflat-nollm": {
+     "recall": 0.7568,
+     "precision": 0.8736,
+     "fp_per_day": 23.0,
+     "recall_at_10fp": 0.757,
+     "cases": 37,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/1",
+      "bigtable_full_scan": "1/2",
+      "b4_replication_spike": "0/2"
+     },
+     "exfil_detected": 2,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 3,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 5.0,
+      "fast:b4_bytes_volume": 1.0
+     }
+    }
+   }
+  },
+  {
+   "dataset": "experiments/cache_protocol/s5",
+   "days_scored": 1.0,
+   "pipelines": {
+    "P2": {
+     "recall": 0.5758,
+     "precision": 0.0812,
+     "fp_per_day": 317.0,
+     "recall_at_10fp": 0.061,
+     "cases": 33,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/1",
+      "bigtable_full_scan": "0/1",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 3,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 189.0,
+      "new_job_read_by_user": 49.0,
+      "new_device_for_user": 45.0
+     }
+    },
+    "P2-vol": {
+     "recall": 0.6667,
+     "precision": 0.0994,
+     "fp_per_day": 317.0,
+     "recall_at_10fp": 0.121,
+     "cases": 33,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/1",
+      "bigtable_full_scan": "1/1",
+      "b4_replication_spike": "1/1"
+     },
+     "exfil_detected": 3,
+     "exfil_cases": 3,
+     "volume_rule_alerts_tp": 7,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 189.0,
+      "new_job_read_by_user": 49.0,
+      "new_device_for_user": 45.0
+     }
+    },
+    "P2-volflat": {
+     "recall": 0.6667,
+     "precision": 0.094,
+     "fp_per_day": 318.0,
+     "recall_at_10fp": 0.121,
+     "cases": 33,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/1",
+      "bigtable_full_scan": "1/1",
+      "b4_replication_spike": "1/1"
+     },
+     "exfil_detected": 3,
+     "exfil_cases": 3,
+     "volume_rule_alerts_tp": 5,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 189.0,
+      "new_job_read_by_user": 49.0,
+      "new_device_for_user": 45.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "FINAL-nollm": {
+     "recall": 0.7273,
+     "precision": 0.8765,
+     "fp_per_day": 21.0,
+     "recall_at_10fp": 0.727,
+     "cases": 33,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/1",
+      "bigtable_full_scan": "0/1",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 3,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 5.0
+     }
+    },
+    "FINAL-vol-nollm": {
+     "recall": 0.8485,
+     "precision": 0.8833,
+     "fp_per_day": 21.0,
+     "recall_at_10fp": 0.848,
+     "cases": 33,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/1",
+      "bigtable_full_scan": "1/1",
+      "b4_replication_spike": "1/1"
+     },
+     "exfil_detected": 3,
+     "exfil_cases": 3,
+     "volume_rule_alerts_tp": 6,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 5.0
+     }
+    },
+    "FINAL-volflat-nollm": {
+     "recall": 0.8485,
+     "precision": 0.8722,
+     "fp_per_day": 23.0,
+     "recall_at_10fp": 0.848,
+     "cases": 33,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/1",
+      "bigtable_full_scan": "1/1",
+      "b4_replication_spike": "1/1"
+     },
+     "exfil_detected": 3,
+     "exfil_cases": 3,
+     "volume_rule_alerts_tp": 4,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 6.0,
+      "fast:b4_bytes_volume": 1.0
+     }
+    }
+   }
+  },
+  {
+   "dataset": "experiments/cache_protocol/s6",
+   "days_scored": 1.0,
+   "pipelines": {
+    "P2": {
+     "recall": 0.5714,
+     "precision": 0.0871,
+     "fp_per_day": 304.0,
+     "recall_at_10fp": 0.029,
+     "cases": 35,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "0/2"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 187.0,
+      "new_job_read_by_user": 38.0,
+      "new_device_for_user": 36.0
+     }
+    },
+    "P2-vol": {
+     "recall": 0.6857,
+     "precision": 0.1082,
+     "fp_per_day": 305.0,
+     "recall_at_10fp": 0.143,
+     "cases": 35,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "2/2"
+     },
+     "exfil_detected": 4,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 8,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 187.0,
+      "new_job_read_by_user": 38.0,
+      "new_device_for_user": 36.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "P2-volflat": {
+     "recall": 0.6571,
+     "precision": 0.1029,
+     "fp_per_day": 305.0,
+     "recall_at_10fp": 0.114,
+     "cases": 35,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "1/2"
+     },
+     "exfil_detected": 3,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 6,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 187.0,
+      "new_job_read_by_user": 38.0,
+      "new_device_for_user": 36.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "FINAL-nollm": {
+     "recall": 0.7429,
+     "precision": 0.8846,
+     "fp_per_day": 21.0,
+     "recall_at_10fp": 0.743,
+     "cases": 35,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "0/2"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 1.0,
+      "fast:denied_syscall_burst": 1.0
+     }
+    },
+    "FINAL-vol-nollm": {
+     "recall": 0.8571,
+     "precision": 0.9128,
+     "fp_per_day": 17.0,
+     "recall_at_10fp": 0.857,
+     "cases": 35,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "2/2"
+     },
+     "exfil_detected": 4,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 8,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 1.0,
+      "fast:denied_syscall_burst": 1.0
+     }
+    },
+    "FINAL-volflat-nollm": {
+     "recall": 0.8286,
+     "precision": 0.9021,
+     "fp_per_day": 19.0,
+     "recall_at_10fp": 0.8,
+     "cases": 35,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "1/2"
+     },
+     "exfil_detected": 3,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 5,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 2.0,
+      "fast:b4_bytes_volume": 1.0,
+      "fast:denied_syscall_burst": 1.0
+     }
+    }
+   }
+  },
+  {
+   "dataset": "experiments/cache_protocol/s7",
+   "days_scored": 1.0,
+   "pipelines": {
+    "P2": {
+     "recall": 0.5556,
+     "precision": 0.1,
+     "fp_per_day": 324.0,
+     "recall_at_10fp": 0.111,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/2",
+      "bigtable_full_scan": "0/2",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 173.0,
+      "new_job_read_by_user": 47.0,
+      "new_device_for_user": 38.0
+     }
+    },
+    "P2-vol": {
+     "recall": 0.6944,
+     "precision": 0.1196,
+     "fp_per_day": 324.0,
+     "recall_at_10fp": 0.222,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "2/2",
+      "b4_replication_spike": "1/1"
+     },
+     "exfil_detected": 5,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 8,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 173.0,
+      "new_job_read_by_user": 47.0,
+      "new_device_for_user": 38.0
+     }
+    },
+    "P2-volflat": {
+     "recall": 0.6944,
+     "precision": 0.1192,
+     "fp_per_day": 325.0,
+     "recall_at_10fp": 0.222,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "2/2",
+      "b4_replication_spike": "1/1"
+     },
+     "exfil_detected": 5,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 8,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 173.0,
+      "new_job_read_by_user": 47.0,
+      "new_device_for_user": 38.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "FINAL-nollm": {
+     "recall": 0.6944,
+     "precision": 0.8921,
+     "fp_per_day": 15.0,
+     "recall_at_10fp": 0.694,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/2",
+      "bigtable_full_scan": "0/2",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 1.0
+     }
+    },
+    "FINAL-vol-nollm": {
+     "recall": 0.8056,
+     "precision": 0.9062,
+     "fp_per_day": 15.0,
+     "recall_at_10fp": 0.806,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "2/2",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 4,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 7,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 1.0
+     }
+    },
+    "FINAL-volflat-nollm": {
+     "recall": 0.8056,
+     "precision": 0.8951,
+     "fp_per_day": 17.0,
+     "recall_at_10fp": 0.806,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "2/2",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 4,
+     "exfil_cases": 5,
+     "volume_rule_alerts_tp": 7,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 2.0,
+      "fast:b4_bytes_volume": 1.0
+     }
+    }
+   }
+  },
+  {
+   "dataset": "experiments/cache_protocol/s8",
+   "days_scored": 1.0,
+   "pipelines": {
+    "P2": {
+     "recall": 0.6176,
+     "precision": 0.1101,
+     "fp_per_day": 307.0,
+     "recall_at_10fp": 0.088,
+     "cases": 34,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/0",
+      "bigtable_full_scan": "0/1",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 2,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 184.0,
+      "new_job_read_by_user": 51.0,
+      "new_device_for_user": 34.0
+     }
+    },
+    "P2-vol": {
+     "recall": 0.6765,
+     "precision": 0.1149,
+     "fp_per_day": 308.0,
+     "recall_at_10fp": 0.118,
+     "cases": 34,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/0",
+      "bigtable_full_scan": "1/1",
+      "b4_replication_spike": "1/1"
+     },
+     "exfil_detected": 2,
+     "exfil_cases": 2,
+     "volume_rule_alerts_tp": 2,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 184.0,
+      "new_job_read_by_user": 51.0,
+      "new_device_for_user": 34.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "P2-volflat": {
+     "recall": 0.6765,
+     "precision": 0.1149,
+     "fp_per_day": 308.0,
+     "recall_at_10fp": 0.118,
+     "cases": 34,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/0",
+      "bigtable_full_scan": "1/1",
+      "b4_replication_spike": "1/1"
+     },
+     "exfil_detected": 2,
+     "exfil_cases": 2,
+     "volume_rule_alerts_tp": 2,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 184.0,
+      "new_job_read_by_user": 51.0,
+      "new_device_for_user": 34.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "FINAL-nollm": {
+     "recall": 0.7353,
+     "precision": 0.9314,
+     "fp_per_day": 12.0,
+     "recall_at_10fp": 0.735,
+     "cases": 34,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/0",
+      "bigtable_full_scan": "0/1",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 2,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 1.0
+     }
+    },
+    "FINAL-vol-nollm": {
+     "recall": 0.7647,
+     "precision": 0.9322,
+     "fp_per_day": 12.0,
+     "recall_at_10fp": 0.765,
+     "cases": 34,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/0",
+      "bigtable_full_scan": "1/1",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 1,
+     "exfil_cases": 2,
+     "volume_rule_alerts_tp": 1,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 1.0
+     }
+    },
+    "FINAL-volflat-nollm": {
+     "recall": 0.7647,
+     "precision": 0.9218,
+     "fp_per_day": 14.0,
+     "recall_at_10fp": 0.765,
+     "cases": 34,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/0",
+      "bigtable_full_scan": "1/1",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 1,
+     "exfil_cases": 2,
+     "volume_rule_alerts_tp": 1,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 2.0,
+      "fast:b4_bytes_volume": 1.0
+     }
+    }
+   }
+  },
+  {
+   "dataset": "experiments/cache_protocol/s9",
+   "days_scored": 1.0,
+   "pipelines": {
+    "P2": {
+     "recall": 0.4848,
+     "precision": 0.0676,
+     "fp_per_day": 331.0,
+     "recall_at_10fp": 0.121,
+     "cases": 33,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 3,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 209.0,
+      "new_job_read_by_user": 44.0,
+      "new_device_for_user": 38.0
+     }
+    },
+    "P2-vol": {
+     "recall": 0.5758,
+     "precision": 0.0854,
+     "fp_per_day": 332.0,
+     "recall_at_10fp": 0.212,
+     "cases": 33,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "1/1"
+     },
+     "exfil_detected": 3,
+     "exfil_cases": 3,
+     "volume_rule_alerts_tp": 7,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 209.0,
+      "new_job_read_by_user": 44.0,
+      "new_device_for_user": 38.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "P2-volflat": {
+     "recall": 0.5758,
+     "precision": 0.0829,
+     "fp_per_day": 332.0,
+     "recall_at_10fp": 0.182,
+     "cases": 33,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "1/1"
+     },
+     "exfil_detected": 3,
+     "exfil_cases": 3,
+     "volume_rule_alerts_tp": 6,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 209.0,
+      "new_job_read_by_user": 44.0,
+      "new_device_for_user": 38.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "FINAL-nollm": {
+     "recall": 0.697,
+     "precision": 0.8852,
+     "fp_per_day": 21.0,
+     "recall_at_10fp": 0.697,
+     "cases": 33,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 3,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 2.0
+     }
+    },
+    "FINAL-vol-nollm": {
+     "recall": 0.7879,
+     "precision": 0.8929,
+     "fp_per_day": 21.0,
+     "recall_at_10fp": 0.788,
+     "cases": 33,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "1/1"
+     },
+     "exfil_detected": 3,
+     "exfil_cases": 3,
+     "volume_rule_alerts_tp": 6,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 2.0
+     }
+    },
+    "FINAL-volflat-nollm": {
+     "recall": 0.7576,
+     "precision": 0.8827,
+     "fp_per_day": 23.0,
+     "recall_at_10fp": 0.758,
+     "cases": 33,
+     "exfil_by_type": {
+      "spanner_bulk_export": "2/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "0/1"
+     },
+     "exfil_detected": 2,
+     "exfil_cases": 3,
+     "volume_rule_alerts_tp": 5,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 3.0,
+      "fast:b4_bytes_volume": 1.0
+     }
+    }
+   }
+  },
+  {
+   "dataset": "experiments/cache_protocol/s10",
+   "days_scored": 1.0,
+   "pipelines": {
+    "P2": {
+     "recall": 0.5556,
+     "precision": 0.0904,
+     "fp_per_day": 312.0,
+     "recall_at_10fp": 0.056,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "0/2"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 204.0,
+      "new_job_read_by_user": 37.0,
+      "new_device_for_user": 28.0
+     }
+    },
+    "P2-vol": {
+     "recall": 0.6111,
+     "precision": 0.1034,
+     "fp_per_day": 312.0,
+     "recall_at_10fp": 0.083,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "1/2"
+     },
+     "exfil_detected": 2,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 5,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 204.0,
+      "new_job_read_by_user": 37.0,
+      "new_device_for_user": 28.0
+     }
+    },
+    "P2-volflat": {
+     "recall": 0.6111,
+     "precision": 0.1006,
+     "fp_per_day": 313.0,
+     "recall_at_10fp": 0.083,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "1/2"
+     },
+     "exfil_detected": 2,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 4,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "new_prod_app_for_user": 204.0,
+      "new_job_read_by_user": 37.0,
+      "new_device_for_user": 28.0,
+      "b4_bytes_volume": 1.0
+     }
+    },
+    "FINAL-nollm": {
+     "recall": 0.6944,
+     "precision": 0.8605,
+     "fp_per_day": 24.0,
+     "recall_at_10fp": 0.694,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "0/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "0/2"
+     },
+     "exfil_detected": 0,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 0,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 3.0
+     }
+    },
+    "FINAL-vol-nollm": {
+     "recall": 0.7222,
+     "precision": 0.8636,
+     "fp_per_day": 24.0,
+     "recall_at_10fp": 0.722,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "0/2"
+     },
+     "exfil_detected": 1,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 2,
+     "volume_rule_fp": 0,
+     "volume_rule_fp_per_day": 0.0,
+     "volume_rule_fp_in_backup_window": 0,
+     "volume_rule_fp_on_backup_entities": 0,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 3.0
+     }
+    },
+    "FINAL-volflat-nollm": {
+     "recall": 0.7222,
+     "precision": 0.8539,
+     "fp_per_day": 26.0,
+     "recall_at_10fp": 0.722,
+     "cases": 36,
+     "exfil_by_type": {
+      "spanner_bulk_export": "1/2",
+      "bigtable_full_scan": "0/0",
+      "b4_replication_spike": "0/2"
+     },
+     "exfil_detected": 1,
+     "exfil_cases": 4,
+     "volume_rule_alerts_tp": 2,
+     "volume_rule_fp": 1,
+     "volume_rule_fp_per_day": 1.0,
+     "volume_rule_fp_in_backup_window": 1,
+     "volume_rule_fp_on_backup_entities": 1,
+     "fp_per_day_by_rule": {
+      "risk:noisy_or": 4.0,
+      "fast:b4_bytes_volume": 1.0
+     }
+    }
+   }
+  }
+ ]
+}

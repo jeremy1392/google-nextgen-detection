@@ -1,0 +1,153 @@
+{
+ "malware": {
+  "files": 7029,
+  "valid": 7029,
+  "bad": {},
+  "machine": {
+   "arm": 1939,
+   "x86_64": 1756,
+   "mips": 934,
+   "x86": 894,
+   "aarch64": 403,
+   "ppc": 282,
+   "superh": 243,
+   "m68k": 229,
+   "sparc": 182,
+   "loongarch": 70,
+   "m93": 30,
+   "ppc64": 28,
+   "riscv": 12,
+   "m252": 7,
+   "m39": 6,
+   "m43": 6,
+   "s390": 4,
+   "m94": 4
+  },
+  "machine_bits_endian": {
+   "arm/32/le": 1939,
+   "x86_64/64/le": 1756,
+   "x86/32/le": 894,
+   "mips/32/be": 450,
+   "mips/32/le": 426,
+   "aarch64/64/le": 403,
+   "ppc/32/be": 282,
+   "superh/32/le": 243,
+   "m68k/32/be": 229,
+   "sparc/32/be": 182,
+   "loongarch/64/le": 70,
+   "mips/64/be": 31,
+   "m93/32/le": 30,
+   "mips/64/le": 27,
+   "ppc64/64/be": 18,
+   "ppc64/64/le": 10,
+   "riscv/64/le": 9,
+   "m252/32/le": 7,
+   "m39/32/le": 6,
+   "m43/64/be": 6
+  },
+  "e_type": {
+   "exec": 6510,
+   "dyn": 512,
+   "rel": 7
+  },
+  "share_static (no PT_INTERP)": 0.8044,
+  "share_with_symtab": 0.2107,
+  "share_no_sections": 0.0896,
+  "share_upx": 0.0791,
+  "size_p10_p50_p90": [
+   9800,
+   152112,
+   3755152
+  ],
+  "share_over_2MB": 0.1421,
+  "x86_64_only": {
+   "files": 1756,
+   "e_type": {
+    "exec": 1542,
+    "dyn": 207,
+    "rel": 7
+   },
+   "share_static": 0.7033,
+   "share_with_symtab": 0.2494,
+   "share_upx": 0.1088
+  }
+ },
+ "benign": {
+  "files": 81355,
+  "valid": 81355,
+  "bad": {},
+  "machine": {
+   "x86_64": 70782,
+   "mips": 3504,
+   "x86": 2119,
+   "m0": 1199,
+   "ppc64": 686,
+   "riscv": 631,
+   "arm": 584,
+   "s390": 464,
+   "ppc": 361,
+   "m36902": 313,
+   "m43": 191,
+   "aarch64": 189,
+   "m18": 171,
+   "loongarch": 39,
+   "m15": 39,
+   "superh": 27,
+   "m195": 14,
+   "m224": 13,
+   "m68k": 12,
+   "m94": 8,
+   "m247": 5,
+   "sparc": 4
+  },
+  "machine_bits_endian": {
+   "x86_64/64/le": 70155,
+   "x86/32/le": 2119,
+   "mips/32/le": 1225,
+   "m0/64/le": 1199,
+   "mips/32/be": 841,
+   "mips/64/be": 744,
+   "mips/64/le": 694,
+   "x86_64/32/le": 627,
+   "arm/32/le": 584,
+   "riscv/64/le": 430,
+   "ppc64/64/be": 366,
+   "ppc/32/be": 361,
+   "ppc64/64/le": 320,
+   "m36902/64/le": 313,
+   "s390/64/be": 271,
+   "riscv/32/le": 201,
+   "s390/32/be": 193,
+   "m43/64/be": 191,
+   "aarch64/64/le": 189,
+   "m18/32/be": 171
+  },
+  "e_type": {
+   "dyn": 45193,
+   "rel": 34358,
+   "exec": 1803,
+   "core": 1
+  },
+  "share_static (no PT_INTERP)": 0.7441,
+  "share_with_symtab": 0.4615,
+  "share_no_sections": 0.0,
+  "share_upx": 0.0,
+  "size_p10_p50_p90": [
+   14480,
+   76541,
+   1002595
+  ],
+  "share_over_2MB": 0.057,
+  "x86_64_only": {
+   "files": 70782,
+   "e_type": {
+    "dyn": 42770,
+    "exec": 1773,
+    "rel": 26239
+   },
+   "share_static": 0.7063,
+   "share_with_symtab": 0.4033,
+   "share_upx": 0.0
+  }
+ }
+}

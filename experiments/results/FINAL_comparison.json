@@ -1,0 +1,318 @@
+{
+ "dataset": "G-series 2-day run (seed 7: lag, drift, 12 weak-signal bundles, injected text in 10% of writable fields)",
+ "rows": [
+  {
+   "pipeline": "1 SIEM (tuned rules + context)",
+   "description": "P1-tuned",
+   "recall": 0.4932,
+   "precision": 0.6864,
+   "fp_per_day": 49.3,
+   "recall_at_10fp": 0.384,
+   "ttd_p50_s": 2.7,
+   "events_per_s": 453651,
+   "source": "x5_nollm"
+  },
+  {
+   "pipeline": "2 Probabilistic fusion",
+   "description": "P6-hyper",
+   "recall": 0.5342,
+   "precision": 0.5702,
+   "fp_per_day": 32.7,
+   "recall_at_10fp": 0.411,
+   "ttd_p50_s": 241.9,
+   "events_per_s": 140801,
+   "source": "G_series"
+  },
+  {
+   "pipeline": "3 Fusion + sequences",
+   "description": "P6+P4",
+   "recall": 0.6164,
+   "precision": 0.1502,
+   "fp_per_day": 275.3,
+   "recall_at_10fp": 0.027,
+   "ttd_p50_s": 419.2,
+   "events_per_s": 55697,
+   "source": "x5_nollm"
+  },
+  {
+   "pipeline": "4 Best per family (MIX)",
+   "description": "MIX-tuned",
+   "recall": 0.5479,
+   "precision": 0.6429,
+   "fp_per_day": 33.3,
+   "recall_at_10fp": 0.425,
+   "ttd_p50_s": 142.1,
+   "events_per_s": 145897,
+   "source": "x5_nollm"
+  },
+  {
+   "pipeline": "5 Graph fusion (tuned)",
+   "description": "P5-hyper-tuned",
+   "recall": 0.6712,
+   "precision": 0.8995,
+   "fp_per_day": 12.7,
+   "recall_at_10fp": 0.671,
+   "ttd_p50_s": 115.8,
+   "events_per_s": 126428,
+   "source": "x5_nollm"
+  },
+  {
+   "pipeline": "6 Fusion + Gemini flash-lite",
+   "description": "P8",
+   "recall": 0.3014,
+   "precision": 0.8788,
+   "fp_per_day": 2.7,
+   "recall_at_10fp": 0.301,
+   "ttd_p50_s": 352.2,
+   "events_per_s": 61175,
+   "source": "G_series",
+   "llm_model": "google/gemini-3.1-flash-lite-preview",
+   "llm_calls": 169,
+   "llm_cost_usd": 0.1974,
+   "llm_latency_p50_s": 0.939
+  },
+  {
+   "pipeline": "7 Fusion + Gemini flash-lite + harness",
+   "description": "P8-harness",
+   "recall": 0.3836,
+   "precision": 0.7963,
+   "fp_per_day": 7.3,
+   "recall_at_10fp": 0.384,
+   "ttd_p50_s": 142.9,
+   "events_per_s": 74569,
+   "source": "G_series",
+   "llm_model": "google/gemini-3.1-flash-lite-preview",
+   "llm_calls": 169,
+   "llm_cost_usd": 0.136,
+   "llm_latency_p50_s": 0.917
+  },
+  {
+   "pipeline": "8 Fusion + Gemini 4",
+   "description": "P8-g4",
+   "recall": 0.3699,
+   "precision": 0.8837,
+   "fp_per_day": 3.3,
+   "recall_at_10fp": 0.37,
+   "ttd_p50_s": 149.5,
+   "events_per_s": 79418,
+   "source": "G_series",
+   "llm_model": "google/gemini-4-hydrogen",
+   "llm_calls": 169,
+   "llm_cost_usd": 1.9888,
+   "llm_latency_p50_s": 6.329
+  },
+  {
+   "pipeline": "9 Cascade + Gemini 4",
+   "description": "P9-g4",
+   "recall": 0.411,
+   "precision": 0.9552,
+   "fp_per_day": 2.0,
+   "recall_at_10fp": 0.411,
+   "ttd_p50_s": 110.7,
+   "events_per_s": 74336,
+   "source": "G_series",
+   "llm_model": "google/gemini-4-hydrogen",
+   "llm_calls": 169,
+   "llm_cost_usd": 1.5212,
+   "llm_latency_p50_s": 6.122
+  },
+  {
+   "pipeline": "10 Agent with tools + Gemini 4",
+   "description": "P8-agent-g4",
+   "recall": 0.411,
+   "precision": 0.7544,
+   "fp_per_day": 9.3,
+   "recall_at_10fp": 0.411,
+   "ttd_p50_s": 110.7,
+   "events_per_s": 52987,
+   "source": "G_series",
+   "llm_model": "google/gemini-4-hydrogen",
+   "llm_calls": 300,
+   "llm_cost_usd": 2.9068,
+   "llm_latency_p50_s": 8.134
+  },
+  {
+   "pipeline": "FINAL: fast path + graph fusion (tuned) + harness-first Gemini flash-lite",
+   "description": "FINAL",
+   "recall": 0.6575,
+   "precision": 0.9492,
+   "fp_per_day": 6.7,
+   "recall_at_10fp": 0.658,
+   "ttd_p50_s": 95.2,
+   "events_per_s": 41208,
+   "source": "x5_final_flash",
+   "llm_model": "google/gemini-3.1-flash-lite-preview",
+   "llm_calls": 153,
+   "llm_cost_usd": 0.1724,
+   "llm_latency_p50_s": 1.182
+  },
+  {
+   "pipeline": "FINAL: fast path + graph fusion (tuned) + harness-first Gemini 4",
+   "description": "FINAL-g4",
+   "recall": 0.6712,
+   "precision": 0.9738,
+   "fp_per_day": 3.3,
+   "recall_at_10fp": 0.671,
+   "ttd_p50_s": 95.2,
+   "events_per_s": 43118,
+   "source": "x5_final_g4",
+   "llm_model": "google/gemini-4-hydrogen",
+   "llm_calls": 153,
+   "llm_cost_usd": 2.0372,
+   "llm_latency_p50_s": 7.263
+  },
+  {
+   "pipeline": "FINAL detection stage (no model)",
+   "description": "FINAL-nollm",
+   "recall": 0.6712,
+   "precision": 0.9123,
+   "fp_per_day": 13.3,
+   "recall_at_10fp": 0.671,
+   "ttd_p50_s": 11.4,
+   "events_per_s": 38421,
+   "source": "s7_final_nollm_v2.json"
+  },
+  {
+   "pipeline": "FINAL: fast path + graph fusion (tuned) + harness-first local 4B (SFT)",
+   "description": "FINAL-local",
+   "recall": 0.5753,
+   "precision": 0.9744,
+   "fp_per_day": 2.0,
+   "recall_at_10fp": 0.575,
+   "ttd_p50_s": 241.9,
+   "events_per_s": 37729,
+   "source": "s7_local_sft.json",
+   "llm_model": "Qwen3-4B-Instruct-2507 + LoRA (sft), local vLLM on H100",
+   "llm_calls": 153,
+   "llm_latency_p50_s": 0.261,
+   "gpu_cost_usd_at_single_request_latency": 0.044
+  },
+  {
+   "pipeline": "FINAL: fast path + graph fusion (tuned) + harness-first local 4B (SFT + GRPO)",
+   "description": "FINAL-local",
+   "recall": 0.6301,
+   "precision": 0.9532,
+   "fp_per_day": 5.3,
+   "recall_at_10fp": 0.63,
+   "ttd_p50_s": 10.6,
+   "events_per_s": 37515,
+   "source": "s7_local_grpo.json",
+   "llm_model": "Qwen3-4B-Instruct-2507 + LoRA (grpo), local vLLM on H100",
+   "llm_calls": 153,
+   "llm_latency_p50_s": 0.428,
+   "gpu_cost_usd_at_single_request_latency": 0.072
+  }
+ ],
+ "three_worlds": {
+  "note": "recall / FP per day on seeds 7, 8, 9 (seed 7 = G-series world with injection)",
+  "FINAL detection stage (no model)": [
+   [
+    0.671,
+    13.3
+   ],
+   [
+    0.522,
+    29.3
+   ],
+   [
+    0.627,
+    10.7
+   ]
+  ],
+  "FINAL, Gemini flash-lite": [
+   [
+    0.657,
+    6.7
+   ],
+   [
+    0.522,
+    18.7
+   ],
+   [
+    0.627,
+    8.0
+   ]
+  ],
+  "FINAL, Gemini 4": [
+   [
+    0.671,
+    3.3
+   ],
+   [
+    0.522,
+    9.3
+   ],
+   [
+    0.627,
+    4.7
+   ]
+  ],
+  "FINAL, local 4B (SFT)": [
+   [
+    0.575,
+    2.0
+   ],
+   [
+    0.478,
+    3.3
+   ],
+   [
+    0.552,
+    1.3
+   ]
+  ],
+  "FINAL, local 4B (SFT + GRPO)": [
+   [
+    0.63,
+    5.3
+   ],
+   [
+    0.507,
+    11.3
+   ],
+   [
+    0.627,
+    6.0
+   ]
+  ],
+  "cascade, Gemini 4": [
+   [
+    0.411,
+    2.0
+   ],
+   [
+    0.435,
+    4.7
+   ],
+   [
+    0.448,
+    2.7
+   ]
+  ],
+  "fusion + Gemini flash-lite": [
+   [
+    0.301,
+    2.7
+   ],
+   [
+    0.362,
+    4.7
+   ],
+   [
+    0.328,
+    1.3
+   ]
+  ],
+  "exposure": {
+   "detected": 127,
+   "protected_by_fast_path_or_policy": 102,
+   "exposed_to_model": 25,
+   "closed_of_exposed": {
+    "Gemini 4": 0,
+    "flash-lite": 1,
+    "SFT+GRPO": 4,
+    "SFT": 15
+   }
+  }
+ }
+}

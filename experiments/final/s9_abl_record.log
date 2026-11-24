@@ -1,0 +1,8 @@
+842,991 events replayed in 41.1s (scored after 12h, speed 1.0x)
+
+          alerts/day       precision          FP/day look-alike FP/d          recall            ueba             nhi         runtime         bundles       TTD p50 s        R@10FP/d    us/event p99        events/s
+ABL-graph+model           130.7          0.9184            10.7             9.3          0.6269            0.56           0.522           0.842             1.0             1.7           0.627            61.8           34621
+
+ABL-graph+model recall by type: b4_replication_spike=0/1, bigtable_full_scan=0/4, breakglass_no_incident=2/2, ebpf_bpf_load=2/2, ebpf_kernel_module=1/1, ebpf_memfd_exec=1/1, ebpf_namespace_escape=1/1, ebpf_ptrace_attach=1/1, ebpf_sensitive_read=2/2, ebpf_shell_in_container=3/3, ebpf_unexpected_connect=2/2, egress_shift=0/1, endpoint_beaconing=0/2, fast_approval=2/5, first_seen_device=4/4, impossible_travel=0/2, new_rpc_edge=5/5, off_hours_access=2/2, priority_quota_abuse=0/3, rare_binary=3/3, read_volume_spike=7/7, review_bypass=1/4, spanner_bulk_export=0/5, titan_measurement_mismatch=0/1, tpu_unusual_checkpoint_load=1/1, unverified_build=2/2
+ABL-graph+model look-alike FPs: {'routine_prod_session': 12, 'incident_response': 7, 'service_launch': 4}
+ABL-graph+model top FP rules (per day): {'risk:noisy_or': 1.3}

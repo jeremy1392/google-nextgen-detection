@@ -1,0 +1,9 @@
+base 1 779 17 {'gnn': 0.6872, 'pref_att': 0.9469, 'cf': 0.9166, 'unseen': 0.9118}
+base 2 875 19 {'gnn': 0.6413, 'pref_att': 0.9486, 'cf': 0.9268, 'unseen': 0.8421}
+base 3 902 14 {'gnn': 0.6035, 'pref_att': 0.9204, 'cf': 0.8839, 'unseen': 0.7143}
+drift 1 858 14 {'gnn': 0.7277, 'pref_att': 0.9841, 'cf': 0.9489, 'unseen': 0.9209}
+drift 2 930 16 {'gnn': 0.6206, 'pref_att': 0.9797, 'cf': 0.9306, 'unseen': 0.8706}
+drift 3 922 13 {'gnn': 0.5936, 'pref_att': 0.8456, 'cf': 0.806, 'unseen': 0.7648}
+mix 1 802 22 {'gnn': 0.77, 'pref_att': 0.9092, 'cf': 0.898, 'unseen': 0.7871}
+mix 2 868 27 {'gnn': 0.635, 'pref_att': 0.8056, 'cf': 0.7769, 'unseen': 0.7324}
+mix 3 941 17 {'gnn': 0.7035, 'pref_att': 0.98, 'cf': 0.9041, 'unseen': 0.6994}

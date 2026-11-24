@@ -1,0 +1,291 @@
+[
+  {
+    "model": "google/gemini-2.5-flash-lite",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 0.38,
+    "total_s": 0.65,
+    "out_tokens": 119,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00015,
+    "verdicts": [
+      "needs_review",
+      "needs_review",
+      "needs_review"
+    ],
+    "provider": "Google AI Studio"
+  },
+  {
+    "model": "google/gemini-3.1-flash-lite-preview",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 0.59,
+    "total_s": 0.69,
+    "out_tokens": 82,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00038,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google AI Studio"
+  },
+  {
+    "model": "google/gemini-2.5-flash",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 0.47,
+    "total_s": 0.87,
+    "out_tokens": 102,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00057,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google AI Studio"
+  },
+  {
+    "model": "google/gemini-3.5-flash-lite",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 0.74,
+    "total_s": 1.07,
+    "out_tokens": 105,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00058,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-3.1-flash-lite",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 0.98,
+    "total_s": 1.25,
+    "out_tokens": 79,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00038,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-3-flash-preview",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 1.1,
+    "total_s": 1.58,
+    "out_tokens": 108,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00085,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-3.5-flash",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 1.64,
+    "total_s": 3.46,
+    "out_tokens": 527,
+    "reasoning_tokens": 423,
+    "cost_usd": 0.00631,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-3.7-flash",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 2.14,
+    "total_s": 3.7,
+    "out_tokens": 363,
+    "reasoning_tokens": 257,
+    "cost_usd": 0.0022,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-3.6-flash",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 1.9,
+    "total_s": 3.84,
+    "out_tokens": 674,
+    "reasoning_tokens": 577,
+    "cost_usd": 0.00316,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-3.8-flash",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 2.96,
+    "total_s": 3.87,
+    "out_tokens": 427,
+    "reasoning_tokens": 344,
+    "cost_usd": 0.00239,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-4-hydrogen",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 3.89,
+    "total_s": 4.34,
+    "out_tokens": 633,
+    "reasoning_tokens": 536,
+    "cost_usd": 0.00628,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-4-argon",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 2.87,
+    "total_s": 4.43,
+    "out_tokens": 105,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00341,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-3.1-pro-preview",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 2.89,
+    "total_s": 5.48,
+    "out_tokens": 416,
+    "reasoning_tokens": 315,
+    "cost_usd": 0.00699,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-4-carbon",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 7.59,
+    "total_s": 7.63,
+    "out_tokens": 196,
+    "reasoning_tokens": 100,
+    "cost_usd": 0.00414,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-4-neon",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 4.65,
+    "total_s": 8.74,
+    "out_tokens": 884,
+    "reasoning_tokens": 781,
+    "cost_usd": 0.01649,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google"
+  },
+  {
+    "model": "google/gemini-2.5-pro",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 2.14,
+    "total_s": 11.89,
+    "out_tokens": 1527,
+    "reasoning_tokens": 1420,
+    "cost_usd": 0.01658,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google AI Studio"
+  },
+  {
+    "model": "google/gemini-2.5-pro-preview",
+    "ok": 3,
+    "runs": 3,
+    "errors": [],
+    "ttft_s": 2.07,
+    "total_s": 12.13,
+    "out_tokens": 1503,
+    "reasoning_tokens": 1411,
+    "cost_usd": 0.01699,
+    "verdicts": [
+      "malicious",
+      "malicious",
+      "malicious"
+    ],
+    "provider": "Google AI Studio"
+  }
+]

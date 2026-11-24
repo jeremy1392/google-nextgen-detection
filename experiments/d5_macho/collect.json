@@ -1,0 +1,11 @@
+{
+ "malware_days": 180,
+ "malware": 1042,
+ "benign": 3008,
+ "day_errors": [
+  {
+   "day": "2026-11-23",
+   "error": "http 404"
+  }
+ ]
+}

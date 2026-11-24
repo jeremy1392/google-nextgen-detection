@@ -1,0 +1,116 @@
+✓ Initialized. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-qlPiijD1mrjFodHf52RbDf
+✓ Created objects.
+├── ✓ Uploaded modal_apps\g10_rlvr.py
+├── ✓ Uploaded experiments\g10
+├── ✓ Created Function sft.
+├── ✓ Created Function grpo.
+├── ✓ Created Function evaluate.
+└── ✓ Created Function answer.
+prompts 114
+INFO 11-24 15:42:27 [__init__.py:239] Automatically detected platform cuda.
+INFO 11-24 15:42:28 [__init__.py:239] Automatically detected platform cuda.
+INFO 11-24 15:42:37 [config.py:717] This model supports multiple tasks: {'embed', 'score', 'classify', 'reward', 'generate'}. Defaulting to 'generate'.
+INFO 11-24 15:42:37 [config.py:2003] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 11-24 15:42:39 [core.py:58] Initializing a V1 LLM engine (v0.8.5) with config: model='/models/merged/grpo', speculative_config=None, tokenizer='/models/merged/grpo', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=12288, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='auto', reasoning_backend=None), observability_config=ObservabilityConfig(show_hidden_metrics=False, otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/models/merged/grpo, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"level":3,"custom_ops":["none"],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output"],"use_inductor":true,"compile_sizes":[],"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":512}
+INFO 11-24 15:42:39 [config.py:717] This model supports multiple tasks: {'embed', 'reward', 'generate', 'classify', 'score'}. Defaulting to 'generate'.
+WARNING 11-24 15:42:39 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x2ac049c60890>
+INFO 11-24 15:42:39 [config.py:2003] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 11-24 15:42:40 [parallel_state.py:1004] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0
+INFO 11-24 15:42:40 [cuda.py:221] Using Flash Attention backend on V1 engine.
+WARNING 11-24 15:42:40 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+INFO 11-24 15:42:40 [gpu_model_runner.py:1329] Starting to load model /models/merged/grpo...
+Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+INFO 11-24 15:42:41 [core.py:58] Initializing a V1 LLM engine (v0.8.5) with config: model='/models/merged/sft', speculative_config=None, tokenizer='/models/merged/sft', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=12288, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='auto', reasoning_backend=None), observability_config=ObservabilityConfig(show_hidden_metrics=False, otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/models/merged/sft, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"level":3,"custom_ops":["none"],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output"],"use_inductor":true,"compile_sizes":[],"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":512}
+WARNING 11-24 15:42:41 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x2afb84e81710>
+INFO 11-24 15:42:42 [parallel_state.py:1004] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0
+Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:01<00:01,  1.73s/it]
+INFO 11-24 15:42:42 [cuda.py:221] Using Flash Attention backend on V1 engine.
+WARNING 11-24 15:42:42 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+INFO 11-24 15:42:42 [gpu_model_runner.py:1329] Starting to load model /models/merged/sft...
+Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.39s/it]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.44s/it]
+
+INFO 11-24 15:42:43 [loader.py:458] Loading weights took 2.93 seconds
+INFO 11-24 15:42:43 [gpu_model_runner.py:1347] Model loading took 7.6065 GiB and 3.129814 seconds
+Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:01<00:01,  1.99s/it]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:03<00:00,  1.59s/it]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:03<00:00,  1.65s/it]
+
+INFO 11-24 15:42:45 [loader.py:458] Loading weights took 3.36 seconds
+INFO 11-24 15:42:46 [gpu_model_runner.py:1347] Model loading took 7.6065 GiB and 3.588841 seconds
+INFO 11-24 15:42:52 [backends.py:420] Using cache directory: /root/.cache/vllm/torch_compile_cache/3c59ac3e7e/rank_0_0 for vLLM's torch.compile
+INFO 11-24 15:42:52 [backends.py:430] Dynamo bytecode transform time: 8.46 s
+INFO 11-24 15:42:55 [backends.py:420] Using cache directory: /root/.cache/vllm/torch_compile_cache/8b0ea723a7/rank_0_0 for vLLM's torch.compile
+INFO 11-24 15:42:55 [backends.py:430] Dynamo bytecode transform time: 9.27 s
+INFO 11-24 15:42:56 [backends.py:136] Cache the graph of shape None for later use
+INFO 11-24 15:42:59 [backends.py:136] Cache the graph of shape None for later use
+INFO 11-24 15:43:22 [backends.py:148] Compiling a graph for general shape takes 29.78 s
+INFO 11-24 15:43:27 [backends.py:148] Compiling a graph for general shape takes 31.03 s
+INFO 11-24 15:43:58 [monitor.py:33] torch.compile takes 38.24 s in total
+INFO 11-24 15:43:59 [kv_cache_utils.py:634] GPU KV cache size: 388,480 tokens
+INFO 11-24 15:43:59 [kv_cache_utils.py:637] Maximum concurrency for 12,288 tokens per request: 31.61x
+INFO 11-24 15:44:03 [monitor.py:33] torch.compile takes 40.30 s in total
+INFO 11-24 15:44:04 [kv_cache_utils.py:634] GPU KV cache size: 388,480 tokens
+INFO 11-24 15:44:04 [kv_cache_utils.py:637] Maximum concurrency for 12,288 tokens per request: 31.61x
+INFO 11-24 15:44:31 [gpu_model_runner.py:1686] Graph capturing finished in 27 secs, took 0.54 GiB
+INFO 11-24 15:44:31 [core.py:159] init engine (profile, create kv cache, warmup model) took 105.04 seconds
+INFO 11-24 15:44:31 [core_client.py:439] Core engine process 0 ready.
+
+INFO 11-24 15:44:32 [gpu_model_runner.py:1686] Graph capturing finished in 32 secs, took 0.54 GiB
+INFO 11-24 15:44:32 [core.py:159] init engine (profile, create kv cache, warmup model) took 108.28 seconds
+INFO 11-24 15:44:32 [core_client.py:439] Core engine process 0 ready.
+[1AProcessed prompts:   0%|          | 0/114 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]
+[1AProcessed prompts:   0%|          | 0/114 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]
+[1AProcessed prompts:   1%|          | 1/114 [00:06<11:38,  6.18s/it, est. speed input: 609.85 toks/s, output: 5.66 toks/s]
+[1AProcessed prompts:   4%|▎         | 4/114 [00:06<02:15,  1.23s/it, est. speed input: 2680.57 toks/s, output: 21.84 toks/s]
+[1AProcessed prompts:   7%|▋         | 8/114 [00:06<00:55,  1.90it/s, est. speed input: 5660.58 toks/s, output: 41.91 toks/s]
+[1AProcessed prompts:   9%|▉         | 10/114 [00:06<00:41,  2.53it/s, est. speed input: 6917.90 toks/s, output: 50.91 toks/s]
+[1AProcessed prompts:  11%|█▏        | 13/114 [00:07<00:27,  3.61it/s, est. speed input: 8921.50 toks/s, output: 63.57 toks/s]
+[1AProcessed prompts:   1%|          | 1/114 [00:06<11:44,  6.23s/it, est. speed input: 604.76 toks/s, output: 5.62 toks/s]
+[1AProcessed prompts:   3%|▎         | 3/114 [00:06<03:07,  1.69s/it, est. speed input: 2067.93 toks/s, output: 16.35 toks/s]
+[1AProcessed prompts:  15%|█▍        | 17/114 [00:07<00:18,  5.30it/s, est. speed input: 10681.75 toks/s, output: 79.96 toks/s]
+[1AProcessed prompts:   4%|▍         | 5/114 [00:06<01:35,  1.14it/s, est. speed input: 3322.02 toks/s, output: 26.34 toks/s]
+[1AProcessed prompts:  17%|█▋        | 19/114 [00:07<00:15,  5.95it/s, est. speed input: 11914.27 toks/s, output: 87.03 toks/s]
+[1AProcessed prompts:   6%|▌         | 7/114 [00:06<00:56,  1.88it/s, est. speed input: 4336.35 toks/s, output: 36.19 toks/s]
+[1AProcessed prompts:  18%|█▊        | 21/114 [00:07<00:14,  6.52it/s, est. speed input: 13056.65 toks/s, output: 93.50 toks/s]
+[1AProcessed prompts:   8%|▊         | 9/114 [00:06<00:38,  2.74it/s, est. speed input: 5894.23 toks/s, output: 45.33 toks/s]
+[1AProcessed prompts:  26%|██▋       | 30/114 [00:07<00:05, 15.19it/s, est. speed input: 18244.75 toks/s, output: 131.84 toks/s]
+[1AProcessed prompts:  10%|▉         | 11/114 [00:07<00:26,  3.85it/s, est. speed input: 6802.25 toks/s, output: 54.41 toks/s]
+[1AProcessed prompts:  11%|█▏        | 13/114 [00:07<00:20,  4.84it/s, est. speed input: 8090.09 toks/s, output: 62.53 toks/s]
+[1AProcessed prompts:  32%|███▏      | 37/114 [00:08<00:03, 21.82it/s, est. speed input: 21788.60 toks/s, output: 160.26 toks/s]
+[1AProcessed prompts:  44%|████▍     | 50/114 [00:08<00:01, 38.17it/s, est. speed input: 30273.89 toks/s, output: 213.81 toks/s]
+[1AProcessed prompts:  50%|█████     | 57/114 [00:08<00:01, 33.08it/s, est. speed input: 33642.32 toks/s, output: 235.61 toks/s]
+[1AProcessed prompts:  13%|█▎        | 15/114 [00:07<00:18,  5.32it/s, est. speed input: 9143.80 toks/s, output: 69.31 toks/s]
+[1AProcessed prompts:  63%|██████▎   | 72/114 [00:08<00:00, 49.23it/s, est. speed input: 40686.28 toks/s, output: 300.75 toks/s]
+[1AProcessed prompts:  15%|█▍        | 17/114 [00:07<00:17,  5.70it/s, est. speed input: 9961.34 toks/s, output: 75.58 toks/s]
+[1AProcessed prompts:  70%|███████   | 80/114 [00:08<00:00, 36.81it/s, est. speed input: 42532.66 toks/s, output: 371.99 toks/s]
+[1AProcessed prompts:  18%|█▊        | 20/114 [00:08<00:13,  7.01it/s, est. speed input: 11721.91 toks/s, output: 85.84 toks/s]
+[1AProcessed prompts:  76%|███████▋  | 87/114 [00:09<00:00, 39.48it/s, est. speed input: 44619.57 toks/s, output: 444.50 toks/s]
+[1AProcessed prompts:  82%|████████▏ | 94/114 [00:09<00:00, 40.73it/s, est. speed input: 45563.58 toks/s, output: 513.17 toks/s]
+[1AProcessed prompts:  19%|█▉        | 22/114 [00:08<00:14,  6.24it/s, est. speed input: 12433.67 toks/s, output: 93.27 toks/s]
+[1AProcessed prompts:  89%|████████▉ | 102/114 [00:09<00:00, 36.74it/s, est. speed input: 47116.44 toks/s, output: 594.92 toks/s]
+[1AProcessed prompts:  96%|█████████▋| 110/114 [00:09<00:00, 42.97it/s, est. speed input: 49762.29 toks/s, output: 719.85 toks/s]
+[1AProcessed prompts:  20%|██        | 23/114 [00:08<00:16,  5.50it/s, est. speed input: 12656.61 toks/s, output: 97.99 toks/s]
+[1AProcessed prompts:  25%|██▍       | 28/114 [00:08<00:08, 10.22it/s, est. speed input: 14964.61 toks/s, output: 127.46 toks/s]
+[1AProcessed prompts:  34%|███▍      | 39/114 [00:09<00:03, 23.08it/s, est. speed input: 20246.43 toks/s, output: 201.85 toks/s]
+[1AProcessed prompts:  39%|███▊      | 44/114 [00:09<00:02, 26.85it/s, est. speed input: 22884.02 toks/s, output: 232.90 toks/s]
+[1AProcessed prompts:  42%|████▏     | 48/114 [00:09<00:02, 25.22it/s, est. speed input: 24435.96 toks/s, output: 266.60 toks/s]
+[1AProcessed prompts:  46%|████▌     | 52/114 [00:09<00:02, 26.88it/s, est. speed input: 25336.94 toks/s, output: 303.06 toks/s]
+[1AProcessed prompts:  54%|█████▍    | 62/114 [00:09<00:01, 40.43it/s, est. speed input: 29471.00 toks/s, output: 400.81 toks/s]
+[1AProcessed prompts:  60%|█████▉    | 68/114 [00:09<00:01, 41.73it/s, est. speed input: 32271.83 toks/s, output: 454.15 toks/s]
+[1AProcessed prompts:  69%|██████▉   | 79/114 [00:10<00:00, 42.04it/s, est. speed input: 34845.11 toks/s, output: 546.19 toks/s]
+[1AProcessed prompts:  75%|███████▌  | 86/114 [00:10<00:00, 44.72it/s, est. speed input: 37072.53 toks/s, output: 622.00 toks/s]
+[1AProcessed prompts:  80%|███████▉  | 91/114 [00:10<00:00, 37.56it/s, est. speed input: 37853.17 toks/s, output: 664.32 toks/s]
+[1AProcessed prompts:  87%|████████▋ | 99/114 [00:10<00:00, 43.76it/s, est. speed input: 40373.22 toks/s, output: 775.01 toks/s]Processed prompts: 100%|██████████| 114/114 [00:11<00:00,  9.93it/s, est. speed input: 43158.66 toks/s, output: 692.06 toks/s]
+
+[1AProcessed prompts:  91%|█████████ | 104/114 [00:11<00:00, 18.80it/s, est. speed input: 39298.67 toks/s, output: 798.61 toks/s]
+[1AProcessed prompts:  96%|█████████▋| 110/114 [00:11<00:00, 21.38it/s, est. speed input: 41245.19 toks/s, output: 915.69 toks/s]
+[1AProcessed prompts: 100%|██████████| 114/114 [00:16<00:00,  3.47it/s, est. speed input: 30643.48 toks/s, output: 787.57 toks/s]Processed prompts: 100%|██████████| 114/114 [00:16<00:00,  7.05it/s, est. speed input: 30643.48 toks/s, output: 787.57 toks/s]
+grpo answers 114
+sft answers 114
+Stopping app - local entrypoint completed.
+[modal-client] 2026-11-24T17:45:36+0200 Timed out waiting for final app logs.
+✓ App completed. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-qlPiijD1mrjFodHf52RbDf

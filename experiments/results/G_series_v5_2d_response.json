@@ -1,0 +1,322 @@
+{
+ "P8": {
+  "human_all": {
+   "cases": 73,
+   "contained": 32,
+   "never_contained": 41,
+   "ttc_min_p50": 28.7,
+   "ttc_min_p95": 176.8,
+   "auto_actions_per_day": 0.0,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 76.0
+  },
+  "llm_auto": {
+   "cases": 73,
+   "contained": 17,
+   "never_contained": 56,
+   "ttc_min_p50": 8.9,
+   "ttc_min_p95": 129.1,
+   "auto_actions_per_day": 16.0,
+   "wrongful_auto_actions_per_day": 2.0,
+   "human_reviews_per_day": 6.0
+  },
+  "llm_auto_strict": {
+   "cases": 73,
+   "contained": 17,
+   "never_contained": 56,
+   "ttc_min_p50": 6.5,
+   "ttc_min_p95": 185.0,
+   "auto_actions_per_day": 14.0,
+   "wrongful_auto_actions_per_day": 1.33,
+   "human_reviews_per_day": 8.0
+  }
+ },
+ "P8-noctx": {
+  "human_all": {
+   "cases": 73,
+   "contained": 32,
+   "never_contained": 41,
+   "ttc_min_p50": 28.7,
+   "ttc_min_p95": 176.8,
+   "auto_actions_per_day": 0.0,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 76.0
+  },
+  "llm_auto": {
+   "cases": 73,
+   "contained": 13,
+   "never_contained": 60,
+   "ttc_min_p50": 0.1,
+   "ttc_min_p95": 68.3,
+   "auto_actions_per_day": 14.0,
+   "wrongful_auto_actions_per_day": 0.67,
+   "human_reviews_per_day": 6.7
+  },
+  "llm_auto_strict": {
+   "cases": 73,
+   "contained": 13,
+   "never_contained": 60,
+   "ttc_min_p50": 0.1,
+   "ttc_min_p95": 68.3,
+   "auto_actions_per_day": 12.0,
+   "wrongful_auto_actions_per_day": 0.67,
+   "human_reviews_per_day": 8.7
+  }
+ },
+ "P8-harness": {
+  "human_all": {
+   "cases": 73,
+   "contained": 32,
+   "never_contained": 41,
+   "ttc_min_p50": 28.7,
+   "ttc_min_p95": 176.8,
+   "auto_actions_per_day": 0.0,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 76.0
+  },
+  "llm_auto": {
+   "cases": 73,
+   "contained": 24,
+   "never_contained": 49,
+   "ttc_min_p50": 15.5,
+   "ttc_min_p95": 118.7,
+   "auto_actions_per_day": 16.0,
+   "wrongful_auto_actions_per_day": 2.0,
+   "human_reviews_per_day": 20.0
+  },
+  "llm_auto_strict": {
+   "cases": 73,
+   "contained": 24,
+   "never_contained": 49,
+   "ttc_min_p50": 26.6,
+   "ttc_min_p95": 147.1,
+   "auto_actions_per_day": 14.0,
+   "wrongful_auto_actions_per_day": 1.33,
+   "human_reviews_per_day": 22.0
+  }
+ },
+ "P8-rep": {
+  "human_all": {
+   "cases": 73,
+   "contained": 32,
+   "never_contained": 41,
+   "ttc_min_p50": 28.7,
+   "ttc_min_p95": 176.8,
+   "auto_actions_per_day": 0.0,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 76.0
+  },
+  "llm_auto": {
+   "cases": 73,
+   "contained": 17,
+   "never_contained": 56,
+   "ttc_min_p50": 8.9,
+   "ttc_min_p95": 129.1,
+   "auto_actions_per_day": 16.0,
+   "wrongful_auto_actions_per_day": 2.0,
+   "human_reviews_per_day": 6.0
+  },
+  "llm_auto_strict": {
+   "cases": 73,
+   "contained": 17,
+   "never_contained": 56,
+   "ttc_min_p50": 6.5,
+   "ttc_min_p95": 185.0,
+   "auto_actions_per_day": 14.0,
+   "wrongful_auto_actions_per_day": 1.33,
+   "human_reviews_per_day": 8.0
+  }
+ },
+ "P8-g4": {
+  "human_all": {
+   "cases": 73,
+   "contained": 32,
+   "never_contained": 41,
+   "ttc_min_p50": 28.7,
+   "ttc_min_p95": 176.8,
+   "auto_actions_per_day": 0.0,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 76.0
+  },
+  "llm_auto": {
+   "cases": 73,
+   "contained": 23,
+   "never_contained": 50,
+   "ttc_min_p50": 17.9,
+   "ttc_min_p95": 118.8,
+   "auto_actions_per_day": 14.0,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 14.7
+  },
+  "llm_auto_strict": {
+   "cases": 73,
+   "contained": 23,
+   "never_contained": 50,
+   "ttc_min_p50": 15.6,
+   "ttc_min_p95": 152.2,
+   "auto_actions_per_day": 9.3,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 19.3
+  }
+ },
+ "P9": {
+  "human_all": {
+   "cases": 73,
+   "contained": 32,
+   "never_contained": 41,
+   "ttc_min_p50": 28.7,
+   "ttc_min_p95": 176.8,
+   "auto_actions_per_day": 0.0,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 76.0
+  },
+  "llm_auto": {
+   "cases": 73,
+   "contained": 17,
+   "never_contained": 56,
+   "ttc_min_p50": 8.9,
+   "ttc_min_p95": 129.1,
+   "auto_actions_per_day": 16.0,
+   "wrongful_auto_actions_per_day": 2.0,
+   "human_reviews_per_day": 6.0
+  },
+  "llm_auto_strict": {
+   "cases": 73,
+   "contained": 17,
+   "never_contained": 56,
+   "ttc_min_p50": 6.5,
+   "ttc_min_p95": 185.0,
+   "auto_actions_per_day": 14.0,
+   "wrongful_auto_actions_per_day": 1.33,
+   "human_reviews_per_day": 8.0
+  }
+ },
+ "P9-harness": {
+  "human_all": {
+   "cases": 73,
+   "contained": 32,
+   "never_contained": 41,
+   "ttc_min_p50": 28.7,
+   "ttc_min_p95": 176.8,
+   "auto_actions_per_day": 0.0,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 76.0
+  },
+  "llm_auto": {
+   "cases": 73,
+   "contained": 24,
+   "never_contained": 49,
+   "ttc_min_p50": 15.5,
+   "ttc_min_p95": 118.7,
+   "auto_actions_per_day": 16.0,
+   "wrongful_auto_actions_per_day": 2.0,
+   "human_reviews_per_day": 20.0
+  },
+  "llm_auto_strict": {
+   "cases": 73,
+   "contained": 24,
+   "never_contained": 49,
+   "ttc_min_p50": 26.6,
+   "ttc_min_p95": 147.1,
+   "auto_actions_per_day": 14.0,
+   "wrongful_auto_actions_per_day": 1.33,
+   "human_reviews_per_day": 22.0
+  }
+ },
+ "P9-g4": {
+  "human_all": {
+   "cases": 73,
+   "contained": 32,
+   "never_contained": 41,
+   "ttc_min_p50": 28.7,
+   "ttc_min_p95": 176.8,
+   "auto_actions_per_day": 0.0,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 76.0
+  },
+  "llm_auto": {
+   "cases": 73,
+   "contained": 22,
+   "never_contained": 51,
+   "ttc_min_p50": 20.8,
+   "ttc_min_p95": 185.1,
+   "auto_actions_per_day": 16.0,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 10.0
+  },
+  "llm_auto_strict": {
+   "cases": 73,
+   "contained": 22,
+   "never_contained": 51,
+   "ttc_min_p50": 19.5,
+   "ttc_min_p95": 185.1,
+   "auto_actions_per_day": 9.3,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 16.7
+  }
+ },
+ "P8-agent": {
+  "human_all": {
+   "cases": 73,
+   "contained": 13,
+   "never_contained": 60,
+   "ttc_min_p50": 37.8,
+   "ttc_min_p95": 176.8,
+   "auto_actions_per_day": 0.0,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 30.0
+  },
+  "llm_auto": {
+   "cases": 73,
+   "contained": 5,
+   "never_contained": 68,
+   "ttc_min_p50": 0.1,
+   "ttc_min_p95": 0.1,
+   "auto_actions_per_day": 6.0,
+   "wrongful_auto_actions_per_day": 0.67,
+   "human_reviews_per_day": 0.7
+  },
+  "llm_auto_strict": {
+   "cases": 73,
+   "contained": 5,
+   "never_contained": 68,
+   "ttc_min_p50": 0.1,
+   "ttc_min_p95": 23.8,
+   "auto_actions_per_day": 2.7,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 4.0
+  }
+ },
+ "P8-agent-g4": {
+  "human_all": {
+   "cases": 73,
+   "contained": 26,
+   "never_contained": 47,
+   "ttc_min_p50": 37.8,
+   "ttc_min_p95": 169.3,
+   "auto_actions_per_day": 0.0,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 57.3
+  },
+  "llm_auto": {
+   "cases": 73,
+   "contained": 14,
+   "never_contained": 59,
+   "ttc_min_p50": 0.2,
+   "ttc_min_p95": 58.0,
+   "auto_actions_per_day": 12.0,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 7.3
+  },
+  "llm_auto_strict": {
+   "cases": 73,
+   "contained": 14,
+   "never_contained": 59,
+   "ttc_min_p50": 6.5,
+   "ttc_min_p95": 86.3,
+   "auto_actions_per_day": 6.7,
+   "wrongful_auto_actions_per_day": 0.0,
+   "human_reviews_per_day": 12.7
+  }
+ }
+}

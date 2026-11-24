@@ -1,0 +1,173 @@
+{
+  "run": "experiments/cache_g11/s7_inject10",
+  "events": 845018,
+  "wall_s": 37.1,
+  "eval_from": "12h",
+  "speed": 1.0,
+  "sources": null,
+  "pipelines": {
+    "FINAL-nollm": {
+      "detector": "FINAL-nollm",
+      "evidence_completeness": 0.519,
+      "attack_coverage": "16/20",
+      "attack_missed": [
+        "T1071.004",
+        "T1496",
+        "T1537",
+        "T1542"
+      ],
+      "brier": 0.0792,
+      "reliability": [
+        {
+          "bin": "0.0-0.1",
+          "alerts": 0,
+          "anomaly_rate": null
+        },
+        {
+          "bin": "0.1-0.2",
+          "alerts": 0,
+          "anomaly_rate": null
+        },
+        {
+          "bin": "0.2-0.3",
+          "alerts": 0,
+          "anomaly_rate": null
+        },
+        {
+          "bin": "0.3-0.4",
+          "alerts": 0,
+          "anomaly_rate": null
+        },
+        {
+          "bin": "0.4-0.5",
+          "alerts": 0,
+          "anomaly_rate": null
+        },
+        {
+          "bin": "0.5-0.6",
+          "alerts": 0,
+          "anomaly_rate": null
+        },
+        {
+          "bin": "0.6-0.7",
+          "alerts": 0,
+          "anomaly_rate": null
+        },
+        {
+          "bin": "0.7-0.8",
+          "alerts": 87,
+          "anomaly_rate": 0.805
+        },
+        {
+          "bin": "0.8-0.9",
+          "alerts": 66,
+          "anomaly_rate": 0.97
+        },
+        {
+          "bin": "0.9-1.0",
+          "alerts": 75,
+          "anomaly_rate": 0.987
+        }
+      ],
+      "batch_s": null,
+      "alerts": 228,
+      "alerts_per_day": 152.0,
+      "precision": 0.9123,
+      "fp_per_day": 13.3,
+      "fp_lookalike_per_day": 10.7,
+      "fp_lookalike_by_type": {
+        "routine_prod_session": 9,
+        "incident_response": 6,
+        "service_launch": 4
+      },
+      "fp_per_day_by_rule": {
+        "risk:noisy_or": 2.0,
+        "fast:denied_syscall_burst": 0.7
+      },
+      "cases": 73,
+      "recall": 0.6712,
+      "recall_by_family": {
+        "nhi": 0.55,
+        "runtime": 0.857,
+        "ueba": 0.625
+      },
+      "recall_by_type": {
+        "b4_replication_spike": "0/1",
+        "bigtable_full_scan": "0/3",
+        "breakglass_no_incident": "1/1",
+        "ebpf_bpf_load": "2/2",
+        "ebpf_kernel_module": "2/2",
+        "ebpf_memfd_exec": "2/2",
+        "ebpf_namespace_escape": "1/1",
+        "ebpf_ptrace_attach": "1/1",
+        "ebpf_sensitive_read": "2/2",
+        "ebpf_shell_in_container": "5/5",
+        "ebpf_unexpected_connect": "2/2",
+        "egress_shift": "1/2",
+        "endpoint_beaconing": "0/2",
+        "fast_approval": "2/4",
+        "first_seen_device": "6/6",
+        "impossible_travel": "1/5",
+        "new_rpc_edge": "5/5",
+        "off_hours_access": "4/4",
+        "priority_quota_abuse": "0/4",
+        "rare_binary": "1/1",
+        "read_volume_spike": "7/7",
+        "review_bypass": "2/4",
+        "spanner_bulk_export": "0/4",
+        "titan_measurement_mismatch": "0/1",
+        "tpu_unusual_checkpoint_load": "2/2"
+      },
+      "bundles": 12,
+      "bundle_recall": 0.917,
+      "ttd_s": {
+        "p50": 11.4,
+        "p95": 11770.5
+      },
+      "average_precision": 0.9767,
+      "recall_at_fp_per_day": {
+        "1/day": 0.575,
+        "10/day": 0.671,
+        "100/day": 0.671
+      },
+      "latency": {
+        "per_event_us": {
+          "p50": 23.0,
+          "p95": 37.3,
+          "p99": 54.9,
+          "max": 60302.2
+        },
+        "throughput_eps": 38421,
+        "detection_delay_s": {
+          "p50": 0.0,
+          "p99": 0.0
+        },
+        "overload": {
+          "dropped": 0,
+          "dropped_share": 0.0,
+          "peak_backlog_s": 0.0,
+          "peak_backlog_events": 2
+        }
+      },
+      "llm": {
+        "model": "google/gemini-3.1-flash-lite-preview",
+        "fused": 189,
+        "llm_calls": 0,
+        "suppressed": 0,
+        "kept": 0,
+        "errors": 0,
+        "cost_usd": 0.0,
+        "verdicts": {},
+        "fast_path": 39,
+        "signals": 742,
+        "events": 845018,
+        "kept_by_policy": 36,
+        "llm_latency_s": {
+          "p50": 0,
+          "p95": 0
+        }
+      },
+      "llm_decisions": []
+    }
+  }
+}

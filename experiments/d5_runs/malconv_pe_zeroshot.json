@@ -1,0 +1,16 @@
+{
+ "tag": "malconv_pe_zeroshot",
+ "init": "pe",
+ "frac": 1.0,
+ "lr": 0.0,
+ "epochs": 0,
+ "history": [
+  {
+   "epoch": null,
+   "val_auc": 0.6742011991699193
+  }
+ ],
+ "best_epoch": null,
+ "train_mal": 4562,
+ "train_ben": 54796
+}

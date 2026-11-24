@@ -1,0 +1,62 @@
+{
+ "P0": {
+  "first_batch": 0.927,
+  "second_batch": 0.429,
+  "drop": 0.498
+ },
+ "P1": {
+  "first_batch": 0.927,
+  "second_batch": 0.336,
+  "drop": 0.591
+ },
+ "P2": {
+  "first_batch": 0.785,
+  "second_batch": 0.171,
+  "drop": 0.614
+ },
+ "P3": {
+  "first_batch": 0.288,
+  "second_batch": 0.236,
+  "drop": 0.052
+ },
+ "P4": {
+  "first_batch": 0.612,
+  "second_batch": 0.564,
+  "drop": 0.048
+ },
+ "P5": {
+  "first_batch": 0.991,
+  "second_batch": 0.357,
+  "drop": 0.634
+ },
+ "P6": {
+  "first_batch": 0.858,
+  "second_batch": 0.093,
+  "drop": 0.765
+ },
+ "P6-sum": {
+  "first_batch": 0.849,
+  "second_batch": 0.086,
+  "drop": 0.763
+ },
+ "P6-max": {
+  "first_batch": 0.379,
+  "second_batch": 0.1,
+  "drop": 0.279
+ },
+ "P6-hyper": {
+  "first_batch": 0.881,
+  "second_batch": 0.186,
+  "drop": 0.695
+ },
+ "P6-indep": {
+  "first_batch": 0.849,
+  "second_batch": 0.086,
+  "drop": 0.763
+ },
+ "P6+P4": {
+  "first_batch": 0.904,
+  "second_batch": 0.407,
+  "drop": 0.497
+ }
+}

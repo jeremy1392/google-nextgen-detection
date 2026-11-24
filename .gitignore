@@ -1,0 +1,18 @@
+# secrets
+.env
+*.env
+# Python
+__pycache__/
+*.pyc
+# third-party datasets (their licences do not allow redistribution; download them from the original sources)
+data/
+out/
+# generated worlds: regenerable byte for byte from their seeds (python -m loggen --seed N ...)
+experiments/cache*/
+experiments/protocol_v1/
+# the paper is not part of this repository
+paper/
+# local tool state
+.claude/
+# live logs of runs still in progress
+experiments/lanl_gnn_relaunch.log

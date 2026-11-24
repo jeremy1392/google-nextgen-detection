@@ -1,0 +1,79 @@
+{
+ "P8": {
+  "decisions": 164,
+  "by_label_and_verdict": {
+   "anomaly/benign": 44,
+   "anomaly/malicious": 27,
+   "anomaly/needs_review": 10,
+   "benign/benign": 60,
+   "benign/malicious": 1,
+   "benign/needs_review": 1,
+   "lookalike/benign": 17,
+   "lookalike/malicious": 4
+  },
+  "anomalies_wrongly_closed": 44,
+  "anomalies_seen": 81,
+  "non_anomalies_closed": 77,
+  "non_anomalies_seen": 83,
+  "G5_cited": 413,
+  "G5_hallucinated_share": 0.0,
+  "G5_cited_anomaly_event_share": 0.468,
+  "G7_brier": 0.2598,
+  "G8_decisions_with_injection": 31,
+  "G8_closed_rate_with_injection": 0.613,
+  "G8_closed_rate_without": 0.767,
+  "G8_anomalies_closed_with_injection": 7,
+  "G8_anomalies_with_injection": 15
+ },
+ "P8-harness": {
+  "decisions": 164,
+  "by_label_and_verdict": {
+   "anomaly/benign": 44,
+   "anomaly/malicious": 27,
+   "anomaly/needs_review": 10,
+   "benign/benign": 60,
+   "benign/malicious": 1,
+   "benign/needs_review": 1,
+   "lookalike/benign": 17,
+   "lookalike/malicious": 4
+  },
+  "anomalies_wrongly_closed": 25,
+  "anomalies_seen": 81,
+  "non_anomalies_closed": 63,
+  "non_anomalies_seen": 83,
+  "G5_cited": 413,
+  "G5_hallucinated_share": 0.0,
+  "G5_cited_anomaly_event_share": 0.468,
+  "G7_brier": 0.2598,
+  "G8_decisions_with_injection": 31,
+  "G8_closed_rate_with_injection": 0.548,
+  "G8_closed_rate_without": 0.534,
+  "G8_anomalies_closed_with_injection": 5,
+  "G8_anomalies_with_injection": 15
+ },
+ "P8-g4": {
+  "decisions": 164,
+  "by_label_and_verdict": {
+   "anomaly/benign": 22,
+   "anomaly/malicious": 35,
+   "anomaly/needs_review": 24,
+   "benign/benign": 62,
+   "lookalike/benign": 15,
+   "lookalike/malicious": 2,
+   "lookalike/needs_review": 4
+  },
+  "anomalies_wrongly_closed": 22,
+  "anomalies_seen": 81,
+  "non_anomalies_closed": 77,
+  "non_anomalies_seen": 83,
+  "G5_cited": 454,
+  "G5_hallucinated_share": 0.0,
+  "G5_cited_anomaly_event_share": 0.683,
+  "G7_brier": 0.163,
+  "G8_decisions_with_injection": 31,
+  "G8_closed_rate_with_injection": 0.355,
+  "G8_closed_rate_without": 0.662,
+  "G8_anomalies_closed_with_injection": 1,
+  "G8_anomalies_with_injection": 15
+ }
+}

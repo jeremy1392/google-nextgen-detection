@@ -1,0 +1,172 @@
+<mxfile host="app.diagrams.net" agent="Python">
+  <diagram id="l7-nextgen-detection-arch" name="L7 NextGen Detection Telemetry &amp; Logging">
+    <mxGraphModel dx="1585" dy="898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1680" pageHeight="1060" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="region-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#008080;strokeWidth=2;dashed=1;dashPattern=8 8;" value="" vertex="1">
+          <mxGeometry height="1010" width="1620" x="30" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="region-flag" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#20B2AA;strokeColor=#008080;fontColor=#FFFFFF;fontSize=20;fontStyle=1;" value="⚑" vertex="1">
+          <mxGeometry height="36" width="36" x="45" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="region-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontStyle=1;fontColor=#008080;" value="Region (Europe) — L7 Staff Security Engineer: NextGen Detection &amp; Dynamic Reasoning Scope" vertex="1">
+          <mxGeometry height="36" width="900" x="90" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="corp-layer-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;fillOpacity=45;strokeColor=#6A1B9A;strokeWidth=2;dashed=1;dashPattern=6 6;" value="" vertex="1">
+          <mxGeometry height="190" width="1580" x="50" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="corp-layer-flag" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B1FA2;strokeColor=#4A148C;fontColor=#FFFFFF;fontSize=18;fontStyle=1;" value="🏢" vertex="1">
+          <mxGeometry height="32" width="32" x="65" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="corp-layer-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1;fontColor=#4A148C;" value="Corporate Network (Corp / BeyondCorp Zero-Trust — Zurich &amp; Belgium Offices)" vertex="1">
+          <mxGeometry height="32" width="760" x="105" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="corp-dev1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8BBD0;strokeColor=#AD1457;strokeWidth=1.5;fontSize=12;" value="&lt;b&gt;Company Devices (Endpoints)&lt;/b&gt;&lt;br&gt;gLinux, Chromebooks, MacBooks, SRE Laptops" vertex="1">
+          <mxGeometry height="65" width="340" x="70" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="QRbUBxmhplsxY03sbjNp-1" edge="1" parent="1" source="log-corp-ep" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;strokeColor=light-dark(#ff8000, #ededed);strokeWidth=3;" target="telemetry-bus">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="355" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="log-corp-ep" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;strokeWidth=1.5;fontSize=11;align=left;" value="&lt;b&gt;📋 LOG:&lt;/b&gt; OS Process Exec (Santa/auditd), EDR Telemetry, DNS/Netflow, USB/Peripheral Events" vertex="1">
+          <mxGeometry height="50" width="340" x="70" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="corp-dev2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE7F6;strokeColor=#512DA8;strokeWidth=1.5;fontSize=12;" value="&lt;b&gt;BeyondCorp &amp; Identity Plane&lt;/b&gt;&lt;br&gt;Titan / Gnubby Keys, Device Certs, Access Proxy" vertex="1">
+          <mxGeometry height="65" width="350" x="440" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="log-corp-bc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;strokeWidth=1.5;fontSize=11;align=left;" value="&lt;b&gt;📋 LOG:&lt;/b&gt; LOAS/UberProxy Auth, Context-Aware Access Decisions, Device Trust Posture, mTLS Handshakes" vertex="1">
+          <mxGeometry height="50" width="350" x="440" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="corp-dev3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#283593;strokeWidth=1.5;fontSize=12;" value="&lt;b&gt;Developer &amp; SRE Admin Workflows&lt;/b&gt;&lt;br&gt;borgcfg, Critique, Breakglass / Ganpati Elevation" vertex="1">
+          <mxGeometry height="65" width="370" x="820" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="QRbUBxmhplsxY03sbjNp-4" edge="1" parent="1" source="log-corp-admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.764;entryY=-0.07;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryPerimeter=0;strokeColor=#FF8000;strokeWidth=3;" target="telemetry-bus">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="log-corp-admin" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;strokeWidth=1.5;fontSize=11;align=left;" value="&lt;b&gt;📋 LOG:&lt;/b&gt; MPA (Multi-Party Auth) Approvals, Breakglass Elevation, Code Submits, Prod SSH/RPC Audit" vertex="1">
+          <mxGeometry height="50" width="370" x="820" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="corp-sec-note" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4EC;strokeColor=#C2185B;strokeWidth=1.5;fontSize=11;align=center;" value="&lt;div align=&quot;center&quot;&gt;&lt;b&gt;🎯 Corp → Prod Boundary Focus:&lt;/b&gt;&lt;br&gt;Detect credential theft, rogue binary push, anomalous SRE privilege escalation &amp;amp; lateral movement into Borg.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="123" width="390" x="1220" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="dc1-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#B22222;strokeWidth=2;dashed=1;dashPattern=6 6;" value="" vertex="1">
+          <mxGeometry height="720" width="1150" x="50" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="dc1-flag" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9534F;strokeColor=#B22222;fontColor=#FFFFFF;fontSize=18;fontStyle=1;" value="⚑" vertex="1">
+          <mxGeometry height="32" width="32" x="65" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="dc1-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1;fontColor=#B22222;" value="Prod Datacenter (Zurich) &amp; Remote Geo-Replica (St-Ghislain, Belgium)" vertex="1">
+          <mxGeometry height="32" width="600" x="105" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="cell1-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#285E8E;strokeWidth=2;dashed=1;dashPattern=4 4;" value="" vertex="1">
+          <mxGeometry height="655" width="1120" x="65" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="cell1-flag" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#428BCA;strokeColor=#285E8E;fontColor=#FFFFFF;fontSize=18;fontStyle=1;" value="⚑" vertex="1">
+          <mxGeometry height="32" width="32" x="80" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="cell1-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1;fontColor=#285E8E;" value="Borg Cell (Autonomous Cluster — Instrumentation &amp; Telemetry Sources)" vertex="1">
+          <mxGeometry height="32" width="580" x="120" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="col1-hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#222222;" value="1. Control Plane &amp; Consensus" vertex="1">
+          <mxGeometry height="25" width="320" x="85" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="chubby-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;strokeWidth=2;fontSize=12;" value="&lt;b&gt;Chubby Lock &amp; Paxos Consensus&lt;/b&gt;&lt;br&gt;(Leader Election &amp; 5-Replica RAM Sync)" vertex="1">
+          <mxGeometry height="60" width="320" x="85" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="bm-container" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#424242;strokeWidth=2;fontSize=12;" value="&lt;b&gt;BorgMaster (5 Isolated Racks)&lt;/b&gt;&lt;br&gt;Active Leader + 4 Hot Standbys" vertex="1">
+          <mxGeometry height="75" width="320" x="85" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="log-bm" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;strokeWidth=2;fontSize=11;align=left;" value="&lt;b&gt;📋 LOG (Control Plane Audit):&lt;/b&gt;&lt;br&gt;• Job/Task Scheduling &amp; Binary Provenance (BCID)&lt;br&gt;• BorgMaster RPC Audit Logs (Who/What/When)&lt;br&gt;• Chubby Lock/Lease Changes &amp; Paxos State Diffs&lt;br&gt;• Privileged Borglet Commands &amp; Quota Overrides" vertex="1">
+          <mxGeometry height="115" width="320" x="85" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="col2-hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#222222;" value="2. Colossus Storage &amp; Geo-Replication" vertex="1">
+          <mxGeometry height="25" width="350" x="435" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="col2-local" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#F57F17;strokeWidth=1.5;fontSize=12;" value="&lt;b&gt;Local Cell Storage (3x Racks 1..3)&lt;/b&gt;&lt;br&gt;BorgMaster State Checkpoints &amp; Paxos Logs" vertex="1">
+          <mxGeometry height="60" width="350" x="435" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="col2-global" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F7FA;strokeColor=#00838F;strokeWidth=1.5;fontSize=12;" value="&lt;b&gt;User/Corp Data Chunks (RS 6+3 + B4 WAN)&lt;/b&gt;&lt;br&gt;Multi-Rack Parity &amp; Async Geo-Rep (Belgium)" vertex="1">
+          <mxGeometry height="75" width="350" x="435" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="log-colossus" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;strokeWidth=2;fontSize=11;align=left;" value="&lt;b&gt;📋 LOG (Data Access &amp; Exfil Plane):&lt;/b&gt;&lt;br&gt;• Colossus Curator Metadata Reads/Writes (ACLs)&lt;br&gt;• Chunkserver I/O &amp; Bulk Data Read/Exfil Anomalies&lt;br&gt;• Spanner/Bigtable Query &amp; Schema Audit Logs&lt;br&gt;• B4 WAN Cross-Region Replication Flows" vertex="1">
+          <mxGeometry height="115" width="350" x="435" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="col3-hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#222222;" value="3. Compute, TPU &amp; Host Runtime" vertex="1">
+          <mxGeometry height="25" width="350" x="815" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="col3-cpu" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;strokeWidth=1.5;fontSize=12;" value="&lt;b&gt;Compute Machines (CPU - x86 / Axion)&lt;/b&gt;&lt;br&gt;Borglet + Linux Containers (Search, GWS, Curators)" vertex="1">
+          <mxGeometry height="60" width="350" x="815" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="col3-tpu" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;strokeWidth=1.5;fontSize=12;" value="&lt;b&gt;AI Accelerators (TPU / GPU Pods)&lt;/b&gt;&lt;br&gt;Gemini Model Weights, Training &amp; Inference" vertex="1">
+          <mxGeometry height="75" width="350" x="815" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="log-host" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;strokeWidth=2;fontSize=11;align=left;" value="&lt;b&gt;📋 LOG (Host, Network &amp; AI Runtime):&lt;/b&gt;&lt;br&gt;• Titan Chip Secure Boot &amp; Firmware Integrity&lt;br&gt;• Kernel eBPF Syscalls, Container Escapes &amp; Borglet&lt;br&gt;• Jupiter SDN / Stubby/ALTS mTLS Service-to-Service&lt;br&gt;• TPU Pod Model Weight Access &amp; Inference Telemetry" vertex="1">
+          <mxGeometry height="115" width="350" x="815" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="telemetry-bus" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#263238;strokeColor=#000000;strokeWidth=2;fontColor=#FFFFFF;fontSize=13;" value="&lt;b&gt;High-Throughput Telemetry Ingestion &amp; Normalization Pipeline (Dapper / Monarch / Security Data Lake)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Petabyte-scale streaming of ALTS Identity, RPC Graph, eBPF Host Events, Binary Authorization (BCID) &amp; Data Access Logs&lt;/font&gt;" vertex="1">
+          <mxGeometry height="65" width="1080" x="85" y="915" as="geometry" />
+        </mxCell>
+        <mxCell id="identity-graph-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;strokeWidth=2;fontSize=12;align=left;" value="&lt;b&gt;🔗 End-to-End Provenance &amp; Identity Stitching (Key for Dynamic Reasoning):&lt;/b&gt;&lt;br&gt;Links &lt;b&gt;Corp Human/Device Identity (LOAS)&lt;/b&gt; ➔ &lt;b&gt;Code Commit &amp; Build (BCID)&lt;/b&gt; ➔ &lt;b&gt;Borg Job/Task Execution&lt;/b&gt; ➔ &lt;b&gt;ALTS Service-to-Service RPCs&lt;/b&gt; ➔ &lt;b&gt;Colossus/Spanner Data Access&lt;/b&gt;." vertex="1">
+          <mxGeometry height="75" width="1080" x="85" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="l7-panel" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#1A237E;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="720" width="410" x="1220" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="l7-hdr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1A237E;strokeColor=#0D47A1;fontColor=#FFFFFF;fontSize=14;" value="&lt;b&gt;L7 Staff Security Engineer Scope&lt;/b&gt;&lt;br&gt;Dynamic Reasoning &amp; NextGen Detection" vertex="1">
+          <mxGeometry height="55" width="380" x="1235" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="l7-box1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#3949AB;strokeWidth=2;fontSize=11.5;align=center;" value="&lt;div align=&quot;center&quot;&gt;&lt;b&gt;1. Applied Dynamic Reasoning (LLMs / ML / Graphs)&lt;/b&gt;&lt;br&gt;• Replace brittle static signatures with semantic reasoning over &lt;b&gt;Corp + Prod RPC/eBPF graphs&lt;/b&gt;&lt;br&gt;• Predictive modeling &amp;amp; behavioral baselining of Borg Jobs, SRE actions &amp;amp; TPU workloads&lt;/div&gt;" vertex="1">
+          <mxGeometry height="125" width="380" x="1235" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="l7-box2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#3949AB;strokeWidth=2;fontSize=11.5;align=center;" value="&lt;div align=&quot;center&quot;&gt;&lt;b&gt;2. Automated Triage &amp;amp; Autonomous Response&lt;/b&gt;&lt;br&gt;• AI agents investigating multi-hop alerts (BeyondCorp → BorgMaster → Colossus)&lt;br&gt;• Automated containment: revoke LOAS tokens, quarantine Borg Task, block B4/Jupiter flows&lt;/div&gt;" vertex="1">
+          <mxGeometry height="125" width="380" x="1235" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="l7-box3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#3949AB;strokeWidth=2;fontSize=11.5;align=center;" value="&lt;div align=&quot;center&quot;&gt;&lt;b&gt;3. Planetary-Scale Signal Engineering&lt;/b&gt;&lt;br&gt;• High-signal, low-noise telemetry selection at exabyte scale (cost vs. detection coverage)&lt;br&gt;• Cross-org technical strategy across Borg, Colossus, CorpSec &amp;amp; AI Infra teams&lt;/div&gt;" vertex="1">
+          <mxGeometry height="125" width="380" x="1235" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="l7-box4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C5CAE9;strokeColor=#283593;strokeWidth=2;fontSize=11.5;align=center;" value="&lt;div align=&quot;center&quot;&gt;&lt;b&gt;4. High-Priority Threat Scenarios Covered:&lt;/b&gt;&lt;br&gt;• Compromised Corp endpoint pivoting via BeyondCorp&lt;br&gt;• Malicious/unverified binary scheduled on Borg&lt;br&gt;• Insider / rogue SRE abuse of Breakglass / MPA&lt;br&gt;• Gemini model weight or user data exfiltration&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="380" x="1235" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="e-log1-bus" edge="1" parent="1" source="log-bm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=3;strokeColor=#F57F17;endArrow=classic;" target="telemetry-bus">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="245" y="860" />
+              <mxPoint x="245" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-log2-bus" edge="1" parent="1" source="log-colossus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=3;strokeColor=#F57F17;endArrow=classic;" target="telemetry-bus">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="860" />
+              <mxPoint x="610" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-log3-bus" edge="1" parent="1" source="log-host" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=3;strokeColor=#F57F17;endArrow=classic;" target="telemetry-bus">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="860" />
+              <mxPoint x="990" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QRbUBxmhplsxY03sbjNp-3" edge="1" parent="1" source="log-corp-bc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.571;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;strokeColor=#FF8000;strokeWidth=3;" target="telemetry-bus">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QRbUBxmhplsxY03sbjNp-8" edge="1" parent="1" source="corp-sec-note" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;strokeColor=#FF0080;strokeWidth=3;" target="l7-hdr">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1670" y="193.5" />
+              <mxPoint x="1670" y="337.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
